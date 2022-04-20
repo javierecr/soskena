@@ -6971,9 +6971,9 @@ a.account-addresses:hover {
   border-bottom: 1px solid var(--color-border);
   text-align: center;
 }
-.account-table .d-table-cell.no-border {
+/* .account-table .d-table-cell.no-border {
   :cn: Cn;
-}
+} */
 @media screen and (max-width: 767px) {
   .account-table .d-table-header {
     display: none;
