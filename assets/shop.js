@@ -21442,31 +21442,3 @@ theme.Helpers = (function () {
 
 window.theme.icons.arrowNavSlider =
   'M42.9,10.6l3.6,3.5L10.6,50l35.9,35.9l-3.6,3.5L3.5,50L42.9,10.6z';
-
-// store front password
-
-$(document).ready(function () {
-  $(window).load(function () {
-    console.log('hi');
-    $duration = 15;
-    $('.seconds').text($duration);
-    $('.popup-wrap').fadeIn(1500);
-
-    $myTimer = setInterval(function () {
-      startTimer();
-    }, 1000);
-    $('.popup .btn-close').on('click', function () {
-      clearInterval($myTimer);
-      $('.popup-wrap').fadeOut(500);
-    });
-
-    function startTimer() {
-      $duration--;
-      $('.seconds').text($duration);
-      if ($duration == 0) {
-        clearInterval($myTimer);
-        $('.popup-wrap').fadeOut(500);
-      }
-    }
-  });
-});

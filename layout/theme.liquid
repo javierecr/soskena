@@ -172,5 +172,13 @@
 
 	{%- comment -%} AJAX Mustache Templates {%- endcomment -%}
 	{%- render 'ajax-cart' -%}
+
+	<div class="body-blackout"></div>
+			<div class="popup-modal shadow" data-popup-modal="one">
+	<div class="popup-modal__close">X</div>
+			{{ pages.size-chart.content }}
+	</div>
+	<script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>
+
 </body>
 </html>
