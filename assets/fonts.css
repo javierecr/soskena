@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'darker_grotesque';
+    src: url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/darkergrotesque-black-webfont.woff2?v=14938022629780718792') format('woff2'),
+         url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/darkergrotesque-black-webfont.woff?v=8607068363213918236') format('woff');
+    font-weight: 900; /* black */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'darker_grotesque';
+    src: url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/darkergrotesque-bold-webfont.woff2?v=4112007053025192099') format('woff2'),
+         url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/darkergrotesque-bold-webfont.woff?v=7335960007679516057') format('woff');
+    font-weight: 700; /* bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'darker_grotesque';
+    src: url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/darkergrotesque-extrabold-webfont.woff2?v=1567570078483810641') format('woff2'),
+         url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/darkergrotesque-extrabold-webfont.woff?v=1984589866850221498') format('woff');
+    font-weight: 800; /* extrabold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'darker_grotesque';
+    src: url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/darkergrotesque-light-webfont.woff2?v=16546329308027330360') format('woff2'),
+         url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/darkergrotesque-light-webfont.woff?v=16444524959540157147') format('woff');
+    font-weight: 300; /* light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'darker_grotesque';
+    src: url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/darkergrotesque-medium-webfont.woff2?v=3370528403412037637') format('woff2'),
+         url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/darkergrotesque-medium-webfont.woff?v=10124566193957534253') format('woff');
+    font-weight: 500; /* medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'darker_grotesque';
+    src: url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/darkergrotesque-regular-webfont.woff2?v=10468668609215488629') format('woff2'),
+         url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/darkergrotesque-regular-webfont.woff?v=1307510275518321993') format('woff');
+    font-weight: 400; /* regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'darker_grotesque';
+    src: url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/darkergrotesque-semibold-webfont.woff2?v=12090786697367065229') format('woff2'),
+         url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/darkergrotesque-semibold-webfont.woff?v=3201325637412173402') format('woff');
+    font-weight: 600; /* semibold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tenor_sansregular';
+    src: url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/tenorsans-regular-webfont.woff2?v=7458326357257381117') format('woff2'),
+         url('//cdn.shopify.com/s/files/1/0640/3850/2612/t/2/assets/tenorsans-regular-webfont.woff?v=10992320838156645116') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
