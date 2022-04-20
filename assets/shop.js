@@ -21447,6 +21447,7 @@ window.theme.icons.arrowNavSlider =
 
 $(document).ready(function () {
   $(window).load(function () {
+    console.log('hi');
     $duration = 15;
     $('.seconds').text($duration);
     $('.popup-wrap').fadeIn(1500);
