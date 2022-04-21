@@ -176,9 +176,36 @@
 	<div class="body-blackout"></div>
 			<div class="popup-modal shadow" data-popup-modal="one">
 	<div class="popup-modal__close">X</div>
-			{{ pages.size-chart.content }}
+			{%- form 'storefront_password' -%}
+
+			{%- if form.errors -%}
+				<div class="feedback error p">
+					{{ form.errors | default_errors }}
+				</div>
+			{%- endif -%}
+
+			<div class="input-group">
+				<p class="form-field form-field--password">
+					<input type="password" name="password" class="password inline" placeholder="{{ 'password.forms.enter_password_placeholder' | t }}">
+				</p>
+				<p class="form-field form-field--submit">
+					<input type="submit" value="{{ 'password.forms.call_to_action' | t }}" class="button submit">
+				</p>
+			</div>
+			<p class="form-field">
+				<label>{{ 'password.content.admin_link' | t }} <a href="/admin">{{ 'password.content.admin_login' | t }}</a></label>
+			</p>
+
+		{%- endform -%}
 	</div>
 	<script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>
 
 </body>
 </html>
+
+{% comment %} <div id="size-chart">
+	<div class="signup-form">
+
+		
+	</div>
+</div> {% endcomment %}
