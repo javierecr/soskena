@@ -15938,7 +15938,7 @@ body {
   position: relative;
 }
 
-#storefront-login.popup-trigger {
+.password__container.popup-trigger {
   position: absolute;
   top: 16px;
   right: 16px;
