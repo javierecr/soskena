@@ -15938,6 +15938,12 @@ body {
   position: relative;
 }
 
+#storefront-login.popup-trigger {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
 .body-blackout {
   position: absolute;
   z-index: 1010;
@@ -15957,7 +15963,7 @@ body {
 }
 
 .popup-modal {
-  background-color: #fff;
+  background-color: #000;
   position: fixed;
   left: 50%;
   top: 50%;
