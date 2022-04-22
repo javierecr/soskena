@@ -578,11 +578,37 @@
       },
       "password-template": {
         "type": "password-template",
+        "blocks": {
+          "4a8e9212-7cb9-4354-926b-2251051eca96": {
+            "type": "gallery_image",
+            "settings": {
+              "slide": "shopify:\/\/shop_images\/8R2A1434.png"
+            }
+          }
+        },
+        "block_order": [
+          "4a8e9212-7cb9-4354-926b-2251051eca96"
+        ],
         "settings": {
           "background": "shopify:\/\/shop_images\/8P8A9068.jpg",
-          "logo": "shopify:\/\/shop_images\/Soskena_logo_Blanco.png",
-          "logo_width": 400,
-          "text_newsletter": "<p>Subscribe to receive  news and curated content about our launching.<\/p>"
+          "logo": "shopify:\/\/shop_images\/Soskena_logo_cc-03_e8500648-9ca7-4fff-8873-3437d36970fb_1.png",
+          "logo_width": 185,
+          "text_newsletter": "<p>Subscribe to receive  news and curated content about our launching.<\/p>",
+          "show_nav_arrows": true,
+          "color_style": "white",
+          "transition": "fade",
+          "autoplay": true,
+          "duration": 4,
+          "show_margins": false,
+          "slide_height": "five-fifty-height-hero",
+          "slide_image_position": "left",
+          "slide_image_width": "med_s12|med_s12",
+          "subheading": "Humble Beginnings",
+          "title": "Tell a Story",
+          "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
+          "cta": "",
+          "link": "",
+          "button_style": "primary"
         }
       },
       "16189662990b38e54c": {
