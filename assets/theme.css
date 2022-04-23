@@ -15942,6 +15942,7 @@ body {
 .password__container .popup-trigger {
   position: absolute;
   top: 16px;
+  z-index: 99;
   right: 16px;
 }
 
