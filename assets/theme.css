@@ -11727,7 +11727,7 @@ button.signUp-submit:hover {
 .template-password h3,
 .template-password label,
 .template-password p {
-  color: #fff;
+  color: var(--color-heading);
 }
 .template-password .logo {
   margin: 20px auto;
@@ -11763,6 +11763,7 @@ button.signUp-submit:hover {
 .template-password .input-group .form-field--email input,
 .template-password .input-group .form-field--password input {
   border: 0;
+  box-shadow: inset 0 0 0 1px var(--color-heading);
 }
 .template-password .input-group .form-field--submit {
   width: 120px;
