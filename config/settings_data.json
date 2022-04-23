@@ -592,7 +592,7 @@
         "settings": {
           "background": "shopify:\/\/shop_images\/8P8A9068.jpg",
           "logo": "shopify:\/\/shop_images\/Soskena_logo_cc-03_e8500648-9ca7-4fff-8873-3437d36970fb_1.png",
-          "logo_width": 185,
+          "logo_width": 345,
           "text_newsletter": "<p>Subscribe to receive  news and curated content about our launching.<\/p>",
           "show_nav_arrows": true,
           "color_style": "white",
