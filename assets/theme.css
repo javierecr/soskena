@@ -15945,6 +15945,10 @@ body {
   right: 16px;
 }
 
+.password__container .popup-modal .form-field label {
+  color: #fff;
+}
+
 .body-blackout {
   position: absolute;
   z-index: 1010;
