@@ -592,7 +592,7 @@
         "settings": {
           "background": "shopify:\/\/shop_images\/8P8A9068.jpg",
           "logo": "shopify:\/\/shop_images\/Soskena_logo_cc-03_e8500648-9ca7-4fff-8873-3437d36970fb_1.png",
-          "logo_width": 185,
+          "logo_width": 345,
           "text_newsletter": "<p>Subscribe to receive  news and curated content about our launching.<\/p>",
           "show_nav_arrows": true,
           "color_style": "white",
@@ -603,9 +603,9 @@
           "slide_height": "five-fifty-height-hero",
           "slide_image_position": "left",
           "slide_image_width": "med_s12|med_s12",
-          "subheading": "Humble Beginnings",
-          "title": "Tell a Story",
-          "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
+          "subheading": "",
+          "title": "",
+          "content": "",
           "cta": "",
           "link": "",
           "button_style": "primary"
