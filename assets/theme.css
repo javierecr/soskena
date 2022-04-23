@@ -15945,7 +15945,7 @@ body {
   right: 16px;
 }
 
-.password__container .popup-modal .form-field label {
+.template-password .popup-modal .form-field label {
   color: #fff;
 }
 
