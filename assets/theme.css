@@ -10492,7 +10492,7 @@ body.allow-grid-items-animations.allow-image-animations
   }
   .gallery.password-gallery .row .gallery-content {
     order: 0;
-    height: auto;
+    height: auto !important;
   }
 }
 
