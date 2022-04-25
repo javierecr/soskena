@@ -10481,6 +10481,21 @@ body.allow-grid-items-animations.allow-image-animations
   overflow: hidden;
   margin: 10px 5px;
 }
+
+.gallery.password-gallery {
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery.password-gallery .row .gallery-slider {
+    order: 1;
+  }
+  .gallery.password-gallery .row .gallery-content {
+    order: 0;
+    height: auto;
+  }
+}
+
 .gallery .row {
   height: 100%;
 }
