@@ -10486,6 +10486,14 @@ body.allow-grid-items-animations.allow-image-animations
   margin: 0;
 }
 
+.gallery.password-gallery .row .gallery-content {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100% !important;
+}
+
 @media screen and (max-width: 767px) {
   .gallery.password-gallery .row .gallery-slider {
     order: 1;
@@ -10494,13 +10502,6 @@ body.allow-grid-items-animations.allow-image-animations
     order: 0;
     height: auto !important;
   }
-}
-.gallery.password-gallery .row .gallery-content {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }
 
 .gallery .row {
