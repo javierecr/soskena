@@ -10508,19 +10508,19 @@ body.allow-grid-items-animations.allow-image-animations
 .gallery .row.original-height:before {
   content: none;
 }
-@media screen and (max-width: 767px) {
-  .gallery .row.original-height .gallery-slider {
-    height: auto;
-    min-height: 0;
-  }
-}
 .gallery .row.original-height .gallery-content,
 .gallery .row.original-height .gallery-slider,
 .gallery .row.original-height .slick-image,
 .gallery .row.original-height .slick-list,
 .gallery .row.original-height .slick-slide,
 .gallery .row.original-height .slick-track {
-  height: auto;
+  height: 100vh;
+}
+@media screen and (max-width: 767px) {
+  .gallery .row.original-height .gallery-slider {
+    height: auto;
+    min-height: 0;
+  }
 }
 .gallery .row.original-height .slide-image {
   position: static;
