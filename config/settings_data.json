@@ -600,7 +600,7 @@
           "autoplay": true,
           "duration": 4,
           "show_margins": false,
-          "slide_height": "seven-fifty-height-hero",
+          "slide_height": "original-height",
           "slide_image_position": "left",
           "slide_image_width": "med_s12|med_s12",
           "subheading": "",
