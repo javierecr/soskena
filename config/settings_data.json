@@ -49,7 +49,7 @@
     "show_reviews": true,
     "enable_yotpo": false,
     "yotpo_ID": "",
-    "favicon": "",
+    "favicon": "shopify:\/\/shop_images\/Instragram_Profile.jpg",
     "twitter_url": "",
     "facebook_url": "",
     "pinterest_url": "",
@@ -582,7 +582,7 @@
           "4a8e9212-7cb9-4354-926b-2251051eca96": {
             "type": "gallery_image",
             "settings": {
-              "slide": "shopify:\/\/shop_images\/8R2A1434.png"
+              "slide": "shopify:\/\/shop_images\/8P8A9262.jpg"
             }
           }
         },
@@ -590,10 +590,7 @@
           "4a8e9212-7cb9-4354-926b-2251051eca96"
         ],
         "settings": {
-          "background": "shopify:\/\/shop_images\/8P8A9068.jpg",
           "logo": "shopify:\/\/shop_images\/Soskena_logo_cc-03_e8500648-9ca7-4fff-8873-3437d36970fb_1.png",
-          "logo_width": 345,
-          "text_newsletter": "<p>Subscribe to receive  news and curated content about our launching.<\/p>",
           "show_nav_arrows": true,
           "color_style": "white",
           "transition": "fade",
@@ -603,12 +600,8 @@
           "slide_height": "original-height",
           "slide_image_position": "left",
           "slide_image_width": "med_s12|med_s12",
-          "subheading": "",
-          "title": "",
-          "content": "",
-          "cta": "",
-          "link": "",
-          "button_style": "primary"
+          "logo_width": 345,
+          "text_newsletter": "<p>Subscribe to receive  news and curated content about our launching.<\/p>"
         }
       },
       "16189662990b38e54c": {
