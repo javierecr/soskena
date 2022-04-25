@@ -10495,6 +10495,13 @@ body.allow-grid-items-animations.allow-image-animations
     height: auto !important;
   }
 }
+.gallery.password-gallery .row .gallery-content {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 .gallery .row {
   height: 100%;
