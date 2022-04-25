@@ -10521,6 +10521,8 @@ body.allow-grid-items-animations.allow-image-animations
 .gallery .row.original-height .slick-slide,
 .gallery .row.original-height .slick-track {
   height: auto;
+  height: 100vh;
+  padding: 16px;
 }
 .gallery .row.original-height .slide-image {
   position: static;
