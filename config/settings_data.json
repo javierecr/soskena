@@ -627,6 +627,7 @@
       },
       "165065552673da1234": {
         "type": "image-with-text",
+        "disabled": true,
         "blocks": {
           "165065552673da1234-0": {
             "type": "gallery_image",
