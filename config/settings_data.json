@@ -618,37 +618,6 @@
           "show_page_title": false
         }
       },
-      "165065552673da1234": {
-        "type": "image-with-text",
-        "blocks": {
-          "165065552673da1234-0": {
-            "type": "gallery_image",
-            "settings": {
-              "slide": "shopify:\/\/shop_images\/8R2A1434.png"
-            }
-          }
-        },
-        "block_order": [
-          "165065552673da1234-0"
-        ],
-        "settings": {
-          "show_nav_arrows": true,
-          "color_style": "white",
-          "transition": "fade",
-          "autoplay": false,
-          "duration": 4,
-          "show_margins": false,
-          "slide_height": "one-hundred-height-hero",
-          "slide_image_position": "left",
-          "slide_image_width": "med_s12|med_s12",
-          "subheading": "Humble Beginnings",
-          "title": "Tell a Story",
-          "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
-          "cta": "BUY NOW",
-          "link": "#",
-          "button_style": "primary"
-        }
-      },
       "image-with-text-password": {
         "type": "image-with-text-password",
         "blocks": {
@@ -697,8 +666,7 @@
       "16124051077ac428b3",
       "logo-list",
       "161240530395c0e831",
-      "testimonials",
-      "165065552673da1234"
+      "testimonials"
     ]
   },
   "presets": {
