@@ -624,6 +624,7 @@
           "165065552673da1234-0": {
             "type": "gallery_image",
             "settings": {
+              "slide": "shopify:\/\/shop_images\/8R2A1434.png"
             }
           }
         },
@@ -634,7 +635,7 @@
           "show_nav_arrows": true,
           "color_style": "white",
           "transition": "fade",
-          "autoplay": true,
+          "autoplay": false,
           "duration": 4,
           "show_margins": false,
           "slide_height": "seven-fifty-height-hero",
