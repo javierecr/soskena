@@ -115,6 +115,7 @@
           "secondary_menu": "secondary-menu",
           "links_position": "links_left",
           "logo_position": "logo_center",
+          "meganav_image": "shopify:\/\/shop_images\/8P8A9262.jpg",
           "image_aspect_ratio": 0.7,
           "meganav_image_heading": "",
           "meganav_image_link": ""
@@ -618,43 +619,6 @@
           "show_page_title": false
         }
       },
-      "165065552673da1234": {
-        "type": "image-with-text",
-        "disabled": true,
-        "blocks": {
-          "165065552673da1234-0": {
-            "type": "gallery_image",
-            "settings": {
-            }
-          },
-          "165065552673da1234-1": {
-            "type": "gallery_image",
-            "settings": {
-            }
-          }
-        },
-        "block_order": [
-          "165065552673da1234-0",
-          "165065552673da1234-1"
-        ],
-        "settings": {
-          "show_nav_arrows": true,
-          "color_style": "white",
-          "transition": "fade",
-          "autoplay": true,
-          "duration": 4,
-          "show_margins": false,
-          "slide_height": "five-fifty-height-hero",
-          "slide_image_position": "left",
-          "slide_image_width": "med_s12|med_s12",
-          "subheading": "Humble Beginnings",
-          "title": "Tell a Story",
-          "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
-          "cta": "",
-          "link": "",
-          "button_style": "primary"
-        }
-      },
       "image-with-text-password": {
         "type": "image-with-text-password",
         "blocks": {
@@ -703,8 +667,7 @@
       "16124051077ac428b3",
       "logo-list",
       "161240530395c0e831",
-      "testimonials",
-      "165065552673da1234"
+      "testimonials"
     ]
   },
   "presets": {
