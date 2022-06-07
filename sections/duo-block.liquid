@@ -32,10 +32,22 @@
 
 {% schema %}
 {
-  "name": "Due Block",
+  "name": "Duo Block",
   "class": "shopify-section--duo-block",
   "settings": [],
   "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
     {
       "type": "text",
       "name": "Text",
