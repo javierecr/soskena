@@ -14,10 +14,7 @@
         </div>
       {% when "text" %}
         <div class="duo-block-item text" style="background-color: {{block.settings.bg_color}};">
-          <div class="duo-block-text" style="
-            align-items: {{block.settings.horizontal_alignment}};
-            justify-content: {{block.settings.vertical_alignment}};
-          ">
+          <div class="duo-block-text duo-text-vertical--{{block.settings.horizontal_alignment}} duo-text-vertical--{{block.settings.vertical_alignment}}">
             <h2 class="duo-block__title">{{block.settings.header}}</h2>
             <h4 class="duo-block__subtitle">
               {{block.settings.paragraph}}
