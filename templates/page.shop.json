@@ -2,11 +2,47 @@
   "sections": {
     "shop": {
       "type": "shop-template",
+      "disabled": true,
       "settings": {
+        "show_title": true,
+        "show_sort_filter": true,
+        "filter_mode": "tag",
+        "position_filters": "left",
+        "show_banner": true,
+        "banner_height": "small",
+        "banner_text_position": "center",
+        "banner_color_text": "#ffffff",
+        "banner_color_overlay": "#333333",
+        "banner_overlay_opacity": 0,
+        "show_featured_image": false,
+        "featured_heading": "Use this image showcase promotional content.",
+        "featured_text": "<p>Elaborate on it with rich text<\/p>",
+        "featured_button_text": "Learn More",
+        "featured_button_link": "",
+        "featured_button_style": "primary",
+        "featured_color_text": "#ffffff",
+        "featured_color_overlay": "#333333",
+        "featured_overlay_opacity": 30,
+        "show_description": true,
+        "collections_columns": 4,
+        "coll_text_position": "center",
+        "button_text": "View products",
+        "button_style": "primary",
+        "text_color": "#ffffff",
+        "overlay_color": "#333333",
+        "overlay_opacity": 0
+      }
+    },
+    "1654637844026d107e": {
+      "type": "blurb",
+      "settings": {
+        "header": "",
+        "paragraph": ""
       }
     }
   },
   "order": [
-    "shop"
+    "shop",
+    "1654637844026d107e"
   ]
 }
