@@ -15429,9 +15429,12 @@ h2 {
   height: 80vh;
 }
 
-.duo-block .row {
-  display: flex;
-  min-height: 100%;
+.duo-block .duo-block-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  grid-row: 1;
+  grid-template-rows: auto;
 }
 
 .duo-block__center-inside {

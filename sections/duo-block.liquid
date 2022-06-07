@@ -1,0 +1,60 @@
+<div class="duo-block" style="">
+  <div class="duo-block-container">
+    <div
+      class="block med_s12"
+      style="
+        background-image: url(https://cdn.shopify.com/s/files/1/0532/9960/9797/files/8R2A1434_720x.png);
+        background-position: 50% 45%;
+      "
+    >
+       
+    </div>
+    <div class="block med_s12 gris">
+      <h2 class="duo-block__title">INTRODUCING_ELEVATED ESSENTIALS</h2>
+      <h4 class="duo-block__subtitle">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat.
+      </h4>
+      <a
+        class="duo-block__link"
+        href="https://coco-line-mx.myshopify.com/collections/essensials"
+        >Shop Essensials</a
+      >
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Due Block",
+  "class": "shopify-section--duo-block",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subeading",
+      "default": "Custom content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "HTML code"
+    },
+    {
+      "type": "html",
+      "id": "html",
+      "label": "Custom HTML",
+      "default": "<p>Once you write some HTML, it will render right here.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced",
+      "name": "Duo Block"
+    }
+  ]
+}
+{% endschema %}
