@@ -2,11 +2,53 @@
   "sections": {
     "collection": {
       "type": "collection-template",
+      "disabled": true,
       "settings": {
+        "show_title": false,
+        "show_sort_filter": false,
+        "filter_mode": "tag",
+        "position_filters": "left",
+        "show_banner": true,
+        "banner_height": "small",
+        "banner_text_position": "center",
+        "banner_color_text": "#ffffff",
+        "banner_color_overlay": "#333333",
+        "banner_overlay_opacity": 0,
+        "show_featured_image": false,
+        "featured_heading": "Use this image showcase promotional content.",
+        "featured_text": "<p>Elaborate on it with rich text<\/p>",
+        "featured_button_text": "Learn More",
+        "featured_button_link": "",
+        "featured_button_style": "primary",
+        "featured_color_text": "#ffffff",
+        "featured_color_overlay": "#333333",
+        "featured_overlay_opacity": 30
+      }
+    },
+    "16546384126ea384d6": {
+      "type": "blurb",
+      "settings": {
+        "header": "ESSENTIALS",
+        "paragraph": "<p>The superior breathability, comfort, and softness of our underwear is spelled lyocell-a future-oriented fibre that us naturally breathable and moisture wicking, in addition to being wrinkle-resistant, durable, and quick-drying. Upgrade your underwear drawer.<\/p>"
+      }
+    },
+    "1654638347c1596f70": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "featured_collection": "essentials",
+        "show_description": false,
+        "products_layout": "grid",
+        "products_rows": 2,
+        "show_button": true,
+        "button_style": "primary",
+        "color_style": "white"
       }
     }
   },
   "order": [
-    "collection"
+    "collection",
+    "16546384126ea384d6",
+    "1654638347c1596f70"
   ]
 }
