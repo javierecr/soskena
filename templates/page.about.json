@@ -115,10 +115,17 @@
             "horizontal_alignment": "center",
             "vertical_alignment": "space-between"
           }
+        },
+        "3a1eb2b3-225b-48b9-be58-c4032a6fb462": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/About-4.webp"
+          }
         }
       },
       "block_order": [
-        "4773f7b7-2899-481b-a5bc-37de015c9a46"
+        "4773f7b7-2899-481b-a5bc-37de015c9a46",
+        "3a1eb2b3-225b-48b9-be58-c4032a6fb462"
       ],
       "settings": {
       }
