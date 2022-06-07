@@ -547,7 +547,7 @@
       "1612393156350ae799": {
         "type": "custom-html",
         "settings": {
-          "subheading": "",
+          "subheading": ".duo-text-vertical--center",
           "title": "",
           "html": "<div class=\"duo-block\">\n<div class=\"row\">\n<div class=\"block med_s12 salmon\" style=\"\n    background-image: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0532\/9960\/9797\/files\/8R2A2148_web_1080x.jpg?v=1619053803); background-position: 50% 70%;\">  \n<\/div>\n<div class=\"block med_s12 gris\">\n<h2 class=\"duo-block__title\">Bundle up<\/h2>\n<h4 class=\"duo-block__subtitle\">\nLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. <\/h4>\n<a class=\"duo-block__link\">Save with packs<\/a>\n<\/div>\n<\/div>\n<\/div>"
         }
@@ -665,14 +665,43 @@
               "btn_url": "shopify:\/\/collections\/essentials",
               "btn_text": "Shop Essentials",
               "bg_color": "#eae7e4",
-              "horizontal_alignment": "center",
-              "vertical_alignment": "center"
+              "horizontal_alignment": "flex-start",
+              "vertical_alignment": "space-between"
             }
           }
         },
         "block_order": [
           "af99b602-5654-4a49-9763-40bd9ad951b4",
           "b905c8f2-3628-4b27-a906-303e72e40aa4"
+        ],
+        "settings": {
+        }
+      },
+      "165461655110d65638": {
+        "type": "duo-block",
+        "blocks": {
+          "3f09c0fd-19d4-4c5d-9b86-ebc149c128ee": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/8R2A2148_web.jpg"
+            }
+          },
+          "67e8b1c5-8a6b-4840-bf08-c434f7d6a2db": {
+            "type": "text",
+            "settings": {
+              "header": "BUNDLE UP",
+              "paragraph": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. <\/p><p><\/p><p>Nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat<\/p>",
+              "btn_url": "#",
+              "btn_text": "Save with packs",
+              "bg_color": "#eae7e4",
+              "horizontal_alignment": "center",
+              "vertical_alignment": "space-between"
+            }
+          }
+        },
+        "block_order": [
+          "3f09c0fd-19d4-4c5d-9b86-ebc149c128ee",
+          "67e8b1c5-8a6b-4840-bf08-c434f7d6a2db"
         ],
         "settings": {
         }
@@ -684,6 +713,7 @@
       "16118807654f10b984",
       "featured-collection",
       "161307465207a8f802",
+      "165461655110d65638",
       "1612393156350ae799",
       "16124051077ac428b3",
       "logo-list",
