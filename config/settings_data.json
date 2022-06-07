@@ -655,11 +655,20 @@
           "link": "",
           "button_style": "primary"
         }
+      },
+      "16546127384f9f8061": {
+        "type": "duo-block",
+        "settings": {
+          "subheading": "Custom content",
+          "title": "HTML code",
+          "html": "<p>Once you write some HTML, it will render right here.<\/p>"
+        }
       }
     },
     "content_for_index": [
       "slideshow",
       "16189662990b38e54c",
+      "16546127384f9f8061",
       "16118807654f10b984",
       "featured-collection",
       "161307465207a8f802",
