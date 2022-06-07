@@ -522,14 +522,6 @@
           "content": "<p>Let&#x27;s keep in touch<\/p>"
         }
       },
-      "16118807654f10b984": {
-        "type": "custom-html",
-        "settings": {
-          "subheading": "",
-          "title": "",
-          "html": "<div class=\"home-about\">\n  <div class=\"row\">\n    <div class=\"block med_s14\">\n     <h2>ABOUT<\/h2>\n    <\/div>\n    <div class=\"block med_s34\">\n      <p>Estamos en la industria de hacer de las personas las mejores versiones de ellas. Nuestros productos son un catalizador de esta meta. Nos deshacemos de toda la mierda que nos han metido en la cabeza_ “el deber ser” y alimentamos la idea de que las cosas auténticas son las más bellas y valiosas de la vida.<\/p>\n    <\/div>\n  <\/div>\n<\/div>"
-        }
-      },
       "faq-section__product": {
         "type": "faq-section__product",
         "settings": {
@@ -718,11 +710,18 @@
         ],
         "settings": {
         }
+      },
+      "165462394922a81a15": {
+        "type": "blurb",
+        "settings": {
+          "header": "ABOUT",
+          "paragraph": "<p>Estamos en la industria de hacer de las personas las mejores versiones de ellas. Nuestros productos son un catalizador de esta meta. Nos deshacemos de toda la mierda que nos han metido en la cabeza_ “el deber ser” y alimentamos la idea de que las cosas auténticas son las más bellas y valiosas de la vida.<\/p>"
+        }
       }
     },
     "content_for_index": [
       "16546127384f9f8061",
-      "16118807654f10b984",
+      "165462394922a81a15",
       "featured-collection",
       "161307465207a8f802",
       "165461655110d65638",
