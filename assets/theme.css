@@ -15425,11 +15425,11 @@ h2 {
   }
 }
 
-.duo-block {
+.duo-block-section {
   height: 80vh;
 }
 
-.duo-block .duo-block-container {
+.duo-block-section .duo-block-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
@@ -15443,7 +15443,7 @@ h2 {
   align-content: center;
 }
 
-.duo-block .block {
+.duo-block-section .duo-block-container .duo-block-item {
   flex-direction: row;
   padding: 40px;
   background-repeat: no-repeat;
