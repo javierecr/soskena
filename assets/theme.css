@@ -3366,8 +3366,16 @@ a .link-hover:hover {
 }
 .content-container {
   max-width: 1600px;
+}
+.content-wrapper {
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1024px) {
+  .content-wrapper {
+    max-width: 85.4%;
+  }
 }
 .shopify-challenge__container {
   padding: 50px 0;
