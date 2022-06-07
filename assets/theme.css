@@ -15436,7 +15436,7 @@ h2 {
 .duo-block-section .duo-block-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
+  gap: 16px;
   grid-row: 1;
   grid-template-rows: auto;
 }
