@@ -658,10 +658,28 @@
       },
       "16546127384f9f8061": {
         "type": "duo-block",
+        "blocks": {
+          "af99b602-5654-4a49-9763-40bd9ad951b4": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/8R2A1434.png"
+            }
+          },
+          "b905c8f2-3628-4b27-a906-303e72e40aa4": {
+            "type": "text",
+            "settings": {
+              "header": "INTRODUCING_ELEVATED ESSENTIALS",
+              "paragraph": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. <\/p><p><\/p><p>Euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<\/p>",
+              "btn_url": "shopify:\/\/collections\/essentials",
+              "btn_text": "Shop Essentials"
+            }
+          }
+        },
+        "block_order": [
+          "af99b602-5654-4a49-9763-40bd9ad951b4",
+          "b905c8f2-3628-4b27-a906-303e72e40aa4"
+        ],
         "settings": {
-          "subheading": "Custom content",
-          "title": "HTML code",
-          "html": "<p>Once you write some HTML, it will render right here.<\/p>"
         }
       }
     },
