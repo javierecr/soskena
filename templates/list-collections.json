@@ -1,0 +1,10 @@
+{
+  "name": "List collections",
+  "sections": {
+    "list-collections": {
+      "type": "list-collections-page-template",
+      "settings": {}
+    }
+  },
+  "order": ["list-collections"]
+}

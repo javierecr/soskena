@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "faq": {
+      "type": "faq-template",
+      "settings": {}
+    }
+  },
+  "order": ["faq"]
+}
