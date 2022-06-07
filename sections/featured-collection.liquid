@@ -50,62 +50,60 @@
 	data-image-aspectratio="{{ settings.image_aspect_ratio }}"
 	data-image-size="{{ settings.image_size }}"
 	data-collection-products>
-	<div class="container">
-      <div class="row">
-        <div class="block med_s14">
-          {%- if title != blank or show_description and featured_collection.description != blank -%}
-              <div class="collectionGrid-header row row-sm">
-                  <div class="block s1">
-                      {%- unless title == blank -%}
-                          <h2>{{ title }}</h2>
-                      {%- endunless -%}
+		<div class="row">
+			<div class="block med_s14">
+				{%- if title != blank or show_description and featured_collection.description != blank -%}
+						<div class="collectionGrid-header row row-sm">
+								<div class="block s1">
+										{%- unless title == blank -%}
+												<h2>{{ title }}</h2>
+										{%- endunless -%}
 
-                      {%- if show_description and featured_collection.description != blank -%}
-                          <p>{{ featured_collection.description | strip_html }}</p>
-                      {%- endif -%}
-                  </div>
-              </div>
-          {%- endif -%}
-      </div>
-      <div class="block med_s34">
-        {%- if enable_carousel -%}
-        <div class="collection-slider__wrapper">
-        {%- endif -%}
+										{%- if show_description and featured_collection.description != blank -%}
+												<p>{{ featured_collection.description | strip_html }}</p>
+										{%- endif -%}
+								</div>
+						</div>
+				{%- endif -%}
+		</div>
+		<div class="block med_s34">
+			{%- if enable_carousel -%}
+			<div class="collection-slider__wrapper">
+			{%- endif -%}
 
-            <div class="collectionGrid-row {% if enable_carousel %}collectionGrid-row--slider collection-slider js-collection-slider{% else %}collectionGrid-row--grid{% endif %}">
-                {% comment %} Collection Block, contains .js-quickView {% endcomment %}
-                {%- if featured_collection -%}
-                    {%- if enable_carousel -%}
-                        {%- for product in featured_collection.products -%}
-                            {%- render 'product-grid-item', product: product, collection_block_size: collection_block_size, collection_block_size_mobile: collection_block_size_mobile, index: forloop.index -%}
-                        {%- endfor -%}
-                    {%- else -%}
-                        {%- for product in featured_collection.products limit: products_limit  -%}
-                            {%- render 'product-grid-item', product: product, collection_block_size: collection_block_size, collection_block_size_mobile: collection_block_size_mobile, index: forloop.index -%}
-                        {%- endfor -%}
-                    {%- endif -%}
-                {%- else -%}
-                    {%- for i in (1..products_limit) -%}
-                        {%- render 'product-grid-item', fallback: true, collection_block_size: collection_block_size, collection_block_size_mobile: collection_block_size_mobile, index: forloop.index -%}
-                    {%- endfor -%}
-                {%- endif -%}
-            </div>
+					<div class="collectionGrid-row {% if enable_carousel %}collectionGrid-row--slider collection-slider js-collection-slider{% else %}collectionGrid-row--grid{% endif %}">
+							{% comment %} Collection Block, contains .js-quickView {% endcomment %}
+							{%- if featured_collection -%}
+									{%- if enable_carousel -%}
+											{%- for product in featured_collection.products -%}
+													{%- render 'product-grid-item', product: product, collection_block_size: collection_block_size, collection_block_size_mobile: collection_block_size_mobile, index: forloop.index -%}
+											{%- endfor -%}
+									{%- else -%}
+											{%- for product in featured_collection.products limit: products_limit  -%}
+													{%- render 'product-grid-item', product: product, collection_block_size: collection_block_size, collection_block_size_mobile: collection_block_size_mobile, index: forloop.index -%}
+											{%- endfor -%}
+									{%- endif -%}
+							{%- else -%}
+									{%- for i in (1..products_limit) -%}
+											{%- render 'product-grid-item', fallback: true, collection_block_size: collection_block_size, collection_block_size_mobile: collection_block_size_mobile, index: forloop.index -%}
+									{%- endfor -%}
+							{%- endif -%}
+					</div>
 
-        {%- if enable_carousel -%}
-        </div>
-        {%- endif -%}
+			{%- if enable_carousel -%}
+			</div>
+			{%- endif -%}
 
-        {% comment %} Shop All Link {% endcomment %}
-        {%- if show_button -%}
-            <div class="row row-med u-center button-wrapper">
-                <a href="{{ featured_collection.url }}" class="button button--{{ button_style }}">
-                    {{ 'collections.grid.shop_all' | t }} {{ featured_collection.title }}
-                </a>
-            </div>
-        {%- endif -%}
-      </div>
-    </div>
-  </div>
+			{% comment %} Shop All Link {% endcomment %}
+			{%- if show_button -%}
+					<div class="row row-med u-center button-wrapper">
+							<a href="{{ featured_collection.url }}" class="button button--{{ button_style }}">
+									{{ 'collections.grid.shop_all' | t }} {{ featured_collection.title }}
+							</a>
+					</div>
+			{%- endif -%}
+		</div>
+	</div>
 </section>
 
 {%- render 'product-quick-view' -%}
