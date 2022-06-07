@@ -6,137 +6,26 @@
         "show_page_title": true
       }
     },
-    "16546211621d31a567": {
+    "duo1": {
       "type": "duo-block",
-      "blocks": {
-        "2c088ffb-75fe-455e-acc9-1ca30c042628": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/About-1_1.webp"
-          }
-        },
-        "e6fdfdfe-29c8-4138-8360-ef350c31d2b7": {
-          "type": "text",
-          "settings": {
-            "header": "ELEMENTAL, CONSCIOUS & FAIRLY PRODUCED ESSENTIALS",
-            "paragraph": "<p>We seek to reduce the climate impact caused by the fashion industry. Reduce excessive consumption that exploits both people and the planet, creating elemental and significant products in an ethical and conscious way. <\/p><p>Garments without season, which emphasize quality and longevity to achieve reduced wardrobes, curated by pieces with permanence<\/p>",
-            "btn_url": "",
-            "btn_text": "",
-            "bg_color": "#eae7e4",
-            "horizontal_alignment": "center",
-            "vertical_alignment": "space-between"
-          }
-        }
-      },
-      "block_order": [
-        "2c088ffb-75fe-455e-acc9-1ca30c042628",
-        "e6fdfdfe-29c8-4138-8360-ef350c31d2b7"
-      ],
-      "settings": {
-      }
+      "settings": {}
     },
-    "1654621592cbaaf5a9": {
+    "custom-html": {
       "type": "custom-html",
-      "settings": {
-        "subheading": "",
-        "title": "We love beautiful products. We think organic and we believe fairness is never out of fashion.",
-        "html": ""
-      }
+      "settings": {}
     },
-    "1654621603fff84a7f": {
+    "duo2": {
       "type": "duo-block",
-      "blocks": {
-        "739817ff-294c-4c5e-9fe3-a65c18143225": {
-          "type": "text",
-          "settings": {
-            "header": "SLOW AND ANTI-EXCESS",
-            "paragraph": "<p>We belive on creating permanent collections of zero-compromise pieces, timelesly designed with you and the evironment top of mind.We design “forever”_ we envision a world free of fast consumption, with less chaos, less waste, less smoke. Emphasizing the quality and longevity of our products, we belivee in creating meaningful essensials that promote conscious and necessary consumption.<\/p>",
-            "btn_url": "",
-            "btn_text": "",
-            "bg_color": "#eae7e4",
-            "horizontal_alignment": "center",
-            "vertical_alignment": "space-between"
-          }
-        },
-        "c4aa0ff6-e336-4787-913b-1e25f9ddf775": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/About-2.webp"
-          }
-        }
-      },
-      "block_order": [
-        "739817ff-294c-4c5e-9fe3-a65c18143225",
-        "c4aa0ff6-e336-4787-913b-1e25f9ddf775"
-      ],
-      "settings": {
-      }
+      "settings": {}
     },
-    "16546216181681b6d3": {
+    "duo3": {
       "type": "duo-block",
-      "blocks": {
-        "ebac773a-685f-43be-8aad-2a09e4b68341": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/About-3.webp"
-          }
-        },
-        "4473dbde-019b-42f7-8173-28f7f49de9c2": {
-          "type": "text",
-          "settings": {
-            "header": "LOCALLY PRODUCED WITH LOVE FROM MEXICO",
-            "paragraph": "<p>All our products are locally produced in Mexico. The closeness to our studio allows us to have a bigger control over the processes, reduce emissions on transportation and ensure good working practices.We are happy to support our local community and contribute to its growth and development as well as they support and help us grow and shape our identity.<\/p>",
-            "btn_url": "",
-            "btn_text": "",
-            "bg_color": "#eae7e4",
-            "horizontal_alignment": "center",
-            "vertical_alignment": "space-between"
-          }
-        }
-      },
-      "block_order": [
-        "ebac773a-685f-43be-8aad-2a09e4b68341",
-        "4473dbde-019b-42f7-8173-28f7f49de9c2"
-      ],
-      "settings": {
-      }
+      "settings": {}
     },
-    "16546217013354c574": {
+    "duo4": {
       "type": "duo-block",
-      "blocks": {
-        "4773f7b7-2899-481b-a5bc-37de015c9a46": {
-          "type": "text",
-          "settings": {
-            "header": "FAIR WORKING CONDITIONS",
-            "paragraph": "<p>We are a team of people who belive in fair trade, dignified treatment and equity. We make sure our production team has a healthy and safe working environment and are being paid fairly.<\/p>",
-            "btn_url": "",
-            "btn_text": "",
-            "bg_color": "#eae7e4",
-            "horizontal_alignment": "center",
-            "vertical_alignment": "space-between"
-          }
-        },
-        "3a1eb2b3-225b-48b9-be58-c4032a6fb462": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/About-4.webp"
-          }
-        }
-      },
-      "block_order": [
-        "4773f7b7-2899-481b-a5bc-37de015c9a46",
-        "3a1eb2b3-225b-48b9-be58-c4032a6fb462"
-      ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
-  "order": [
-    "about",
-    "16546211621d31a567",
-    "1654621592cbaaf5a9",
-    "1654621603fff84a7f",
-    "16546216181681b6d3",
-    "16546217013354c574"
-  ]
+  "order": ["about", "duo1", "custom-html", "duo2", "duo3", "duo4"]
 }
