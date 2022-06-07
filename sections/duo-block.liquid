@@ -39,17 +39,32 @@
     },
     {
       "type": "text",
-      "id": "title",
-      "label": "Heading",
-      "default": "HTML code"
-    },
-    {
-      "type": "html",
-      "id": "html",
-      "label": "Custom HTML",
-      "default": "<p>Once you write some HTML, it will render right here.</p>"
+      "name": "Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "header",
+          "label": "Header"
+        },
+        {
+          "type": "richtext",
+          "id": "paragraph",
+          "label": "Text content"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button Link"
+        },
+        {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Button Text"
+        }
+      ]
     }
-  ],
+  ]
   "presets": [
     {
       "category": "Advanced",
