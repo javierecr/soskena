@@ -1,55 +1,86 @@
-<div class="duo-block" style="">
+<div class="duo-block-section" style="">
   <div class="duo-block-container">
-    <div
-      class="block med_s12"
-      style="
-        background-image: url(https://cdn.shopify.com/s/files/1/0532/9960/9797/files/8R2A1434_720x.png);
-        background-position: 50% 45%;
-      "
-    >
-       
-    </div>
-    <div class="block med_s12 gris">
-      <h2 class="duo-block__title">INTRODUCING_ELEVATED ESSENTIALS</h2>
-      <h4 class="duo-block__subtitle">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat.
-      </h4>
-      <a
-        class="duo-block__link"
-        href="https://coco-line-mx.myshopify.com/collections/essensials"
-        >Shop Essensials</a
-      >
-    </div>
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when "image" %}
+        <div
+          class="duo-block-item"
+          style="
+            background-image: url({{block.settings.image | img_url }});
+            background-position: 50% 45%;
+          "
+        ></div>
+      {% when "text" %}
+        <div class="duo-block-item">
+          {% if block.settings.header != blank %}
+          <h2 class="duo-block__title">{{block.settings.header}}</h2>
+          {% endif %}
+          {% if block.settings.paragraph != blank %}
+          <h4 class="duo-block__subtitle">
+            {{block.settings.paragraph}}
+          </h4>
+          {% endif %}
+          {% if block.settings.btn_url != blank and block.settings.btn_text != blank %}
+            <a
+              class="duo-block__link"
+              href="{{block.settings.btn_url}}"
+              >{{block.settings.btn_text}}</a
+            >
+          {% endif %}
+        </div>
+    {% endcase %}
+  {% endfor %}
   </div>
 </div>
 
 
 {% schema %}
 {
-  "name": "Due Block",
+  "name": "Duo Block",
   "class": "shopify-section--duo-block",
-  "settings": [
+  "max-blocks": 2,
+  "settings": [],
+  "blocks": [
     {
-      "type": "text",
-      "id": "subheading",
-      "label": "Subeading",
-      "default": "Custom content"
+      "type": "image",
+      "name": "Image",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
     },
     {
       "type": "text",
-      "id": "title",
-      "label": "Heading",
-      "default": "HTML code"
+      "name": "Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "header",
+          "label": "Header"
+        },
+        {
+          "type": "richtext",
+          "id": "paragraph",
+          "label": "Text content"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button Link"
+        },
+        {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Button Text"
+        }
+      ]
     },
-    {
-      "type": "html",
-      "id": "html",
-      "label": "Custom HTML",
-      "default": "<p>Once you write some HTML, it will render right here.</p>"
-    }
-  ],
+  ]
   "presets": [
     {
       "category": "Advanced",
