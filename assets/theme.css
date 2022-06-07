@@ -15548,7 +15548,6 @@ h2 {
   display: grid;
   grid-template-columns: 25% 75%;
   grid-template-rows: auto;
-  gap: 16px;
 }
 
 #shopify-section-logo-list {
