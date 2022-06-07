@@ -3,16 +3,49 @@
     "product": {
       "type": "product-template",
       "settings": {
+        "product_layout": "slideshow",
+        "image_size": "large",
+        "add_cart_position": "top",
+        "lightbox": true,
+        "show_vendor": true,
+        "show_quantity": true,
+        "show_cart_bar": true,
+        "enable_payment_button": true,
+        "show_newsletter": true,
+        "text_newsletter": "<p>Notify me when this product is available:<\/p>",
+        "enable_tabs_h6": false,
+        "page_tab_1": "",
+        "page_tab_2": "",
+        "page_tab_3": "",
+        "product_slideshow_dots": false,
+        "product_slideshow_arrows": false,
+        "enable_video_looping": false
       }
     },
     "faq-product": {
       "type": "faq-section__product",
+      "blocks": {
+        "c54f1ce3-50e5-46e6-9455-1771b404e1ec": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Use this answer block to discuss some commonly asked questions you've discovered from your customers interactions. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your product or collection. This section will appear across all products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c54f1ce3-50e5-46e6-9455-1771b404e1ec"
+      ],
       "settings": {
+        "title": "",
+        "subheading": ""
       }
     },
     "related-product": {
       "type": "related-products",
       "settings": {
+        "related_products_enable": true,
+        "product_recommendations_heading": "YOU MIGHT ALSO LIKE"
       }
     }
   },
