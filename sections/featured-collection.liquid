@@ -51,22 +51,22 @@
 	data-image-size="{{ settings.image_size }}"
 	data-collection-products>
 		<div class="row">
-			<div class="block med_s14">
-				{%- if title != blank or show_description and featured_collection.description != blank -%}
-						<div class="collectionGrid-header row row-sm">
-								<div class="block s1">
-										{%- unless title == blank -%}
-												<h2>{{ title }}</h2>
-										{%- endunless -%}
+			{%- if title != blank or show_description and featured_collection.description != blank -%}
+				<div class="block med_s14">
+					<div class="collectionGrid-header row row-sm">
+							<div class="block s1">
+									{%- unless title == blank -%}
+											<h2>{{ title }}</h2>
+									{%- endunless -%}
 
-										{%- if show_description and featured_collection.description != blank -%}
-												<p>{{ featured_collection.description | strip_html }}</p>
-										{%- endif -%}
-								</div>
-						</div>
-				{%- endif -%}
-		</div>
-		<div class="block med_s34">
+									{%- if show_description and featured_collection.description != blank -%}
+											<p>{{ featured_collection.description | strip_html }}</p>
+									{%- endif -%}
+							</div>
+					</div>
+				</div>
+			{%- endif -%}
+		<div class="block {%- if title != blank or show_description and featured_collection.description != blank -%}med_s34{% else %}med_s1{%endif%}">
 			{%- if enable_carousel -%}
 			<div class="collection-slider__wrapper">
 			{%- endif -%}
