@@ -1,0 +1,35 @@
+<div class="home-about">
+  <div class="home-about-container">
+    <div class="home-about-block">
+     <h2>{{section.settings.header}}</h2>
+    </div>
+    <div class="home-about-block">
+      <p>{{section.settings.paragraph}}</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blurb",
+  "class": "shopify-section--blurb",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Text body"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced",
+      "name": "Blurb"
+    }
+  ]
+}
+{% endschema %}
