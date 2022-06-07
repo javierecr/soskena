@@ -1,7 +1,7 @@
 {
   "sections": {
     "about": {
-      "type": "static-about",
+      "type": "about-template",
       "settings": {}
     }
   },
