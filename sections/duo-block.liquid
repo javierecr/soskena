@@ -13,16 +13,21 @@
           ></div>
         </div>
       {% when "text" %}
-        <div class="duo-block-item gris">
-          <h2 class="duo-block__title">{{block.settings.title}}</h2>
-          <h4 class="duo-block__subtitle">
-            {{block.settings.paragraph}}
-          </h4>
-          <a
-            class="duo-block__link"
-            href="{{block.settings.btn_url}}"
-            >{{block.settings.btn_text}}</a
-          >
+        <div class="duo-block-item text" style="background-color: {{block.settings.bg_color}};">
+          <div class="duo-block-text" style="
+            align-items: {{block.settings.horizontal_alignment}};
+            justify-content: {{block.settings.vertical_alignment}};
+          ">
+            <h2 class="duo-block__title">{{block.settings.title}}</h2>
+            <h4 class="duo-block__subtitle">
+              {{block.settings.paragraph}}
+            </h4>
+            <a
+              class="duo-block__link"
+              href="{{block.settings.btn_url}}"
+              >{{block.settings.btn_text}}</a
+            >
+          </div>
         </div>
     {% endcase%}
   {% endfor  %}
@@ -72,7 +77,34 @@
           "type": "text",
           "id": "btn_text",
           "label": "Button Text"
-        }
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background color",
+          "default": "#eae7e4"
+        },
+        {
+          "type": "select",
+          "id": "horizontal_alignment",
+          "label": "Horizontal Alignment",
+          "default": "center",
+          "options": [
+            { "label": "Left", "value": "flex-start" },
+            { "label": "Centered", "value": "center" },
+            { "label": "Right", "value": "flex-end" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "vertical_alignment",
+          "label": "Vertical Alignment",
+          "default": "space-between",
+          "options": [
+            { "label": "Space between", "value": "space-between" },
+            { "label": "Centered", "value": "center" }
+          ]
+        },
       ]
     }
   ],

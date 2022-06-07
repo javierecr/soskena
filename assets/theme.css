@@ -15443,23 +15443,26 @@ h2 {
   align-content: center;
 }
 
-.duo-block-section .duo-block-container .duo-block-item {
-  flex-direction: row;
-  padding: 40px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-flow: wrap;
-  align-content: space-between;
-  justify-content: center;
-}
-
 .duo-block-item.image {
   position: relative;
 }
 
 .duo-block-item.image .duo-block-image {
-  padding-top: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 0;
+  padding-top: 125%;
+  background-position: center;
+  top: 0;
+}
+
+.duo-block-item.text {
+  position: static;
+}
+
+.duo-block-item.text .duo-block-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .duo-block .block:first-child {
