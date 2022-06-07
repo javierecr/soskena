@@ -14,45 +14,43 @@
 {%- endif -%}
 
 <section class="testimonials-section" data-section-id="{{ section.id }}" data-section-type="testimonials">
-	<div class="container">
-		<div class="testimonials testimonials--{{ block_size }}">
-			{%- if heading != blank -%}
-				<div class="page-title page-title--{{ heading_position }}">
-					<h2>{{ heading }}</h2>
-				</div>
-			{%- endif -%}
+	<div class="testimonials testimonials--{{ block_size }}">
+		{%- if heading != blank -%}
+			<div class="page-title page-title--{{ heading_position }}">
+				<h2>{{ heading }}</h2>
+			</div>
+		{%- endif -%}
 
-			{%- if section.blocks.size > 0 -%}
-				<div class="testimonials__blocks">
-					{%- for block in section.blocks -%}
-						{%- assign blockquote = block.settings.blockquote -%}
-						{%- assign author = block.settings.author -%}
-						{%- if author != blank or blockquote != blank -%}
-							<div class="testimonial testimonial--{{ block_size }} testimonial--{{ blocks_text_align }}" {{ block.shopify_attributes }}>
-								{%- unless blockquote == blank -%}
-									<blockquote class="testimonial__blockquote">
-										{%- unless hide_quotes -%}
-											<span class="testimonial__blockquote-quotes">{% render 'icon-quotes' %}</span>
-										{%- endunless -%}
-										<p>{{ blockquote }}</p>
-									</blockquote>
-								{%- endunless -%}
+		{%- if section.blocks.size > 0 -%}
+			<div class="testimonials__blocks">
+				{%- for block in section.blocks -%}
+					{%- assign blockquote = block.settings.blockquote -%}
+					{%- assign author = block.settings.author -%}
+					{%- if author != blank or blockquote != blank -%}
+						<div class="testimonial testimonial--{{ block_size }} testimonial--{{ blocks_text_align }}" {{ block.shopify_attributes }}>
+							{%- unless blockquote == blank -%}
+								<blockquote class="testimonial__blockquote">
+									{%- unless hide_quotes -%}
+										<span class="testimonial__blockquote-quotes">{% render 'icon-quotes' %}</span>
+									{%- endunless -%}
+									<p>{{ blockquote }}</p>
+								</blockquote>
+							{%- endunless -%}
 
-								{%- if settings.accent_line != 'none' or author != blank -%}
-									<div class="testimonial__bottom">
-										{%- render 'accent-line' -%}
+							{%- if settings.accent_line != 'none' or author != blank -%}
+								<div class="testimonial__bottom">
+									{%- render 'accent-line' -%}
 
-										{%- unless author == blank -%}
-											<p class="testimonial__author">{{ author }}</p>
-										{%- endunless -%}
-									</div>
-								{%- endif -%}
-							</div>
-						{%- endif -%}
-					{%- endfor -%}
-				</div>
-			{%- endif -%}
-		</div>
+									{%- unless author == blank -%}
+										<p class="testimonial__author">{{ author }}</p>
+									{%- endunless -%}
+								</div>
+							{%- endif -%}
+						</div>
+					{%- endif -%}
+				{%- endfor -%}
+			</div>
+		{%- endif -%}
 	</div>
 </section>
 

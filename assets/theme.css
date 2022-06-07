@@ -11000,7 +11000,6 @@ body.allow-grid-items-animations.allow-image-animations
   overflow: hidden;
   height: 90px;
   text-align: center;
-  padding: 0 40px;
 }
 .logos-list-wrapper .slick-prev {
   left: -40px;
@@ -15581,11 +15580,11 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .logos-list-wrapper {
     padding: 0 80px;
   }
-}
+} */
 
 .testimonial__author,
 .testimonial__blockquote p {
