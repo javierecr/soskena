@@ -15463,6 +15463,7 @@ h2 {
 .duo-block-item.text .duo-block-text {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .duo-block .block:first-child {
