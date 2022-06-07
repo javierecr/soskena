@@ -39,10 +39,24 @@
         "header": "ESSENTIALS",
         "paragraph": "<p>The superior breathability, comfort, and softness of our underwear is spelled lyocell-a future-oriented fibre that us naturally breathable and moisture wicking, in addition to being wrinkle-resistant, durable, and quick-drying. Upgrade your underwear drawer.<\/p>"
       }
+    },
+    "1654637901794cad21": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "featured_collection": "essentials",
+        "show_description": false,
+        "products_layout": "grid",
+        "products_rows": 2,
+        "show_button": true,
+        "button_style": "primary",
+        "color_style": "white"
+      }
     }
   },
   "order": [
     "shop",
-    "1654637844026d107e"
+    "1654637844026d107e",
+    "1654637901794cad21"
   ]
 }
