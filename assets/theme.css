@@ -5067,7 +5067,8 @@ button.slick-prev.slick-disabled:after {
   margin: 0;
 }
 
-#shopify-section-announcement {
+#shopify-section-announcement,
+#shopify-section-popup {
   margin: 0;
 }
 .shopify-section-header--fixed {
