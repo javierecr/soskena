@@ -1,5 +1,9 @@
 {
   "sections": {
+    "page": {
+      "type": "page-template",
+      "settings": {}
+    },
     "duo1": {
       "type": "duo-block",
       "blocks": {
@@ -121,5 +125,5 @@
       "settings": {}
     }
   },
-  "order": ["duo1", "custom-html", "duo2", "duo3", "duo4"]
+  "order": ["page", "duo1", "custom-html", "duo2", "duo3", "duo4"]
 }
