@@ -4,8 +4,8 @@
     "theme_name": "Modular",
     "theme_author": "Presidio Creative",
     "theme_version": "1.9.9",
-    "theme_support_url": "https://modular.helpscoutdocs.com/",
-    "theme_documentation_url": "http://modular.helpscoutdocs.com/contact"
+    "theme_support_url": "https:\/\/modular.helpscoutdocs.com\/",
+    "theme_documentation_url": "http:\/\/modular.helpscoutdocs.com\/contact"
   },
   {
     "name": "Colors",
@@ -226,7 +226,7 @@
       {
         "type": "header",
         "content": "Products",
-        "info": "Sold out/Sale badges"
+        "info": "Sold out\/Sale badges"
       },
       {
         "type": "color",
@@ -316,9 +316,18 @@
         "label": "Style",
         "default": "none",
         "options": [
-          { "label": "Curved", "value": "curved" },
-          { "label": "Straight", "value": "straight" },
-          { "label": "None", "value": "none" }
+          {
+            "label": "Curved",
+            "value": "curved"
+          },
+          {
+            "label": "Straight",
+            "value": "straight"
+          },
+          {
+            "label": "None",
+            "value": "none"
+          }
         ]
       },
       {
@@ -372,9 +381,18 @@
         "label": "Dots style",
         "default": "hidden",
         "options": [
-          { "label": "Circle", "value": "circle" },
-          { "label": "Line", "value": "line" },
-          { "label": "Hidden", "value": "hidden" }
+          {
+            "label": "Circle",
+            "value": "circle"
+          },
+          {
+            "label": "Line",
+            "value": "line"
+          },
+          {
+            "label": "Hidden",
+            "value": "hidden"
+          }
         ]
       }
     ]
@@ -398,9 +416,18 @@
         "label": "Search type",
         "default": "product",
         "options": [
-          { "label": "Products only", "value": "product" },
-          { "label": "Products and pages", "value": "product,page" },
-          { "label": "Products and articles", "value": "product,article" },
+          {
+            "label": "Products only",
+            "value": "product"
+          },
+          {
+            "label": "Products and pages",
+            "value": "product,page"
+          },
+          {
+            "label": "Products and articles",
+            "value": "product,article"
+          },
           {
             "label": "Products, pages and articles",
             "value": "product,page,article"
@@ -448,8 +475,14 @@
         "label": "Image size",
         "default": "cover",
         "options": [
-          { "label": "Stretch", "value": "cover" },
-          { "label": "Contain", "value": "contain" }
+          {
+            "label": "Stretch",
+            "value": "cover"
+          },
+          {
+            "label": "Contain",
+            "value": "contain"
+          }
         ]
       },
       {
@@ -458,8 +491,14 @@
         "label": "Product title position",
         "default": "center",
         "options": [
-          { "label": "Left", "value": "left" },
-          { "label": "Center", "value": "center" }
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          }
         ]
       },
       {
@@ -507,7 +546,7 @@
         "type": "checkbox",
         "id": "enable_payment_button",
         "label": "Show dynamic checkout button",
-        "info": "Lets customers check out directly using a familiar payment method. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+        "info": "Lets customers check out directly using a familiar payment method. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)",
         "default": true
       },
       {
@@ -521,7 +560,7 @@
         "id": "enable_color_swatches",
         "label": "Enable color swatches",
         "default": true,
-        "info": "Set up your product color variant options. [Learn more](https://palo-alto.helpscoutdocs.com/article/145-how-to-add-color-swatches)"
+        "info": "Set up your product color variant options. [Learn more](https:\/\/palo-alto.helpscoutdocs.com\/article\/145-how-to-add-color-swatches)"
       },
       {
         "type": "select",
@@ -529,8 +568,14 @@
         "label": "Color swatches style",
         "default": "circle",
         "options": [
-          { "label": "Circle", "value": "circle" },
-          { "label": "Square", "value": "square" }
+          {
+            "label": "Circle",
+            "value": "circle"
+          },
+          {
+            "label": "Square",
+            "value": "square"
+          }
         ]
       },
       {
@@ -573,14 +618,20 @@
         "label": "Products per row on mobile",
         "default": "1",
         "options": [
-          { "label": "One", "value": "1" },
-          { "label": "Two", "value": "2" }
+          {
+            "label": "One",
+            "value": "1"
+          },
+          {
+            "label": "Two",
+            "value": "2"
+          }
         ]
       },
       {
         "type": "header",
         "content": "Media",
-        "info": "Learn more about [media types](https://help.shopify.com/manual/products/product-media)"
+        "info": "Learn more about [media types](https:\/\/help.shopify.com\/manual\/products\/product-media)"
       },
       {
         "type": "checkbox",
@@ -599,8 +650,14 @@
         "label": "Cart icon style",
         "default": "cart",
         "options": [
-          { "label": "Circle", "value": "circle" },
-          { "label": "Cart", "value": "cart" }
+          {
+            "label": "Circle",
+            "value": "circle"
+          },
+          {
+            "label": "Cart",
+            "value": "cart"
+          }
         ]
       },
       {
@@ -642,7 +699,7 @@
         "type": "richtext",
         "id": "accept_terms_text",
         "label": "Checkbox label",
-        "default": "<p>I agree with the terms and conditions</p>"
+        "default": "<p>I agree with the terms and conditions<\/p>"
       }
     ]
   },
@@ -664,7 +721,7 @@
       {
         "type": "header",
         "content": "Reviews",
-        "info": "Install Shopify's free [Product Reviews app](https://apps.shopify.com/product-reviews) before enabling this option."
+        "info": "Install Shopify's free [Product Reviews app](https:\/\/apps.shopify.com\/product-reviews) before enabling this option."
       },
       {
         "type": "checkbox",
@@ -709,43 +766,43 @@
         "type": "text",
         "id": "twitter_url",
         "label": "Twitter",
-        "info": "http://twitter.com/shopify"
+        "info": "http:\/\/twitter.com\/shopify"
       },
       {
         "type": "text",
         "id": "facebook_url",
         "label": "Facebook",
-        "info": "http://facebook.com/shopify"
+        "info": "http:\/\/facebook.com\/shopify"
       },
       {
         "type": "text",
         "id": "pinterest_url",
         "label": "Pinterest",
-        "info": "http://pinterest.com/shopify"
+        "info": "http:\/\/pinterest.com\/shopify"
       },
       {
         "type": "text",
         "id": "instagram_url",
         "label": "Instagram",
-        "info": "http://instagram.com/shopify"
+        "info": "http:\/\/instagram.com\/shopify"
       },
       {
         "type": "text",
         "id": "tumblr_url",
         "label": "Tumblr",
-        "info": "http://shopify.tumblr.com"
+        "info": "http:\/\/shopify.tumblr.com"
       },
       {
         "type": "text",
         "id": "youtube_url",
         "label": "Youtube",
-        "info": "http://youtube.com/user/shopify"
+        "info": "http:\/\/youtube.com\/user\/shopify"
       },
       {
         "type": "text",
         "id": "rss_url",
         "label": "RSS Blog Feed",
-        "info": "http://store.myshopify.com/blogs/news.atom"
+        "info": "http:\/\/store.myshopify.com\/blogs\/news.atom"
       },
       {
         "type": "header",

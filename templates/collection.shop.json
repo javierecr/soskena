@@ -40,7 +40,9 @@
         "show_description": false,
         "products_layout": "grid",
         "products_rows": 2,
-        "show_button": true,
+        "products_columns": 5,
+        "products_columns_mobile": "1",
+        "show_button": false,
         "button_style": "primary",
         "color_style": "white"
       }
