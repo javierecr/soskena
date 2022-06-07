@@ -5064,6 +5064,7 @@ button.slick-prev.slick-disabled:after {
   position: absolute;
   width: 100%;
   z-index: 1000;
+  margin: 0;
 }
 .shopify-section-header--fixed {
   position: fixed;
