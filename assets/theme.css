@@ -15454,6 +15454,14 @@ h2 {
   justify-content: center;
 }
 
+.duo-block-item.image {
+  position: relative;
+}
+
+.duo-block-item.image .duo-block-image {
+  padding-top: 50%;
+}
+
 .duo-block .block:first-child {
   margin-right: 7.5px;
 }
@@ -15462,7 +15470,7 @@ h2 {
   margin-left: 7.5px;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .duo-block {
     height: 160vh;
   }
@@ -15484,7 +15492,7 @@ h2 {
   .duo-block .block:last-child {
     margin-left: 0;
   }
-}
+} */
 
 .duo-block .block.verde .duo-block__title,
 .duo-block .block.verde .duo-block__subtitle,
