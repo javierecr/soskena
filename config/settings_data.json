@@ -605,14 +605,6 @@
           "text_newsletter": "<p>Subscribe to receive  news and curated content about our launching.<\/p>"
         }
       },
-      "16189662990b38e54c": {
-        "type": "custom-html",
-        "settings": {
-          "subheading": "",
-          "title": "",
-          "html": "<div class=\"duo-block\" style=\"\">\n<div class=\"row\">\n<div class=\"block med_s12\" style=\"background-image: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0532\/9960\/9797\/files\/8R2A1434_720x.png); background-position: 50% 45%\"> \n\t \n<\/div>\n<div class=\"block med_s12 gris\">\n<h2 class=\"duo-block__title\">INTRODUCING_ELEVATED ESSENTIALS<\/h2>\n<h4 class=\"duo-block__subtitle\">\nLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<\/h4>\n<a class=\"duo-block__link\" href=\"https:\/\/coco-line-mx.myshopify.com\/collections\/essensials\">Shop Essensials<\/a>\n<\/div>\n<\/div>\n<\/div>"
-        }
-      },
       "about-template": {
         "type": "about-template",
         "settings": {
@@ -685,7 +677,6 @@
     },
     "content_for_index": [
       "slideshow",
-      "16189662990b38e54c",
       "16546127384f9f8061",
       "16118807654f10b984",
       "featured-collection",
