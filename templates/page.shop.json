@@ -2,8 +2,11 @@
   "sections": {
     "shop": {
       "type": "shop-template",
-      "settings": {}
+      "settings": {
+      }
     }
   },
-  "order": ["shop"]
+  "order": [
+    "shop"
+  ]
 }

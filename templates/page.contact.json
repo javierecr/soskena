@@ -2,8 +2,11 @@
   "sections": {
     "contact": {
       "type": "contact-template",
-      "settings": {}
+      "settings": {
+      }
     }
   },
-  "order": ["contact"]
+  "order": [
+    "contact"
+  ]
 }

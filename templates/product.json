@@ -1,18 +1,24 @@
 {
-  "name": "Product",
   "sections": {
     "product": {
       "type": "product-template",
-      "settings": {}
+      "settings": {
+      }
     },
     "faq-product": {
       "type": "faq-section__product",
-      "settings": {}
+      "settings": {
+      }
     },
     "related-product": {
       "type": "related-products",
-      "settings": {}
+      "settings": {
+      }
     }
   },
-  "order": ["product", "faq-product", "related-product"]
+  "order": [
+    "product",
+    "faq-product",
+    "related-product"
+  ]
 }

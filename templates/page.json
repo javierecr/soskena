@@ -1,10 +1,12 @@
 {
-  "name": "Page",
   "sections": {
     "page": {
       "type": "page-template",
-      "settings": {}
+      "settings": {
+      }
     }
   },
-  "order": ["page"]
+  "order": [
+    "page"
+  ]
 }

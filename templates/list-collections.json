@@ -1,10 +1,12 @@
 {
-  "name": "List collections",
   "sections": {
     "list-collections": {
       "type": "list-collections-page-template",
-      "settings": {}
+      "settings": {
+      }
     }
   },
-  "order": ["list-collections"]
+  "order": [
+    "list-collections"
+  ]
 }

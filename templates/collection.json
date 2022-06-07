@@ -1,10 +1,12 @@
 {
-  "name": "Collection",
   "sections": {
     "collection": {
       "type": "collection-template",
-      "settings": {}
+      "settings": {
+      }
     }
   },
-  "order": ["collection"]
+  "order": [
+    "collection"
+  ]
 }

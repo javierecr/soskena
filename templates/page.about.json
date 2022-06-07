@@ -2,8 +2,42 @@
   "sections": {
     "about": {
       "type": "about-template",
-      "settings": {}
+      "settings": {
+        "show_page_title": true
+      }
+    },
+    "16546211621d31a567": {
+      "type": "duo-block",
+      "blocks": {
+        "2c088ffb-75fe-455e-acc9-1ca30c042628": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8P8A9262.jpg"
+          }
+        },
+        "e6fdfdfe-29c8-4138-8360-ef350c31d2b7": {
+          "type": "text",
+          "settings": {
+            "header": "ELEMENTAL, CONSCIOUS & FAIRLY PRODUCED ESSENTIALS",
+            "paragraph": "<p>We seek to reduce the climate impact caused by the fashion industry. Reduce excessive consumption that exploits both people and the planet, creating elemental and significant products in an ethical and conscious way. <\/p><p>Garments without season, which emphasize quality and longevity to achieve reduced wardrobes, curated by pieces with permanence<\/p>",
+            "btn_url": "",
+            "btn_text": "",
+            "bg_color": "#eae7e4",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "space-between"
+          }
+        }
+      },
+      "block_order": [
+        "2c088ffb-75fe-455e-acc9-1ca30c042628",
+        "e6fdfdfe-29c8-4138-8360-ef350c31d2b7"
+      ],
+      "settings": {
+      }
     }
   },
-  "order": ["about"]
+  "order": [
+    "about",
+    "16546211621d31a567"
+  ]
 }
