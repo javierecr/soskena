@@ -21,6 +21,7 @@
     "color_footer_text": "#4f4e4e",
     "color_footer_bg": "#ffffff",
     "color_bottom_bar_bg": "#ffffff",
+    "heading_font_picker": "pt_sans_n7",
     "base_font_picker": "work_sans_n5",
     "accent_line": "none",
     "transition_grid_items": true,
