@@ -18,11 +18,13 @@
             <h4 class="duo-block__subtitle">
               {{block.settings.paragraph}}
             </h4>
+            {% if block.settings.btn_url != blank and block.settings.btn_text != blank %}
             <a
               class="duo-block__link"
               href="{{block.settings.btn_url}}"
               >{{block.settings.btn_text}}</a
             >
+            {% endif %}
           </div>
         </div>
     {% endcase%}
