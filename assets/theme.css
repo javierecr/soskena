@@ -15433,10 +15433,6 @@ h2 {
   }
 }
 
-.duo-block-section {
-  height: 80vh;
-}
-
 .duo-block-section .duo-block-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -15472,6 +15468,7 @@ h2 {
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding: 32px;
 }
 
 .duo-block-item.text .duo-block-text > * {
