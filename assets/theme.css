@@ -15990,8 +15990,10 @@ h2 {
 }
 
 /*Footer*/
-.footer__block.footer__block--newsletter {
-  max-width: 35%;
+@media screen and (min-width: 768px) {
+  .footer__block.footer__block--newsletter {
+    max-width: 35%;
+  }
 }
 
 .payment-icon {
