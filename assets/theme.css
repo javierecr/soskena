@@ -15478,7 +15478,7 @@ h2 {
   margin: 0;
 }
 
-.duo-block-item.text .duo-block-text .duo-text-vertical--center > * + * {
+.duo-block-item.text .duo-block-text.duo-text-vertical--center > * + * {
   margin-top: 24px;
 }
 
