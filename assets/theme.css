@@ -15446,10 +15446,16 @@ h2 {
 
 .duo-block-section .duo-block-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 16px;
   grid-row: 1;
   grid-template-rows: auto;
+} 
+
+@media screen and (min-width: 768px) {
+  .duo-block-section .duo-block-container {
+    grid-template-columns: repeat(2, 1fr);
+  } 
 }
 
 .duo-block__center-inside {
@@ -15460,6 +15466,7 @@ h2 {
 
 .duo-block-item.image {
   position: relative;
+  grid-row: 1;
 }
 
 .duo-block-item.image .duo-block-image {
@@ -15480,6 +15487,24 @@ h2 {
   flex-direction: column;
   height: 100%;
   padding: 32px;
+  grid-row: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .duo-block-item.image {
+    grid-row: unset;
+  } 
+  .duo-block-item.text {
+    grid-row: unset;
+  } 
+}
+
+.duo-block-item.text .duo-block-text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 32px;
+  grid-row: 2;
 }
 
 .duo-block-item.text .duo-block-text > * {
@@ -15546,8 +15571,16 @@ h2 {
 
 .home-about .home-about-container {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
+  gap: 16px;
+}
+
+@media screen and (min-width: 768) {
+  .home-about .home-about-container {
+    grid-template-columns: 25% 75%;
+    gap: 0;
+  }
 }
 
 #shopify-section-logo-list {
