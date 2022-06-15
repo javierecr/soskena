@@ -51,7 +51,7 @@
     "show_reviews": true,
     "enable_yotpo": false,
     "yotpo_ID": "",
-    "favicon": "shopify://shop_images/Instragram_Profile.jpg",
+    "favicon": "shopify:\/\/shop_images\/Instragram_Profile.jpg",
     "twitter_url": "",
     "facebook_url": "",
     "pinterest_url": "",
@@ -63,13 +63,13 @@
     "share_on_facebook": false,
     "share_on_pinterest": false,
     "checkout_header_image": "",
-    "checkout_logo_image": "shopify://shop_images/Soskena_logo_cc-03_e8500648-9ca7-4fff-8873-3437d36970fb.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Soskena_logo_cc-03_e8500648-9ca7-4fff-8873-3437d36970fb.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "large",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
-    "checkout_sidebar_background_image": "shopify://shop_images/salmon.png",
+    "checkout_sidebar_background_image": "shopify:\/\/shop_images\/salmon.png",
     "checkout_sidebar_background_color": "#fafafa",
     "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
@@ -89,7 +89,7 @@
         "settings": {
           "show_announcement": true,
           "show_announcement_on_mobile": true,
-          "text": "<p>Free MX Shipping above $899. Easy return 30 days.</p>",
+          "text": "<p>Free MX Shipping above $899. Easy return 30 days.<\/p>",
           "link": ""
         }
       },
@@ -109,15 +109,15 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify://shop_images/Soskena_logo_cc-03_e8500648-9ca7-4fff-8873-3437d36970fb_1.png",
-          "logo_other": "shopify://shop_images/Logo_Soskena.png",
+          "logo": "shopify:\/\/shop_images\/Soskena_logo_cc-03_e8500648-9ca7-4fff-8873-3437d36970fb_1.png",
+          "logo_other": "shopify:\/\/shop_images\/Logo_Soskena.png",
           "logo_max_width": 135,
           "show_site_name": false,
           "menu_list": "main-menu",
           "secondary_menu": "secondary-menu",
           "links_position": "links_left",
           "logo_position": "logo_center",
-          "meganav_image": "shopify://shop_images/8P8A9262.jpg",
+          "meganav_image": "shopify:\/\/shop_images\/8P8A9262.jpg",
           "image_aspect_ratio": 0.7,
           "meganav_image_heading": "",
           "meganav_image_link": ""
@@ -185,7 +185,7 @@
           "show_cart_bar": false,
           "enable_payment_button": false,
           "show_newsletter": true,
-          "text_newsletter": "<p>Notify me when this product is available:</p>",
+          "text_newsletter": "<p>Notify me when this product is available:<\/p>",
           "enable_tabs_h6": true,
           "page_tab_1": "",
           "page_tab_2": "",
@@ -238,7 +238,7 @@
           "banner_overlay_opacity": 10,
           "show_featured_image": false,
           "featured_heading": "Everyday Basics",
-          "featured_text": "<p>Breathable cotton basics </p>",
+          "featured_text": "<p>Breathable cotton basics <\/p>",
           "featured_button_text": "",
           "featured_button_style": "secondary",
           "featured_color_text": "#ffffff",
@@ -260,7 +260,7 @@
               "title": "",
               "text": "",
               "cta": "SHOP NOW",
-              "link": "shopify://collections/all",
+              "link": "shopify:\/\/collections\/all",
               "cta_primary_btn_style": "primary",
               "cta_2": "",
               "link_2": "",
@@ -279,7 +279,7 @@
               "title": "",
               "text": "",
               "cta": "",
-              "link": "shopify://collections/all",
+              "link": "shopify:\/\/collections\/all",
               "cta_primary_btn_style": "primary",
               "cta_2": "",
               "link_2": "",
@@ -289,7 +289,10 @@
             }
           }
         },
-        "block_order": ["slideshow-0", "dc983a8f-1650-4b00-9bed-5156b3985731"],
+        "block_order": [
+          "slideshow-0",
+          "dc983a8f-1650-4b00-9bed-5156b3985731"
+        ],
         "settings": {
           "showNavArrows": false,
           "show_arrow_down": false,
@@ -308,7 +311,7 @@
           "layout": "default",
           "subheading": "",
           "title": "COCO es “Momentos de amor propio”",
-          "content": "<p>Estamos en la industria de hacer de las personas las mejores versiones de ellas.<br/></p><p>Nuestros productos son un catalizador de esta meta. Nos deshacemos de toda la mierda que<br/></p><p>nos han metido en la cabeza_ “el deber ser” y alimentamos la idea de que las cosas auténticas<br/></p><p>son las más bellas y valiosas de la vida.</p><p>Somos una marca que a través de prueba y error, metas, mentalidad y creaciones representamos<br/></p><p>un grupo de individuos con el corage y valor de cuestionar las reglas y cambiar sus propios caminos.<br/></p><p>Nunca seremos tradicionalistas, extravagantes e inconscientes_ en ninguna de nuestras acciones.</p>",
+          "content": "<p>Estamos en la industria de hacer de las personas las mejores versiones de ellas.<br\/><\/p><p>Nuestros productos son un catalizador de esta meta. Nos deshacemos de toda la mierda que<br\/><\/p><p>nos han metido en la cabeza_ “el deber ser” y alimentamos la idea de que las cosas auténticas<br\/><\/p><p>son las más bellas y valiosas de la vida.<\/p><p>Somos una marca que a través de prueba y error, metas, mentalidad y creaciones representamos<br\/><\/p><p>un grupo de individuos con el corage y valor de cuestionar las reglas y cambiar sus propios caminos.<br\/><\/p><p>Nunca seremos tradicionalistas, extravagantes e inconscientes_ en ninguna de nuestras acciones.<\/p>",
           "button_text": "",
           "button_style": "primary"
         }
@@ -318,14 +321,19 @@
         "blocks": {
           "image-with-text-0": {
             "type": "gallery_image",
-            "settings": {}
+            "settings": {
+            }
           },
           "image-with-text-1": {
             "type": "gallery_image",
-            "settings": {}
+            "settings": {
+            }
           }
         },
-        "block_order": ["image-with-text-0", "image-with-text-1"],
+        "block_order": [
+          "image-with-text-0",
+          "image-with-text-1"
+        ],
         "settings": {
           "show_nav_arrows": true,
           "color_style": "white",
@@ -338,7 +346,7 @@
           "slide_image_width": "med_s12|med_s12",
           "subheading": "Humble Beginnings",
           "title": "Tell a Story",
-          "content": "<p>By showcasing a product, collection, or your brand.</p>",
+          "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
           "cta": "Shop Now",
           "button_style": "primary"
         }
@@ -437,7 +445,11 @@
             }
           }
         },
-        "block_order": ["testimonials-0", "testimonials-1", "testimonials-2"],
+        "block_order": [
+          "testimonials-0",
+          "testimonials-1",
+          "testimonials-2"
+        ],
         "settings": {
           "title": "Testimonials",
           "title_position": "left",
@@ -469,28 +481,28 @@
           "logo-list-0": {
             "type": "item_logo",
             "settings": {
-              "logo_image": "shopify://shop_images/Iconos_CC_1.png",
+              "logo_image": "shopify:\/\/shop_images\/Iconos_CC_1.png",
               "logo_url": ""
             }
           },
           "logo-list-1": {
             "type": "item_logo",
             "settings": {
-              "logo_image": "shopify://shop_images/Iconos_CC_3.png",
+              "logo_image": "shopify:\/\/shop_images\/Iconos_CC_3.png",
               "logo_url": ""
             }
           },
           "logo-list-2": {
             "type": "item_logo",
             "settings": {
-              "logo_image": "shopify://shop_images/Iconos_CC_4.png",
+              "logo_image": "shopify:\/\/shop_images\/Iconos_CC_4.png",
               "logo_url": ""
             }
           },
           "logo-list-3": {
             "type": "item_logo",
             "settings": {
-              "logo_image": "shopify://shop_images/Iconos_CC_2.png",
+              "logo_image": "shopify:\/\/shop_images\/Iconos_CC_2.png",
               "logo_url": ""
             }
           }
@@ -511,7 +523,7 @@
           "color": "#222222",
           "background": "#ffffff",
           "title": "Newsletter",
-          "content": "<p>Let&#x27;s keep in touch</p>"
+          "content": "<p>Let&#x27;s keep in touch<\/p>"
         }
       },
       "faq-section__product": {
@@ -533,7 +545,7 @@
         "settings": {
           "heading_size": 20,
           "feed_width": 90,
-          "html_area": "<div class=\"instagram-header container\">\n<div class=\"row\">\n<h6>ON THE GRAM</h6>\n<a href=\"#\"> Follow us on instagram  <svg aria-hidden=\"true\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 448 512\"><path fill=\"currentColor\" d=\"M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z\" class=\"\"></path></svg></a>\n</div>\n</div>"
+          "html_area": "<div class=\"instagram-header container\">\n<div class=\"row\">\n<h6>ON THE GRAM<\/h6>\n<a href=\"#\"> Follow us on instagram  <svg aria-hidden=\"true\" role=\"img\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 448 512\"><path fill=\"currentColor\" d=\"M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z\" class=\"\"><\/path><\/svg><\/a>\n<\/div>\n<\/div>"
         }
       },
       "161307465207a8f802": {
@@ -541,24 +553,15 @@
         "settings": {
           "subheading": "",
           "title": "",
-          "html": "<div class=\"info-banner\"><h2 class=\"semi\">Can't decide? Get our starter set.</h2></div>"
+          "html": "<div class=\"info-banner\"><h2 class=\"semi\">Can't decide? Get our starter set.<\/h2><\/div>"
         }
       },
       "password-template": {
         "type": "password-template",
         "settings": {
-          "logo": "shopify://shop_images/Soskena_logo_cc-03_1_3a415283-5577-414a-887f-05f509d910f8.png",
-          "show_nav_arrows": true,
-          "color_style": "white",
-          "transition": "fade",
-          "autoplay": true,
-          "duration": 4,
-          "show_margins": true,
-          "slide_height": "original-height",
-          "slide_image_position": "left",
-          "slide_image_width": "med_s12|med_s12",
+          "logo": "shopify:\/\/shop_images\/Soskena_logo_cc-03_1_3a415283-5577-414a-887f-05f509d910f8.png",
           "logo_width": 345,
-          "text_newsletter": "<p>Subscribe to receive  news and curated content about our launching.</p>"
+          "text_newsletter": "<p>Subscribe to receive  news and curated content about our launching.<\/p>"
         }
       },
       "about-template": {
@@ -572,12 +575,14 @@
         "blocks": {
           "cc15f6f5-4137-40bd-a2fb-5846bfcc6bec": {
             "type": "gallery_image",
-            "settings": {}
+            "settings": {
+            }
           },
           "da94dddd-8c97-457d-83cf-53adce08ca4c": {
             "type": "gallery_image",
             "disabled": true,
-            "settings": {}
+            "settings": {
+            }
           }
         },
         "block_order": [
@@ -596,7 +601,7 @@
           "slide_image_width": "med_s12|med_s12",
           "subheading": "Humble Beginnings",
           "title": "Tell a Story",
-          "content": "<p>By showcasing a product, collection, or your brand.</p>",
+          "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
           "cta": "",
           "link": "",
           "button_style": "primary"
@@ -608,15 +613,15 @@
           "af99b602-5654-4a49-9763-40bd9ad951b4": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/8R2A1434.png"
+              "image": "shopify:\/\/shop_images\/8R2A1434.png"
             }
           },
           "b905c8f2-3628-4b27-a906-303e72e40aa4": {
             "type": "text",
             "settings": {
               "header": "INTRODUCING_ELEVATED ESSENTIALS",
-              "paragraph": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. </p><p></p><p>Euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>",
-              "btn_url": "shopify://collections/essentials",
+              "paragraph": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. <\/p><p><\/p><p>Euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<\/p>",
+              "btn_url": "shopify:\/\/collections\/essentials",
               "btn_text": "Shop Essentials",
               "bg_color": "#eae7e4",
               "horizontal_alignment": "center",
@@ -628,7 +633,8 @@
           "af99b602-5654-4a49-9763-40bd9ad951b4",
           "b905c8f2-3628-4b27-a906-303e72e40aa4"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "165461655110d65638": {
         "type": "duo-block",
@@ -636,14 +642,14 @@
           "3f09c0fd-19d4-4c5d-9b86-ebc149c128ee": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/8R2A2148_web.jpg"
+              "image": "shopify:\/\/shop_images\/8R2A2148_web.jpg"
             }
           },
           "67e8b1c5-8a6b-4840-bf08-c434f7d6a2db": {
             "type": "text",
             "settings": {
               "header": "BUNDLE UP",
-              "paragraph": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. </p><p></p><p>Nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>",
+              "paragraph": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. <\/p><p><\/p><p>Nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat<\/p>",
               "btn_url": "#",
               "btn_text": "Save with packs",
               "bg_color": "#eae7e4",
@@ -656,7 +662,8 @@
           "3f09c0fd-19d4-4c5d-9b86-ebc149c128ee",
           "67e8b1c5-8a6b-4840-bf08-c434f7d6a2db"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "1654616943dba2cba6": {
         "type": "duo-block",
@@ -664,14 +671,14 @@
           "78980c47-4b98-451c-978b-6403076e4681": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/Factory.jpg"
+              "image": "shopify:\/\/shop_images\/Factory.jpg"
             }
           },
           "200df134-9a3f-4394-bd7d-82947969ceb8": {
             "type": "text",
             "settings": {
               "header": "SØSKENA_A RESPONSABLE AND ETHICAL BRAND.",
-              "paragraph": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>",
+              "paragraph": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<\/p>",
               "btn_url": "#",
               "btn_text": "Learn more",
               "bg_color": "#eae7e4",
@@ -684,13 +691,14 @@
           "78980c47-4b98-451c-978b-6403076e4681",
           "200df134-9a3f-4394-bd7d-82947969ceb8"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "165462394922a81a15": {
         "type": "blurb",
         "settings": {
           "header": "ABOUT",
-          "paragraph": "<p>Estamos en la industria de hacer de las personas las mejores versiones de ellas. Nuestros productos son un catalizador de esta meta. Nos deshacemos de toda la mierda que nos han metido en la cabeza_ “el deber ser” y alimentamos la idea de que las cosas auténticas son las más bellas y valiosas de la vida.</p>"
+          "paragraph": "<p>Estamos en la industria de hacer de las personas las mejores versiones de ellas. Nuestros productos son un catalizador de esta meta. Nos deshacemos de toda la mierda que nos han metido en la cabeza_ “el deber ser” y alimentamos la idea de que las cosas auténticas son las más bellas y valiosas de la vida.<\/p>"
         }
       }
     },
@@ -778,7 +786,7 @@
           "settings": {
             "show_announcement": true,
             "show_announcement_on_mobile": true,
-            "text": "<p>Broadcast sales, promos, or other offerings here</p>",
+            "text": "<p>Broadcast sales, promos, or other offerings here<\/p>",
             "link": ""
           }
         },
@@ -788,7 +796,7 @@
             "show_popup": "disabled",
             "popup_position": "left",
             "popup_header": "Use the popup to catch emails and showcase promotions",
-            "popup_content": "<p>Popups can detract from a user's experience, so try to limit how often they appear.</p>",
+            "popup_content": "<p>Popups can detract from a user's experience, so try to limit how often they appear.<\/p>",
             "text_alignment": "left",
             "show_popup_newsletter": true,
             "popup_delay": 5,
@@ -827,7 +835,7 @@
               "type": "text",
               "settings": {
                 "title": "Information",
-                "text": "<p>This text block is a great place to discuss shipping policies, or terms and conditions info.</p>",
+                "text": "<p>This text block is a great place to discuss shipping policies, or terms and conditions info.<\/p>",
                 "mobile_hide_block": false
               }
             },
@@ -865,7 +873,7 @@
             "show_cart_bar": true,
             "enable_payment_button": true,
             "show_newsletter": true,
-            "text_newsletter": "<p>Notify me when this product is available:</p>",
+            "text_newsletter": "<p>Notify me when this product is available:<\/p>",
             "page_tab_1": "",
             "page_tab_2": "",
             "page_tab_3": "",
@@ -915,7 +923,7 @@
             "banner_overlay_opacity": 0,
             "featured_image": "",
             "featured_heading": "Use this image showcase promotional content.",
-            "featured_text": "<p>Elaborate on it with rich text</p>",
+            "featured_text": "<p>Elaborate on it with rich text<\/p>",
             "featured_button_text": "Learn More",
             "featured_button_link": "",
             "featured_button_style": "primary",
@@ -937,7 +945,7 @@
                 "color_style": "white",
                 "subheading": "",
                 "title": "Welcome to Modular",
-                "text": "<p>A unique layout with a striking design</p>",
+                "text": "<p>A unique layout with a striking design<\/p>",
                 "cta": "Learn More",
                 "link": "",
                 "cta_primary_btn_style": "primary",
@@ -958,7 +966,7 @@
                 "color_style": "white",
                 "subheading": "",
                 "title": "Welcome to Modular",
-                "text": "<p>A unique layout with a striking design</p>",
+                "text": "<p>A unique layout with a striking design<\/p>",
                 "cta": "Learn More",
                 "link": "",
                 "cta_primary_btn_style": "primary",
@@ -970,7 +978,10 @@
               }
             }
           },
-          "block_order": ["slideshow-0", "slideshow-1"],
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
           "settings": {
             "show_arrow_down": false,
             "autoplay": true,
@@ -987,7 +998,7 @@
             "layout": "split",
             "subheading": "Humble Beginnings",
             "title": "Modular is a powerful Shopify theme that will set you apart from the rest.",
-            "content": "<p>It features ample space to showcase your imagery with Mosaic, Image with text, and Slideshow sections ... and even this Rich Text section itself.</p>",
+            "content": "<p>It features ample space to showcase your imagery with Mosaic, Image with text, and Slideshow sections ... and even this Rich Text section itself.<\/p>",
             "button_text": "Learn More",
             "button_link": "",
             "button_style": "primary"
@@ -1009,7 +1020,10 @@
               }
             }
           },
-          "block_order": ["image-with-text-0", "image-with-text-1"],
+          "block_order": [
+            "image-with-text-0",
+            "image-with-text-1"
+          ],
           "settings": {
             "show_nav_arrows": true,
             "color_style": "white",
@@ -1022,7 +1036,7 @@
             "slide_image_width": "med_s12|med_s12",
             "subheading": "Humble Beginnings",
             "title": "Tell a Story",
-            "content": "<p>By showcasing a product, collection, or your brand.</p>",
+            "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
             "cta": "Shop Now",
             "link": "",
             "button_style": "primary"
@@ -1120,7 +1134,11 @@
               }
             }
           },
-          "block_order": ["testimonials-0", "testimonials-1", "testimonials-2"],
+          "block_order": [
+            "testimonials-0",
+            "testimonials-1",
+            "testimonials-2"
+          ],
           "settings": {
             "title": "",
             "title_position": "center",
@@ -1202,7 +1220,7 @@
             "color": "#333",
             "background": "#ffffff",
             "title": "Newsletter",
-            "content": "<p>Let's keep in touch</p>"
+            "content": "<p>Let's keep in touch<\/p>"
           }
         }
       },
@@ -1289,7 +1307,7 @@
           "settings": {
             "show_announcement": true,
             "show_announcement_on_mobile": true,
-            "text": "<p>Free Shipping on Orders over $100</p>",
+            "text": "<p>Free Shipping on Orders over $100<\/p>",
             "link": ""
           }
         },
@@ -1299,7 +1317,7 @@
             "show_popup": "disabled",
             "popup_position": "right",
             "popup_header": "Use the popup to catch emails and showcase promotions",
-            "popup_content": "<p>Popups can detract from a user's experience, so try to limit how often they appear.</p>",
+            "popup_content": "<p>Popups can detract from a user's experience, so try to limit how often they appear.<\/p>",
             "text_alignment": "center",
             "show_popup_newsletter": true,
             "popup_delay": 5,
@@ -1338,7 +1356,7 @@
               "type": "text",
               "settings": {
                 "title": "Information",
-                "text": "<p>This text block is a great place to discuss shipping policies, or terms and conditions info.</p>",
+                "text": "<p>This text block is a great place to discuss shipping policies, or terms and conditions info.<\/p>",
                 "mobile_hide_block": false
               }
             },
@@ -1376,7 +1394,7 @@
             "show_cart_bar": true,
             "enable_payment_button": true,
             "show_newsletter": true,
-            "text_newsletter": "<p>Notify me when this product is available:</p>",
+            "text_newsletter": "<p>Notify me when this product is available:<\/p>",
             "page_tab_1": "",
             "page_tab_2": "",
             "page_tab_3": "",
@@ -1426,7 +1444,7 @@
             "banner_overlay_opacity": 10,
             "featured_image": "",
             "featured_heading": "Use this image showcase promotional content.",
-            "featured_text": "<p>Elaborate on it with rich text</p>",
+            "featured_text": "<p>Elaborate on it with rich text<\/p>",
             "featured_button_text": "Learn More",
             "featured_button_link": "",
             "featured_button_style": "primary",
@@ -1448,7 +1466,7 @@
                 "color_style": "white",
                 "subheading": "",
                 "title": "Welcome to Modular",
-                "text": "<p>A unique layout with a striking design</p>",
+                "text": "<p>A unique layout with a striking design<\/p>",
                 "cta": "Learn More",
                 "link": "",
                 "cta_primary_btn_style": "secondary",
@@ -1469,7 +1487,7 @@
                 "color_style": "white",
                 "subheading": "",
                 "title": "Welcome to Modular",
-                "text": "<p>A unique layout with a striking design</p>",
+                "text": "<p>A unique layout with a striking design<\/p>",
                 "cta": "Learn More",
                 "link": "",
                 "cta_primary_btn_style": "primary",
@@ -1481,7 +1499,10 @@
               }
             }
           },
-          "block_order": ["slideshow-0", "slideshow-1"],
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
           "settings": {
             "show_arrow_down": false,
             "autoplay": true,
@@ -1498,7 +1519,7 @@
             "layout": "split",
             "subheading": "Humble Beginnings",
             "title": "Modular is a powerful Shopify theme that will set you apart from the rest.",
-            "content": "<p>It features ample space to showcase your imagery with Mosaic, Image with text, and Slideshow sections ... and even this Rich Text section itself.</p>",
+            "content": "<p>It features ample space to showcase your imagery with Mosaic, Image with text, and Slideshow sections ... and even this Rich Text section itself.<\/p>",
             "button_text": "Learn More",
             "button_link": "",
             "button_style": "primary"
@@ -1520,7 +1541,10 @@
               }
             }
           },
-          "block_order": ["image-with-text-0", "image-with-text-1"],
+          "block_order": [
+            "image-with-text-0",
+            "image-with-text-1"
+          ],
           "settings": {
             "show_nav_arrows": true,
             "color_style": "white",
@@ -1533,7 +1557,7 @@
             "slide_image_width": "med_s12|med_s12",
             "subheading": "Humble Beginnings",
             "title": "Tell a Story",
-            "content": "<p>By showcasing a product, collection, or your brand.</p>",
+            "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
             "cta": "Shop Now",
             "link": "",
             "button_style": "primary"
@@ -1631,7 +1655,11 @@
               }
             }
           },
-          "block_order": ["testimonials-0", "testimonials-1", "testimonials-2"],
+          "block_order": [
+            "testimonials-0",
+            "testimonials-1",
+            "testimonials-2"
+          ],
           "settings": {
             "title": "",
             "title_position": "left",
@@ -1713,7 +1741,7 @@
             "color": "#222222",
             "background": "#ffffff",
             "title": "Newsletter",
-            "content": "<p>Let's keep in touch</p>"
+            "content": "<p>Let's keep in touch<\/p>"
           }
         }
       },
@@ -1799,7 +1827,7 @@
           "settings": {
             "show_announcement": true,
             "show_announcement_on_mobile": true,
-            "text": "<p>Broadcast sales, promos, or other offerings here</p>",
+            "text": "<p>Broadcast sales, promos, or other offerings here<\/p>",
             "link": ""
           }
         },
@@ -1809,7 +1837,7 @@
             "show_popup": "disabled",
             "popup_position": "left",
             "popup_header": "Use the popup to catch emails and showcase promotions",
-            "popup_content": "<p>Popups can detract from a user's experience, so try to limit how often they appear.</p>",
+            "popup_content": "<p>Popups can detract from a user's experience, so try to limit how often they appear.<\/p>",
             "text_alignment": "left",
             "show_popup_newsletter": true,
             "popup_delay": 5,
@@ -1848,7 +1876,7 @@
               "type": "text",
               "settings": {
                 "title": "Information",
-                "text": "<p>This text block is a great place to discuss shipping policies, or terms and conditions info.</p>",
+                "text": "<p>This text block is a great place to discuss shipping policies, or terms and conditions info.<\/p>",
                 "mobile_hide_block": false
               }
             },
@@ -1886,7 +1914,7 @@
             "show_cart_bar": true,
             "enable_payment_button": true,
             "show_newsletter": true,
-            "text_newsletter": "<p>Notify me when this product is available:</p>",
+            "text_newsletter": "<p>Notify me when this product is available:<\/p>",
             "page_tab_1": "",
             "page_tab_2": "",
             "page_tab_3": "",
@@ -1936,7 +1964,7 @@
             "banner_overlay_opacity": 10,
             "featured_image": "",
             "featured_heading": "Use this image showcase promotional content.",
-            "featured_text": "<p>Elaborate on it with rich text</p>",
+            "featured_text": "<p>Elaborate on it with rich text<\/p>",
             "featured_button_text": "Learn More",
             "featured_button_link": "",
             "featured_button_style": "secondary",
@@ -1958,7 +1986,7 @@
                 "color_style": "white",
                 "subheading": "",
                 "title": "Welcome to Modular",
-                "text": "<p>A unique layout with a striking design</p>",
+                "text": "<p>A unique layout with a striking design<\/p>",
                 "cta": "Learn More",
                 "link": "",
                 "cta_primary_btn_style": "primary",
@@ -1979,7 +2007,7 @@
                 "color_style": "white",
                 "subheading": "",
                 "title": "Welcome to Modular",
-                "text": "<p>A unique layout with a striking design</p>",
+                "text": "<p>A unique layout with a striking design<\/p>",
                 "cta": "Learn More",
                 "link": "",
                 "cta_primary_btn_style": "primary",
@@ -1991,7 +2019,10 @@
               }
             }
           },
-          "block_order": ["slideshow-0", "slideshow-1"],
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
           "settings": {
             "show_arrow_down": false,
             "autoplay": true,
@@ -2008,7 +2039,7 @@
             "layout": "split",
             "subheading": "Humble Beginnings",
             "title": "Modular is a powerful Shopify theme that will set you apart from the rest.",
-            "content": "<p>It features ample space to showcase your imagery with Mosaic, Image with text, and Slideshow sections ... and even this Rich Text section itself.</p>",
+            "content": "<p>It features ample space to showcase your imagery with Mosaic, Image with text, and Slideshow sections ... and even this Rich Text section itself.<\/p>",
             "button_text": "Learn More",
             "button_link": "",
             "button_style": "primary"
@@ -2030,7 +2061,10 @@
               }
             }
           },
-          "block_order": ["image-with-text-0", "image-with-text-1"],
+          "block_order": [
+            "image-with-text-0",
+            "image-with-text-1"
+          ],
           "settings": {
             "show_nav_arrows": true,
             "color_style": "white",
@@ -2043,7 +2077,7 @@
             "slide_image_width": "med_s12|med_s12",
             "subheading": "Humble Beginnings",
             "title": "Tell a Story",
-            "content": "<p>By showcasing a product, collection, or your brand.</p>",
+            "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
             "cta": "Shop Now",
             "link": "",
             "button_style": "primary"
@@ -2141,7 +2175,11 @@
               }
             }
           },
-          "block_order": ["testimonials-0", "testimonials-1", "testimonials-2"],
+          "block_order": [
+            "testimonials-0",
+            "testimonials-1",
+            "testimonials-2"
+          ],
           "settings": {
             "title": "Testimonials",
             "title_position": "left",
@@ -2223,7 +2261,7 @@
             "color": "#222222",
             "background": "#ffffff",
             "title": "Newsletter",
-            "content": "<p>Let's keep in touch</p>"
+            "content": "<p>Let's keep in touch<\/p>"
           }
         }
       },
