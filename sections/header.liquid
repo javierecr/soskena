@@ -109,75 +109,77 @@
 {%- capture headerClass -%}site-header header--no-bg header--is-standard header--{{ logo_position }}_{{ links_position }} header--standard {% unless logo or logo_other or show_shop_name %}header--no-logo{% endunless %}{%- endcapture -%}
 
 <header class="{{ headerClass }}" data-section-type="header" id="header" data-transparent="{{ transparent_header }}" data-scroll-lock-fill-gap>
-		<div class="row">
-			{%- if logo or logo_other or show_shop_name -%}
-				<h1 class="nav-item logo {% unless logo or logo_other %}logo--text-only{% endunless %}">
-					{%- if logo or logo_other -%}
-						<a href="{{ routes.root_url }}" class="logo__image-link visible-nav-link" data-width="{{ section.settings.logo_max_width }}" aria-label="{{ shop_name }}">
-							{%- if logo -%}
-								{{- logo_home -}}
-							{%- endif -%}
+		<div class="container">
+			<div class="row">
+				{%- if logo or logo_other or show_shop_name -%}
+					<h1 class="nav-item logo {% unless logo or logo_other %}logo--text-only{% endunless %}">
+						{%- if logo or logo_other -%}
+							<a href="{{ routes.root_url }}" class="logo__image-link visible-nav-link" data-width="{{ section.settings.logo_max_width }}" aria-label="{{ shop_name }}">
+								{%- if logo -%}
+									{{- logo_home -}}
+								{%- endif -%}
 
-							{%- if logo_other -%}
-								{{- logo_not_home -}}
-							{%- endif -%}
-						</a>
-					{%- endif -%}
-
-					{%- if show_shop_name -%}
-						<a id="shopName" class="logo__text" href="{{ routes.root_url }}">{{ shop_name }}</a>
-					{%- endif -%}
-				</h1>
-			{%- endif -%}
-
-			<div class="header-fix-cont">
-				<div class="header-fix-cont-inner">
-					<nav role="navigation" class="nav-standard nav-main">
-						{%- render 'navigation', is_hamburger_nav: false -%}
-
-						{%- if settings.show_search -%}
-							{%- render 'nav-search' -%}
-						{%- endif -%}
-					</nav>
-
-					<div class="header-icons">
-                      {% comment %} COCO -> {% endcomment %}
-                      <nav role="navigation" class="nav-standard nav-main">
-                            {% for link in linklists[section.settings.secondary_menu].links %}
-                              <li  class="menu-item">
-                                <a href="{{ link.url }}" {% if link.active %} class="active"{% endif %}>{{ link.title }}</a>
-                              </li>
-                            {% endfor %}
-                          </ul>                          
-                        </nav>
-                        {% comment %} <!- COCO {% endcomment %}
-						<a href="#menu" class="js-menuToggle menuToggle" data-target="nav" aria-expanded="false" aria-label="{{ 'general.accessibility.menu_toggle' | t }}">
-							<div id="hamburger-menu" class="icon-menu">
-								<div class="diamond-bar"></div>
-								<div id="hamburger-bar" class="icon-bar"></div>
-							</div>
-						</a>
-
-						{%- if shop.customer_accounts_enabled -%}
-							<a href="{{ routes.account_url }}" class="nav-item nav-item-fixed nav-account-link{% unless settings.show_search %} nav-account-link--no-search{% endunless %}" aria-label="{{ 'general.accessibility.account' | t }}">
-								{%- render 'icon-user' -%}
+								{%- if logo_other -%}
+									{{- logo_not_home -}}
+								{%- endif -%}
 							</a>
 						{%- endif -%}
 
-						{%- if settings.show_search -%}
-							<a href="#" class="nav-item searchToggle js-searchToggle js-searchToggle--open" data-search-nav=".nav-standard" aria-expanded="false" aria-label="{{ 'general.accessibility.search' | t }}">
-							 	{%- render 'icon-search' -%}
-							</a>
+						{%- if show_shop_name -%}
+							<a id="shopName" class="logo__text" href="{{ routes.root_url }}">{{ shop_name }}</a>
 						{%- endif -%}
+					</h1>
+				{%- endif -%}
 
-						<a id="cartTotal" href="{{ routes.cart_url }}" aria-label="{{ 'cart.labels.items_added' | t }}" class="nav-item nav-item-fixed js-cartToggle cartToggle{% if cart.item_count == 0 %} cartToggle--empty{% endif %}" aria-expanded="false" aria-label="{{ 'general.accessibility.cart' | t }}">
-							{%- if settings.cart_icon == 'cart' -%}
-								{%- render 'icon-cart' -%}
-							{%- else -%}
-								{%- render 'icon-circle' -%}
-								<div id="CartToggleItemCount" class="cartToggle-items">{{ cart.item_count }}</div>
+				<div class="header-fix-cont">
+					<div class="header-fix-cont-inner">
+						<nav role="navigation" class="nav-standard nav-main">
+							{%- render 'navigation', is_hamburger_nav: false -%}
+
+							{%- if settings.show_search -%}
+								{%- render 'nav-search' -%}
 							{%- endif -%}
-						</a>
+						</nav>
+
+						<div class="header-icons">
+												{% comment %} COCO -> {% endcomment %}
+												<nav role="navigation" class="nav-standard nav-main">
+															{% for link in linklists[section.settings.secondary_menu].links %}
+																<li  class="menu-item">
+																	<a href="{{ link.url }}" {% if link.active %} class="active"{% endif %}>{{ link.title }}</a>
+																</li>
+															{% endfor %}
+														</ul>                          
+													</nav>
+													{% comment %} <!- COCO {% endcomment %}
+							<a href="#menu" class="js-menuToggle menuToggle" data-target="nav" aria-expanded="false" aria-label="{{ 'general.accessibility.menu_toggle' | t }}">
+								<div id="hamburger-menu" class="icon-menu">
+									<div class="diamond-bar"></div>
+									<div id="hamburger-bar" class="icon-bar"></div>
+								</div>
+							</a>
+
+							{%- if shop.customer_accounts_enabled -%}
+								<a href="{{ routes.account_url }}" class="nav-item nav-item-fixed nav-account-link{% unless settings.show_search %} nav-account-link--no-search{% endunless %}" aria-label="{{ 'general.accessibility.account' | t }}">
+									{%- render 'icon-user' -%}
+								</a>
+							{%- endif -%}
+
+							{%- if settings.show_search -%}
+								<a href="#" class="nav-item searchToggle js-searchToggle js-searchToggle--open" data-search-nav=".nav-standard" aria-expanded="false" aria-label="{{ 'general.accessibility.search' | t }}">
+									{%- render 'icon-search' -%}
+								</a>
+							{%- endif -%}
+
+							<a id="cartTotal" href="{{ routes.cart_url }}" aria-label="{{ 'cart.labels.items_added' | t }}" class="nav-item nav-item-fixed js-cartToggle cartToggle{% if cart.item_count == 0 %} cartToggle--empty{% endif %}" aria-expanded="false" aria-label="{{ 'general.accessibility.cart' | t }}">
+								{%- if settings.cart_icon == 'cart' -%}
+									{%- render 'icon-cart' -%}
+								{%- else -%}
+									{%- render 'icon-circle' -%}
+									<div id="CartToggleItemCount" class="cartToggle-items">{{ cart.item_count }}</div>
+								{%- endif -%}
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
