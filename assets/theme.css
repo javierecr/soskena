@@ -15614,17 +15614,6 @@ h2 {
   margin-bottom: -6px;
 }
 
-#insta-feed {
-  max-width: 100%;
-  width: calc(100% - 140px) !important;
-}
-
-@media screen and (max-width: 1024px) {
-  #insta-feed {
-    width: calc(100% - 65px) !important;
-  }
-}
-
 /* @media screen and (min-width: 1024px) {
   .logos-list-wrapper {
     padding: 0 80px;
