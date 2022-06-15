@@ -558,17 +558,6 @@
       },
       "password-template": {
         "type": "password-template",
-        "blocks": {
-          "4a8e9212-7cb9-4354-926b-2251051eca96": {
-            "type": "gallery_image",
-            "settings": {
-              "slide": "shopify:\/\/shop_images\/8P8A9262.jpg"
-            }
-          }
-        },
-        "block_order": [
-          "4a8e9212-7cb9-4354-926b-2251051eca96"
-        ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/Soskena_logo_cc-03_1_3a415283-5577-414a-887f-05f509d910f8.png",
           "show_nav_arrows": true,
