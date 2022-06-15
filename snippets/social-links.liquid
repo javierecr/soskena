@@ -9,7 +9,7 @@
 -%}
 <div class="footer__social">
     <ul class="social-links social-links--footer">
-        {%- if settings.twitter_url != '' -%}
+        {%- if settings.twitter_url != blank -%}
             <li>
                 <a href="{{settings.twitter_url}}" target="_blank" class="social-link" rel="noopener">
                     {%- render 'icon-twitter' -%}
@@ -17,7 +17,7 @@
                 </a>
             </li>
         {%- endif -%}
-        {%- if settings.facebook_url != '' -%}
+        {%- if settings.facebook_url != blank -%}
             <li>
                 <a href="{{settings.facebook_url}}" target="_blank" class="social-link" rel="noopener">
                     {%- render 'icon-facebook' -%}
@@ -25,7 +25,7 @@
                 </a>
             </li>
         {%- endif -%}
-        {%- if settings.instagram_url != '' -%}
+        {%- if settings.instagram_url != blank -%}
             <li>
                 <a href="{{settings.instagram_url}}" target="_blank" class="social-link" rel="noopener">
                     {%- render 'icon-instagram' -%}
@@ -33,7 +33,7 @@
                 </a>
             </li>
         {%- endif -%}
-        {%- if settings.pinterest_url != '' -%}
+        {%- if settings.pinterest_url != blank -%}
             <li>
                 <a href="{{settings.pinterest_url}}" target="_blank" class="social-link" rel="noopener">
                     {%- render 'icon-pinterest' -%}
@@ -41,7 +41,7 @@
                 </a>
             </li>
         {%- endif -%}
-        {%- if settings.youtube_url != '' -%}
+        {%- if settings.youtube_url != blank -%}
             <li>
                 <a href="{{settings.youtube_url}}" target="_blank" class="social-link" rel="noopener">
                     {%- render 'icon-youtube' -%}
@@ -49,7 +49,7 @@
                 </a>
             </li>
         {%- endif -%}
-        {%- if settings.tumblr_url != '' -%}
+        {%- if settings.tumblr_url != blank -%}
             <li>
                 <a href="{{settings.tumblr_url}}" target="_blank" class="social-link" rel="noopener">
                     {%- render 'icon-tumblr' -%}
@@ -57,7 +57,7 @@
                 </a>
             </li>
         {%- endif -%}
-        {%- if settings.rss_url != '' -%}
+        {%- if settings.rss_url != blank -%}
             <li>
                 <a href="{{settings.rss_url}}" target="_blank" class="social-link" rel="noopener">
                     {%- render 'icon-rss' -%}
