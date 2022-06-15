@@ -33,7 +33,6 @@
 
 {%- comment %} Section {% endcomment %}
 {% comment %} COCO -> {% endcomment %}
-<div class="container">
   <div class="row">
 {% comment %} <!- COCO {% endcomment %}
 <section id="hero--{{ section.id }}"
@@ -101,36 +100,34 @@
 						{%- if original_height -%}
 						<div class="slide-text">
 						{%- endif -%}
-							<div class="container">
-								<div class="row">
-									<div class="slide-content {% unless has_bg %}no-background{% endunless %}">
-										{%- if subheading != blank -%}
-											<p class="slide-content__subheading subheading-text"{% if show_text_animations %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>{{ subheading }}</p>
-											{%- assign animation_delay = animation_delay | plus: 250 -%}
-										{%- endif -%}
+							<div class="row">
+								<div class="slide-content {% unless has_bg %}no-background{% endunless %}">
+									{%- if subheading != blank -%}
+										<p class="slide-content__subheading subheading-text"{% if show_text_animations %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>{{ subheading }}</p>
+										{%- assign animation_delay = animation_delay | plus: 250 -%}
+									{%- endif -%}
 
-										{%- if heading != blank -%}
-											<h1 class="slide-content__heading"{% if show_text_animations %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>{{ heading }}</h1>
-											{%- assign animation_delay = animation_delay | plus: 250 -%}
-										{%- endif -%}
+									{%- if heading != blank -%}
+										<h1 class="slide-content__heading"{% if show_text_animations %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>{{ heading }}</h1>
+										{%- assign animation_delay = animation_delay | plus: 250 -%}
+									{%- endif -%}
 
-										{%- if text != blank -%}
-											<div class="slide-content__text"{% if show_text_animations %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>{{ text }}</div>
-											{%- assign animation_delay = animation_delay | plus: 250 -%}
-										{%- endif -%}
+									{%- if text != blank -%}
+										<div class="slide-content__text"{% if show_text_animations %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>{{ text }}</div>
+										{%- assign animation_delay = animation_delay | plus: 250 -%}
+									{%- endif -%}
 
-										{%- if cta != blank or cta_2 != blank -%}
-											<div class="slide-content__buttons"{% if show_text_animations %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>
-												{%- if cta != blank -%}
-													<a tabindex="0" {% if link != blank %}href="{{ link }}"{% endif %} class="slide-content__button button button--{{ section.settings.button_size }} button--{{ buttonPrimaryStyle }}" aria-label="{{ cta }}" title="{{ cta }}">{{ cta }}</a>
-												{%- endif -%}
+									{%- if cta != blank or cta_2 != blank -%}
+										<div class="slide-content__buttons"{% if show_text_animations %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>
+											{%- if cta != blank -%}
+												<a tabindex="0" {% if link != blank %}href="{{ link }}"{% endif %} class="slide-content__button button button--{{ section.settings.button_size }} button--{{ buttonPrimaryStyle }}" aria-label="{{ cta }}" title="{{ cta }}">{{ cta }}</a>
+											{%- endif -%}
 
-												{%- if cta_2 != blank -%}
-													<a tabindex="0" {% if link_2 != blank %}href="{{ link_2 }}"{% endif %} class="slide-content__button button button--{{ section.settings.button_size }} button--{{ buttonSecondaryStyle }}" aria-label="{{ cta_2 }}" title="{{ cta_2 }}">{{ cta_2 }}</a>
-												{%- endif -%}
-											</div>
-										{%- endif -%}
-									</div>
+											{%- if cta_2 != blank -%}
+												<a tabindex="0" {% if link_2 != blank %}href="{{ link_2 }}"{% endif %} class="slide-content__button button button--{{ section.settings.button_size }} button--{{ buttonSecondaryStyle }}" aria-label="{{ cta_2 }}" title="{{ cta_2 }}">{{ cta_2 }}</a>
+											{%- endif -%}
+										</div>
+									{%- endif -%}
 								</div>
 							</div>
 						{%- if original_height -%}
@@ -245,6 +242,5 @@
 {%- endif -%}
 {% comment %} COCO -> {% endcomment %}
     </div>
-</div>
 {% comment %} <!- COCO {% endcomment %}
   

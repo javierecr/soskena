@@ -51,42 +51,40 @@
 		</div>
 
 		<div class="split-hero__content split-hero__content--{{ content_alignment }}">
-			<div class="container">
-				<div class="row">
-					<div class="split-hero__text">
-						{%- if subheading != blank -%}
-							<p class="split-hero__subheading subheading-text{% if transition_text %} will-animate{% endif %}"{% if transition_text %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>
-								{{- subheading -}}
-							</p>
-							{%- assign animation_delay = animation_delay | plus: 250 -%}
-						{%- endif -%}
+			<div class="row">
+				<div class="split-hero__text">
+					{%- if subheading != blank -%}
+						<p class="split-hero__subheading subheading-text{% if transition_text %} will-animate{% endif %}"{% if transition_text %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>
+							{{- subheading -}}
+						</p>
+						{%- assign animation_delay = animation_delay | plus: 250 -%}
+					{%- endif -%}
 
-						{%- if heading != blank -%}
-							<h2 class="split-hero__heading size--heading-1{% if transition_text %} will-animate{% endif %}"{% if transition_text %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>
-								{{- heading -}}
-							</h2>
-							{%- assign animation_delay = animation_delay | plus: 250 -%}
-						{%- endif -%}
+					{%- if heading != blank -%}
+						<h2 class="split-hero__heading size--heading-1{% if transition_text %} will-animate{% endif %}"{% if transition_text %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>
+							{{- heading -}}
+						</h2>
+						{%- assign animation_delay = animation_delay | plus: 250 -%}
+					{%- endif -%}
 
-						{%- if text != blank -%}
-							<div class="split-hero__richtext{% if transition_text %} will-animate{% endif %}"{% if transition_text %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>
-								{{- text -}}
-							</div>
-							{%- assign animation_delay = animation_delay | plus: 250 -%}
-						{%- endif -%}
+					{%- if text != blank -%}
+						<div class="split-hero__richtext{% if transition_text %} will-animate{% endif %}"{% if transition_text %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>
+							{{- text -}}
+						</div>
+						{%- assign animation_delay = animation_delay | plus: 250 -%}
+					{%- endif -%}
 
-						{%- if cta != blank or cta_2 != blank -%}
-							<div class="split-hero__buttons{% if cta != blank and cta_2 != blank %} split-hero__buttons--inline{% endif %}{% if transition_text %} will-animate{% endif %}"{% if transition_text %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>
-								{%- if cta != blank -%}
-									<a tabindex="0" {% if link != blank %}href="{{ link }}"{% endif %} class="button button--{{ button_size }} button--{{ button_primary_style }}" aria-label="{{ cta }}" title="{{ cta }}">{{ cta }}</a>
-								{%- endif -%}
+					{%- if cta != blank or cta_2 != blank -%}
+						<div class="split-hero__buttons{% if cta != blank and cta_2 != blank %} split-hero__buttons--inline{% endif %}{% if transition_text %} will-animate{% endif %}"{% if transition_text %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>
+							{%- if cta != blank -%}
+								<a tabindex="0" {% if link != blank %}href="{{ link }}"{% endif %} class="button button--{{ button_size }} button--{{ button_primary_style }}" aria-label="{{ cta }}" title="{{ cta }}">{{ cta }}</a>
+							{%- endif -%}
 
-								{%- if cta_2 != blank -%}
-									<a tabindex="0" {% if link_2 != blank %}href="{{ link_2 }}"{% endif %} class="button button--{{ button_size }} button--{{ button_secondary_style }}" aria-label="{{ cta_2 }}" title="{{ cta_2 }}">{{ cta_2 }}</a>
-								{%- endif -%}
-							</div>
-						{%- endif -%}
-					</div>
+							{%- if cta_2 != blank -%}
+								<a tabindex="0" {% if link_2 != blank %}href="{{ link_2 }}"{% endif %} class="button button--{{ button_size }} button--{{ button_secondary_style }}" aria-label="{{ cta_2 }}" title="{{ cta_2 }}">{{ cta_2 }}</a>
+							{%- endif -%}
+						</div>
+					{%- endif -%}
 				</div>
 			</div>
 		</div>

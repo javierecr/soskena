@@ -343,7 +343,7 @@
 {%- endif -%}
 		{%- endif -%}
 		<div class="collectionGrid__wrapper">
-			<div class="container">
+			<div class="">
 				<div class="collectionGrid-nav collectionGrid-row row inline">
 
 					{%- if settings.show_breadcrumbs -%}
@@ -377,13 +377,13 @@
 				</div>
 				<div class="collectionGrid-load icon-load-more" data-icon-load-more></div>
 
-				{%- if collection.all_products_count == 0 -%}
-					<div class="collection-no-products row inline u-center empty-collection">
-						<h4>{{ 'collections.errors.no_products' | t }}</h4>
-						<a class="button" href="{{ routes.all_products_collection_url }}">{{ 'collections.errors.continue_shopping' | t }}</a>
-					</div>
-				{%- endif -%}
-			</div>
+                    {%- if collection.all_products_count == 0 -%}
+                        <div class="collection-no-products row inline u-center empty-collection">
+                            <h4>{{ 'collections.errors.no_products' | t }}</h4>
+                            <a class="button" href="{{ routes.all_products_collection_url }}">{{ 'collections.errors.continue_shopping' | t }}</a>
+                        </div>
+                    {%- endif -%}
+                </div>
 
 			{%- if collection.all_products_count > 0 -%}
 				{%- paginate collection.products by products_limit -%}

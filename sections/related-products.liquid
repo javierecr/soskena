@@ -21,48 +21,46 @@
 	{%- assign collection_block_size = 'lg_s1' | append: columns_size | append: ' med_s13' -%}
 {%- endif -%}
 
-<div class="container">
-  <section class="related-products container-wrap collectionGrid js-collectionGrid {% unless enableSection %}visually-hidden{% endunless%}"
-      data-columns="{{ products_columns }}"
-      data-section-type="related-products"
-      data-section-id="{{ section.id }}"
-      data-product-id="{{ product.id }}"
-      data-limit="{{ settings.products_columns }}"
-      data-show_quantity="{{ settings.show_quantity }}"
-      data-show_reviews="{{ show_reviews }}"
-      data-yotpo="{{ settings.enable_yotpo }}"
-      data-yotpo-id="{{ settings.yotpo_ID }}"
-      data-enable-color-swatches="{{ enable_color_swatches }}"
-      data-image-aspectratio="{{ settings.image_aspect_ratio }}"
-      data-image-size="{{ settings.image_size }}">
+<section class="related-products container-wrap collectionGrid js-collectionGrid {% unless enableSection %}visually-hidden{% endunless%}"
+    data-columns="{{ products_columns }}"
+    data-section-type="related-products"
+    data-section-id="{{ section.id }}"
+    data-product-id="{{ product.id }}"
+    data-limit="{{ settings.products_columns }}"
+    data-show_quantity="{{ settings.show_quantity }}"
+    data-show_reviews="{{ show_reviews }}"
+    data-yotpo="{{ settings.enable_yotpo }}"
+    data-yotpo-id="{{ settings.yotpo_ID }}"
+    data-enable-color-swatches="{{ enable_color_swatches }}"
+    data-image-aspectratio="{{ settings.image_aspect_ratio }}"
+    data-image-size="{{ settings.image_size }}">
 
-      {%- if enableSection -%}
-          {%- if recommendations.performed -%}
-              {%- if recommendations.products_count > 0 -%}
+    {%- if enableSection -%}
+        {%- if recommendations.performed -%}
+            {%- if recommendations.products_count > 0 -%}
 
-                  {%- assign alignCenter = false -%}
-                  {%- if recommendations.products_count < products_columns -%}
-                      {%- assign alignCenter = true -%}
-                  {%- endif -%}
+                {%- assign alignCenter = false -%}
+                {%- if recommendations.products_count < products_columns -%}
+                    {%- assign alignCenter = true -%}
+                {%- endif -%}
 
-                  {%- if heading != blank -%}
-                      <div class="page-title">
-                          <h2>{{ heading }}</h2>
-                      </div>
-                  {%- endif -%}
+                {%- if heading != blank -%}
+                    <div class="page-title">
+                        <h2>{{ heading }}</h2>
+                    </div>
+                {%- endif -%}
 
-                  <div class="collectionGrid-row {% if alignCenter %}row--center{% endif %}">
-                      {%- for product in recommendations.products -%}
-                          {%- render 'product-grid-item', product: product, collection_block_size: collection_block_size, collection_block_size_mobile: collection_block_size_mobile, index: forloop.index -%}
-                      {%- endfor -%}
-                  </div>
-              {%- endif -%}
-          {%- else -%}
-              <div class="related__placeholder"></div>
-          {%- endif -%}
-      {%- endif -%}
-  </section>
-</div>
+                <div class="collectionGrid-row {% if alignCenter %}row--center{% endif %}">
+                    {%- for product in recommendations.products -%}
+                        {%- render 'product-grid-item', product: product, collection_block_size: collection_block_size, collection_block_size_mobile: collection_block_size_mobile, index: forloop.index -%}
+                    {%- endfor -%}
+                </div>
+            {%- endif -%}
+        {%- else -%}
+            <div class="related__placeholder"></div>
+        {%- endif -%}
+    {%- endif -%}
+</section>
 
 {%- render 'product-quick-view' -%}
 

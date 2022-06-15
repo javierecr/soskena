@@ -19,57 +19,53 @@
 {%- endif -%}
 
 <section class="page-title container-wrap">
-	<div class="container">
-		<div class="row inline u-center">
-			<h1>{{ 'search.content.title' | t }}</h1>
-		</div>
+	<div class="row inline u-center">
+		<h1>{{ 'search.content.title' | t }}</h1>
 	</div>
 </section>
 <section class="collectionGrid container-wrap">
-	<div class="container">
-		<div class="collectionGrid-nav{% unless search.performed %} collectionGrid-nav--center{% endunless %} collectionGrid-row row inline">
-			{%- if search.performed -%}
-				<div class="search-info block search-alert">
-					<h3>
-						{%- if search.results_count == 0 -%}{{ "search.content.no_results" | t: search: search.terms }}{%- else -%}{{ "search.content.has_results" | t: search: search.terms }}{%- endif -%}
-					</h3>
-				</div>
-			{%- endif -%}
-
-			<div class="collectionGrid-filter block s1 sm_s34 lg_s23">
-				<form action="{{ routes.search_url }}" method="get" class="search-page-form clearfix" role="search">
-					<input type="hidden" name="type" value="product" />
-					<input type="hidden" name="options[prefix]" value="last" />
-					<input name="q" type="search" id="search-field" value="{{ search.terms | escape }}" autofocus />
-					<input type="submit" id="search-submit" class="button" value="{{ 'search.button.text' | t }}" />
-				</form>
+	<div class="collectionGrid-nav{% unless search.performed %} collectionGrid-nav--center{% endunless %} collectionGrid-row row inline">
+		{%- if search.performed -%}
+			<div class="search-info block search-alert">
+				<h3>
+					{%- if search.results_count == 0 -%}{{ "search.content.no_results" | t: search: search.terms }}{%- else -%}{{ "search.content.has_results" | t: search: search.terms }}{%- endif -%}
+				</h3>
 			</div>
+		{%- endif -%}
+
+		<div class="collectionGrid-filter block s1 sm_s34 lg_s23">
+			<form action="{{ routes.search_url }}" method="get" class="search-page-form clearfix" role="search">
+				<input type="hidden" name="type" value="product" />
+				<input type="hidden" name="options[prefix]" value="last" />
+				<input name="q" type="search" id="search-field" value="{{ search.terms | escape }}" autofocus />
+				<input type="submit" id="search-submit" class="button" value="{{ 'search.button.text' | t }}" />
+			</form>
 		</div>
 	</div>
 
-		{%- if search.performed -%}
-			{%- paginate search.results by 12 -%}
-				<div class="collectionGrid-row{% if enable_infinity_scroll %} EndlessScroll{% endif %}">
-					{%- for product in search.results -%}
-						{%- render 'product-grid-item', product: product, collection_block_size: collection_block_size, collection_block_size_mobile: collection_block_size_mobile, index: forloop.index -%}
-					{%- endfor -%}
+	{%- if search.performed -%}
+		{%- paginate search.results by 12 -%}
+			<div class="collectionGrid-row{% if enable_infinity_scroll %} EndlessScroll{% endif %}">
+				{%- for product in search.results -%}
+					{%- render 'product-grid-item', product: product, collection_block_size: collection_block_size, collection_block_size_mobile: collection_block_size_mobile, index: forloop.index -%}
+				{%- endfor -%}
 
-					{%- if enable_infinity_scroll -%}
-						<div class="pagination u-center">
-							{%- if paginate.next -%}
-								<div class="pagination u-center">
-									<a href="{{ paginate.next.url }}" class="js-loadMore loadMore visually-hidden">{{ 'collections.pagination.load_more' | t }}</a>
-									<div class="icon-load-more"></div>
-								</div>
-							{%- endif -%}
-						</div>
-					{%- else -%}
-						{%- if paginate.pages > 1 -%}
-							{%- render 'pagination', paginate: paginate -%}
+				{%- if enable_infinity_scroll -%}
+					<div class="pagination u-center">
+						{%- if paginate.next -%}
+							<div class="pagination u-center">
+								<a href="{{ paginate.next.url }}" class="js-loadMore loadMore visually-hidden">{{ 'collections.pagination.load_more' | t }}</a>
+								<div class="icon-load-more"></div>
+							</div>
 						{%- endif -%}
+					</div>
+				{%- else -%}
+					{%- if paginate.pages > 1 -%}
+						{%- render 'pagination', paginate: paginate -%}
 					{%- endif -%}
-				</div>
-			{%- endpaginate -%}
-		{%- endif -%}
+				{%- endif -%}
+			</div>
+		{%- endpaginate -%}
+	{%- endif -%}
 	</div>
 </section>

@@ -18,16 +18,14 @@
 	data-blog-container>
 	{%- unless title == blank and text == blank -%}
 		<div class="page-title{% if title == blank and text == blank %} page-title--no-text{% endif %}">
-			<div class="container">
-				{%- if title != blank -%}
-					<h2>{{ title }}</h2>
-				{%- endif -%}
-				{%- if text != blank -%}
-					<div class="row row-sm">
-						<p>{{ text }}</p>
-					</div>
-				{%- endif -%}
-			</div>
+			{%- if title != blank -%}
+				<h2>{{ title }}</h2>
+			{%- endif -%}
+			{%- if text != blank -%}
+				<div class="row row-sm">
+					<p>{{ text }}</p>
+				</div>
+			{%- endif -%}
 		</div>
 	{%- endunless -%}
 

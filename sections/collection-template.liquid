@@ -83,7 +83,7 @@
 	{%- capture page_title -%}
 		{%- if show_title or collection.handle == 'all' -%}
 		<div class="page-title">
-			<div class="container" data-collection-banner-content>
+			<div data-collection-banner-content>
 				{%- if show_title -%}
 					<div class="row row-sm page-title__wrapper">
 						<h1 class="page-title__heading">
@@ -144,332 +144,325 @@
 	{%- else -%}
 		{{- page_title -}}
 	{%- endif -%}
-	<div class="container">
-      <section class="collectionGrid container-wrap" data-show-quickView="{{ settings.show_quick_view }}" data-collection-wrapper>
-          {%- if enable_filters -%}
-              {%- assign position_filters = section.settings.position_filters -%}
+    <section class="collectionGrid container-wrap" data-show-quickView="{{ settings.show_quick_view }}" data-collection-wrapper>
+        {%- if enable_filters -%}
+            {%- assign position_filters = section.settings.position_filters -%}
 
-  {%- capture filter_tags -%}	
-      {%- assign tags_list = '' -%}
-      {%- case filter_mode -%}
-          {%- when 'tag' -%}
-              {%- for tag in collection.all_tags -%}
-                  {%- unless tags_list contains tag or tag contains 'badge' or tag contains '__tab' -%}
-                      {%- capture temp_list -%}{{ tags_list | append: tag | append: ' ' }}{%- endcapture -%}
-                      {%- assign tags_list = tempList -%}
-                      <li class="collection__filter-tag collection__filter-tag--default {% if current_tags contains tag %}is-active{% endif %}" data-collection-filter-tag>
-                          <button class="collection__filter-tag-btn" data-tag="{{ tag | handleize }}" data-collection-filter-tag-button>
-                              {{- tag -}}
-                              {%- render 'icon-check' -%}
-                          </button>
-                      </li>
-                  {%- endunless -%}
-              {%- endfor -%}
+        {%- capture filter_tags -%}	
+            {%- assign tags_list = '' -%}
+                {%- case filter_mode -%}
+                    {%- when 'tag' -%}
+                        {%- for tag in collection.all_tags -%}
+                            {%- unless tags_list contains tag or tag contains 'badge' or tag contains '__tab' -%}
+                                {%- capture temp_list -%}{{ tags_list | append: tag | append: ' ' }}{%- endcapture -%}
+                                {%- assign tags_list = tempList -%}
+                                <li class="collection__filter-tag collection__filter-tag--default {% if current_tags contains tag %}is-active{% endif %}" data-collection-filter-tag>
+                                    <button class="collection__filter-tag-btn" data-tag="{{ tag | handleize }}" data-collection-filter-tag-button>
+                                        {{- tag -}}
+                                        {%- render 'icon-check' -%}
+                                    </button>
+                                </li>
+                            {%- endunless -%}
+                        {%- endfor -%}
 
-          {%- when 'group' -%}
-              {%- assign all_groups = '' -%}
-              {%- assign groups = '' -%}
+                    {%- when 'group' -%}
+                        {%- assign all_groups = '' -%}
+                        {%- assign groups = '' -%}
 
-              {%- for tag in collection.all_tags -%}
-                  {%- assign tag_parts = tag | split: '_' -%}
-                  {%- if tag_parts.size == 2 -%}
+                        {%- for tag in collection.all_tags -%}
+                            {%- assign tag_parts = tag | split: '_' -%}
+                            {%- if tag_parts.size == 2 -%}
 
-                      {% unless all_groups contains tag_parts.first %}
-                          {%- assign groups = groups | append: tag_parts.first | append: ',' -%}
-                          {%- assign all_groups = all_groups | append: groups -%}
-                      {%- endunless -%}
+                                {% unless all_groups contains tag_parts.first %}
+                                    {%- assign groups = groups | append: tag_parts.first | append: ',' -%}
+                                    {%- assign all_groups = all_groups | append: groups -%}
+                                {%- endunless -%}
 
-                  {%- endif -%}
-              {%- endfor -%}
+                            {%- endif -%}
+                        {%- endfor -%}
 
-              {%- assign groups = groups | split: ',' | compact | uniq -%}
-              {%- assign color_label = 'color,colour,couleur,colore,farbe,색,色,färg,farve' | split: ',' -%}
+                        {%- assign groups = groups | split: ',' | compact | uniq -%}
+                        {%- assign color_label = 'color,colour,couleur,colore,farbe,색,色,färg,farve' | split: ',' -%}
 
-              {%- for group in groups -%}
-                  {%- assign group_label = group | downcase -%}
+                        {%- for group in groups -%}
+                            {%- assign group_label = group | downcase -%}
 
-                  {%- comment -%} Don't show "badge" as a filter {%- endcomment -%}
-                  {%- unless group_label == 'badge' -%}
+                            {%- comment -%} Don't show "badge" as a filter {%- endcomment -%}
+                            {%- unless group_label == 'badge' -%}
 
-                      {%- if color_label contains group_label and settings.enable_color_swatches -%}
-                          {%- assign is_color_swatch = true -%}
-                      {%- else -%}
-                          {%- assign is_color_swatch = false -%}
-                      {%- endif -%}
+                                {%- if color_label contains group_label and settings.enable_color_swatches -%}
+                                    {%- assign is_color_swatch = true -%}
+                                {%- else -%}
+                                    {%- assign is_color_swatch = false -%}
+                                {%- endif -%}
 
-                      <div class="collection__filter collection__filter--accordion-expanded" data-collection-filter>
-                          <button class="collection__filter-title" tabindex="0" data-collection-filter-title>
-                              <span>{{ group }}</span>
-                              {%- render 'icon-arrow' -%}
-                          </button>
-                          <div class="collection__filter-container">
-                              <ul class="collection__filter-tags {% if is_color_swatch %}collection__filter-tags--swatches{% endif %}">
-                                  {%- for tag in collection.all_tags -%}
-                                      {%- assign tag_parts = tag | split: '_' -%}
-                                      {%- assign group_tag = tag_parts.last -%}
+                                <div class="collection__filter collection__filter--accordion-expanded" data-collection-filter>
+                                    <button class="collection__filter-title" tabindex="0" data-collection-filter-title>
+                                        <span>{{ group }}</span>
+                                        {%- render 'icon-arrow' -%}
+                                    </button>
+                                    <div class="collection__filter-container">
+                                        <ul class="collection__filter-tags {% if is_color_swatch %}collection__filter-tags--swatches{% endif %}">
+                                            {%- for tag in collection.all_tags -%}
+                                                {%- assign tag_parts = tag | split: '_' -%}
+                                                {%- assign group_tag = tag_parts.last -%}
 
-                                      {%- if tag_parts.first == group -%}
-                                          {%- if is_color_swatch -%}
-                                              <li class="collection__filter-tag collection__filter-tag--swatch swatch{% if current_tags contains tag %} is-active{% endif %}"
-                                                  data-collection-filter-tag>
-                                                  <button
-                                                      class="swatch__element swatch__element--{{ group_tag | handle }} collection__filter-tag-btn"
-                                                      data-value="{{ group_tag }}"
-                                                      data-tag="{{ tag | handleize }}"
-                                                      data-collection-filter-tag-button>
-                                                      <div class="swatch__label">
-                                                          <span class="swatch__color swatch__color--{{ group_tag | handle }}" style="background-color: {{ group_tag | split: ' ' | last | handle }}; background-image: url({{ value | handle | append: '.' | append: file_extension | asset_url }})"></span>
-                                                          <span class="swatch__color-name">{{ group_tag }}</span>
-                                                      </div>
-                                                  </button>
-                                              </li>
-                                          {%- else -%}
+                                                {%- if tag_parts.first == group -%}
+                                                    {%- if is_color_swatch -%}
+                                                        <li class="collection__filter-tag collection__filter-tag--swatch swatch{% if current_tags contains tag %} is-active{% endif %}"
+                                                            data-collection-filter-tag>
+                                                            <button
+                                                                class="swatch__element swatch__element--{{ group_tag | handle }} collection__filter-tag-btn"
+                                                                data-value="{{ group_tag }}"
+                                                                data-tag="{{ tag | handleize }}"
+                                                                data-collection-filter-tag-button>
+                                                                <div class="swatch__label">
+                                                                    <span class="swatch__color swatch__color--{{ group_tag | handle }}" style="background-color: {{ group_tag | split: ' ' | last | handle }}; background-image: url({{ value | handle | append: '.' | append: file_extension | asset_url }})"></span>
+                                                                    <span class="swatch__color-name">{{ group_tag }}</span>
+                                                                </div>
+                                                            </button>
+                                                        </li>
+                                                    {%- else -%}
 
-                                              {% comment %} Check if the tag value is a number {% endcomment %}
-                                              {%- capture tag_value -%}{{ group_tag | abs }}{%- endcapture -%}
+                                                        {% comment %} Check if the tag value is a number {% endcomment %}
+                                                        {%- capture tag_value -%}{{ group_tag | abs }}{%- endcapture -%}
 
-                                              {%- if tag_value == group_tag -%}
-                                                  {%- assign is_number = true -%}
-                                              {%- else -%}
-                                                  {%- assign is_number = false -%}
-                                              {%- endif -%}
+                                                        {%- if tag_value == group_tag -%}
+                                                            {%- assign is_number = true -%}
+                                                        {%- else -%}
+                                                            {%- assign is_number = false -%}
+                                                        {%- endif -%}
 
-                                              <li class="collection__filter-tag {% if is_number %}collection__filter-tag--number{% else %}collection__filter-tag--default{% endif %} {% if current_tags contains tag %}is-active{% endif %}"
-                                                  data-collection-filter-tag>
-                                                  <button data-tag="{{ tag | handleize }}" class="collection__filter-tag-btn" data-collection-filter-tag-button>
-                                                      {{- group_tag -}}
-                                                      {%- unless is_number -%}
-                                                          {%- render 'icon-check' -%}
-                                                      {%- endunless -%}
-                                                  </button>
-                                              </li>
-                                          {%- endif -%}
-                                      {%- endif -%}
-                                  {%- endfor -%}
-                              </ul>
-                          </div>
-                      </div>
+                                                        <li class="collection__filter-tag {% if is_number %}collection__filter-tag--number{% else %}collection__filter-tag--default{% endif %} {% if current_tags contains tag %}is-active{% endif %}"
+                                                            data-collection-filter-tag>
+                                                            <button data-tag="{{ tag | handleize }}" class="collection__filter-tag-btn" data-collection-filter-tag-button>
+                                                                {{- group_tag -}}
+                                                                {%- unless is_number -%}
+                                                                    {%- render 'icon-check' -%}
+                                                                {%- endunless -%}
+                                                            </button>
+                                                        </li>
+                                                    {%- endif -%}
+                                                {%- endif -%}
+                                            {%- endfor -%}
+                                        </ul>
+                                    </div>
+                                </div>
 
-                  {%- endunless -%}
-              {%- endfor -%}
+                            {%- endunless -%}
+                        {%- endfor -%}
 
-      {%- endcase -%}
-  {%- endcapture -%}
+                {%- endcase -%}
+        {%- endcapture -%}
 
-  {%- if filter_tags != blank -%}
-      <div class="collection__filters collection__filters--{{ position_filters }} {% if current_tags != blank %}collection__filters--has-tags-selected{% endif %}" data-collection-filters>
-          <div class="container">
-              <div class="collection__filters-list">
-                  <div class="collection__filters-reset">
-                      <button class="collection__filters-reset-btn {% if current_tags != blank %}is-visible{% endif %}" {% if current_tags == blank %}style="display: none;"{% endif %} data-collection-filters-reset-button>
-                          {%- render 'icon-close' -%}
-                          <span class="collection__filters-reset-btn-text">
-                              {{ 'collections.tag_filtering.reset' | t }}
-                              <span class="products-found" data-products-found-label>- {{ 'collections.products_with_count' | t: count: collection.products_count }}</span>
-                          </span>
-                      </button>
-                  </div>
+            {%- if filter_tags != blank -%}
+                <div class="collection__filters collection__filters--{{ position_filters }} {% if current_tags != blank %}collection__filters--has-tags-selected{% endif %}" data-collection-filters>
+                <div class="collection__filters-list">
+                    <div class="collection__filters-reset">
+                        <button class="collection__filters-reset-btn {% if current_tags != blank %}is-visible{% endif %}" {% if current_tags == blank %}style="display: none;"{% endif %} data-collection-filters-reset-button>
+                            {%- render 'icon-close' -%}
+                            <span class="collection__filters-reset-btn-text">
+                                {{ 'collections.tag_filtering.reset' | t }}
+                                <span class="products-found" data-products-found-label>- {{ 'collections.products_with_count' | t: count: collection.products_count }}</span>
+                            </span>
+                        </button>
+                    </div>
 
-                  {%- case filter_mode -%}
-                  {%- when 'tag' -%}
-                      <div class="collection__filter collection__filter--accordion-expanded" data-collection-filter>
-                          <button class="collection__filter-title" data-collection-filter-title>
-                              <span>{{ 'collections.tag_filtering.filters' | t }}</span>
-                              {%- render 'icon-arrow' -%}
-                          </button>
-                          <div class="collection__filter-container">
-                              <ul class="collection__filter-tags">
-                                  {{- filter_tags -}}
-                              </ul>
-                          </div>
-                      </div>
-                  {%- when 'group' -%}
-                      {{- filter_tags -}}
-                  {%- endcase -%}
-              </div>
-          </div>
-      </div>
-  {%- endif -%}
-          {%- endif -%}
-					
-          <div class="collectionGrid__wrapper">
+                    {%- case filter_mode -%}
+                    {%- when 'tag' -%}
+                        <div class="collection__filter collection__filter--accordion-expanded" data-collection-filter>
+                            <button class="collection__filter-title" data-collection-filter-title>
+                                <span>{{ 'collections.tag_filtering.filters' | t }}</span>
+                                {%- render 'icon-arrow' -%}
+                            </button>
+                            <div class="collection__filter-container">
+                                <ul class="collection__filter-tags">
+                                    {{- filter_tags -}}
+                                </ul>
+                            </div>
+                        </div>
+                    {%- when 'group' -%}
+                        {{- filter_tags -}}
+                    {%- endcase -%}
+                </div>
+                </div>
+            {%- endif -%}
+        {%- endif -%}
+                
+        <div class="collectionGrid__wrapper">
             <div>
-              <div class="row">
-                <div class="block med_s14">
-                  <h2>{{- collection.title -}}</h2>
+                <div class="row">
+                    <div class="block med_s14">
+                        <h2>{{- collection.title -}}</h2>
+                    </div>
+                    <div class="block med_s34">
+                        {{ }}
+                        {%- if collection.description != blank -%}
+                        <div class="page-title__text">
+                        {{- collection.description -}}
+                        </div>
+                        {%- endif -%}
                 </div>
-                <div class="block med_s34">
-                  {{ }}
-                  {%- if collection.description != blank -%}
-                  <div class="page-title__text">
-                    {{- collection.description -}}
-                  </div>
-                  {%- endif -%}
+            </div> 
+                <div class="collectionGrid-nav collectionGrid-row row inline">
+
+                    {%- if settings.show_breadcrumbs -%}
+                        <div class="breadcrumbs block">
+                            {%- render 'site-breadcrumbs' -%}
+                        </div>
+                    {%- endif -%}
+
+                    <div class="grid-sort block">
+                        {%- if show_sort_filter -%}
+                            <div class="collectionGrid-sort block">
+                                <div class="selector-wrapper">
+                                    <label for="#collectionSort">{{ 'collections.sorting_dropdown.label' | t }}</label>
+                                    {%- render 'icon-arrow' -%}
+                                    {%- assign sort_by = collection.sort_by -%}
+                                    <label for="collectionSort" class="accessible-label">{{ 'general.accessibility.sort_by' | t }}</label>
+                                    <select class="sort" id="collectionSort" data-collection-sort>
+                                        <option value="">{{ 'collections.sorting_dropdown.all' | t }}</option>
+                                        <option value="best-selling" {% if sort_by == "best-selling" %}selected{% endif %}>{{ 'collections.sorting_dropdown.best_selling' | t }}</option>
+                                        <option value="price-ascending" {% if sort_by == "price-ascending" %}selected{% endif %}>{{ 'collections.sorting_dropdown.price_ascending' | t }}</option>
+                                        <option value="price-descending" {% if sort_by == "price-descending" %}selected{% endif %}>{{ 'collections.sorting_dropdown.price_descending' | t }}</option>
+                                        <option value="title-ascending" {% if sort_by == "title-ascending" %}selected{% endif %}>{{ 'collections.sorting_dropdown.title_ascending' | t }}</option>
+                                        <option value="title-descending" {% if sort_by == "title-descending" %}selected{% endif %}>{{ 'collections.sorting_dropdown.title_descending' | t }}</option>
+                                        <option value="created-ascending" {% if sort_by == "created-ascending" %}selected{% endif %}>{{ 'collections.sorting_dropdown.created_ascending' | t }}</option>
+                                        <option value="created-descending" {% if sort_by == "created-descending" %}selected{% endif %}>{{ 'collections.sorting_dropdown.created_descending' | t }}</option>
+                                    </select>
+                                </div>
+                            </div>
+                        {%- endif -%}
+                    </div>
                 </div>
-              </div> 
-              <div class="container">                
-                </div>
-                  <div class="collectionGrid-nav collectionGrid-row row inline">
-	
-                      {%- if settings.show_breadcrumbs -%}
-                          <div class="breadcrumbs block">
-                              {%- render 'site-breadcrumbs' -%}
-                          </div>
-                      {%- endif -%}
+                <div class="collectionGrid-load icon-load-more" data-icon-load-more></div>
 
-                      <div class="grid-sort block">
-                          {%- if show_sort_filter -%}
-                              <div class="collectionGrid-sort block">
-                                  <div class="selector-wrapper">
-                                      <label for="#collectionSort">{{ 'collections.sorting_dropdown.label' | t }}</label>
-                                      {%- render 'icon-arrow' -%}
-                                      {%- assign sort_by = collection.sort_by -%}
-                                      <label for="collectionSort" class="accessible-label">{{ 'general.accessibility.sort_by' | t }}</label>
-                                      <select class="sort" id="collectionSort" data-collection-sort>
-                                          <option value="">{{ 'collections.sorting_dropdown.all' | t }}</option>
-                                          <option value="best-selling" {% if sort_by == "best-selling" %}selected{% endif %}>{{ 'collections.sorting_dropdown.best_selling' | t }}</option>
-                                          <option value="price-ascending" {% if sort_by == "price-ascending" %}selected{% endif %}>{{ 'collections.sorting_dropdown.price_ascending' | t }}</option>
-                                          <option value="price-descending" {% if sort_by == "price-descending" %}selected{% endif %}>{{ 'collections.sorting_dropdown.price_descending' | t }}</option>
-                                          <option value="title-ascending" {% if sort_by == "title-ascending" %}selected{% endif %}>{{ 'collections.sorting_dropdown.title_ascending' | t }}</option>
-                                          <option value="title-descending" {% if sort_by == "title-descending" %}selected{% endif %}>{{ 'collections.sorting_dropdown.title_descending' | t }}</option>
-                                          <option value="created-ascending" {% if sort_by == "created-ascending" %}selected{% endif %}>{{ 'collections.sorting_dropdown.created_ascending' | t }}</option>
-                                          <option value="created-descending" {% if sort_by == "created-descending" %}selected{% endif %}>{{ 'collections.sorting_dropdown.created_descending' | t }}</option>
-                                      </select>
-                                  </div>
-                              </div>
-                          {%- endif -%}
-                      </div>
-                  </div>
-                  <div class="collectionGrid-load icon-load-more" data-icon-load-more></div>
+                {%- if collection.all_products_count == 0 -%}
+                    <div class="collection-no-products row inline u-center empty-collection">
+                        <h4>{{ 'collections.errors.no_products' | t }}</h4>
+                        <a class="button" href="{{ routes.all_products_collection_url }}">{{ 'collections.errors.continue_shopping' | t }}</a>
+                    </div>
+                {%- endif -%}
+            </div>
 
-                  {%- if collection.all_products_count == 0 -%}
-                      <div class="collection-no-products row inline u-center empty-collection">
-                          <h4>{{ 'collections.errors.no_products' | t }}</h4>
-                          <a class="button" href="{{ routes.all_products_collection_url }}">{{ 'collections.errors.continue_shopping' | t }}</a>
-                      </div>
-                  {%- endif -%}
-              </div>
+            {%- if collection.all_products_count > 0 -%}
+                {%- paginate collection.products by products_limit -%}
 
-              {%- if collection.all_products_count > 0 -%}
-                  {%- paginate collection.products by products_limit -%}
+                    <div class="js-collectionGrid collectionGrid-row collectionGrid-row--grid{% if enable_infinity_scroll %} EndlessScroll{% endif %}"
+                        data-section-id="{{ section.id }}"
+                        data-show_quantity="{{ settings.show_quantity }}"
+                        data-show_reviews="{{ show_reviews }}"
+                        data-yotpo="{{ settings.enable_yotpo }}"
+                        data-yotpo-id="{{ settings.yotpo_ID }}"
+                        data-enable-color-swatches="{{ enable_color_swatches }}"
+                        data-image-aspectratio="{{ settings.image_aspect_ratio }}"
+                        data-image-size="{{ settings.image_size }}"
+                        data-tags='{% if selected_tags != blank %}{{ selected_tags | split: '+' | json }}{% else %}[]{% endif %}'
+                        data-sort="{{ collection.sort_by | default: collection.default_sort_by }}"
+                        data-collection="{{ collection.url | default: routes.all_products_collection_url }}"
+                        data-collection-products>
+                        {%- if show_featured_image and columns_size != '5' and paginate.current_page == 1 and collection.all_products_count > 0 -%}
+                            {% comment %} Featured Content Settings {% endcomment %}
+                            {%- assign featuredImage = section.settings.featured_image -%}
+                            {%- assign featuredHeading = section.settings.featured_heading -%}
+                            {%- assign featuredText = section.settings.featured_text -%}
+                            {%- assign featuredButtonText = section.settings.featured_button_text -%}
+                            {%- assign featuredButtonLink = section.settings.featured_button_link -%}
+                            {%- assign featuredButtonStyle = section.settings.featured_button_style -%}
+                            {%- assign featuredColorText = section.settings.featured_color_text -%}
+                            {%- assign featuredColorOverlay = section.settings.featured_color_overlay -%}
+                            {%- assign featuredOverlayOpacity = section.settings.featured_overlay_opacity | times: 0.01 | round: 2 -%}
 
-                      <div class="js-collectionGrid collectionGrid-row collectionGrid-row--grid{% if enable_infinity_scroll %} EndlessScroll{% endif %}"
-                          data-section-id="{{ section.id }}"
-                          data-show_quantity="{{ settings.show_quantity }}"
-                          data-show_reviews="{{ show_reviews }}"
-                          data-yotpo="{{ settings.enable_yotpo }}"
-                          data-yotpo-id="{{ settings.yotpo_ID }}"
-                          data-enable-color-swatches="{{ enable_color_swatches }}"
-                          data-image-aspectratio="{{ settings.image_aspect_ratio }}"
-                          data-image-size="{{ settings.image_size }}"
-                          data-tags='{% if selected_tags != blank %}{{ selected_tags | split: '+' | json }}{% else %}[]{% endif %}'
-                          data-sort="{{ collection.sort_by | default: collection.default_sort_by }}"
-                          data-collection="{{ collection.url | default: routes.all_products_collection_url }}"
-                          data-collection-products>
-                          {%- if show_featured_image and columns_size != '5' and paginate.current_page == 1 and collection.all_products_count > 0 -%}
-                              {% comment %} Featured Content Settings {% endcomment %}
-                              {%- assign featuredImage = section.settings.featured_image -%}
-                              {%- assign featuredHeading = section.settings.featured_heading -%}
-                              {%- assign featuredText = section.settings.featured_text -%}
-                              {%- assign featuredButtonText = section.settings.featured_button_text -%}
-                              {%- assign featuredButtonLink = section.settings.featured_button_link -%}
-                              {%- assign featuredButtonStyle = section.settings.featured_button_style -%}
-                              {%- assign featuredColorText = section.settings.featured_color_text -%}
-                              {%- assign featuredColorOverlay = section.settings.featured_color_overlay -%}
-                              {%- assign featuredOverlayOpacity = section.settings.featured_overlay_opacity | times: 0.01 | round: 2 -%}
+                            <style>
+                                .featured__content { color: {{ featuredColorText }}; }
+                                .featured__image::before { background-color: {{ featuredColorOverlay }}; opacity: {{ featuredOverlayOpacity }}; }
+                            </style>
 
-                              <style>
-                                  .featured__content { color: {{ featuredColorText }}; }
-                                  .featured__image::before { background-color: {{ featuredColorOverlay }}; opacity: {{ featuredOverlayOpacity }}; }
-                              </style>
+                            <div class="collectionBlock js-collectionBlock featured-block featured-block--mobile-{{ products_columns_mobile }} s1 {% if columns_size == '4' %}lg_s12{% else %}{{ collection_block_size }}{% endif %} med_s13">
+                                <div class="featured-block__container">
+                                    <div class="featured-block__wrapper">
+                                        {%- unless featuredImage == blank -%}
+                                            <div class="featured__image lazyload"
+                                                data-bgset="{% render 'bgset', image: featuredImage %}"
+                                                data-sizes="auto"
+                                                data-parent-fit="cover"
+                                                data-aspectratio="{{ featuredImage.aspect_ratio }}"></div>
+                                            <noscript>
+                                                <div class="featured__image no-js-image" style="background-image: url({{ section.settings.featured_image | img_url: '1024x' }});"></div>
+                                            </noscript>
+                                        {%- else -%}
+                                            <div class="featured__image svg-placeholder">
+                                                {{- 'image' | placeholder_svg_tag -}}
+                                            </div>
+                                        {%- endunless -%}
 
-                              <div class="collectionBlock js-collectionBlock featured-block featured-block--mobile-{{ products_columns_mobile }} s1 {% if columns_size == '4' %}lg_s12{% else %}{{ collection_block_size }}{% endif %} med_s13">
-                                  <div class="featured-block__container">
-                                      <div class="featured-block__wrapper">
-                                          {%- unless featuredImage == blank -%}
-                                              <div class="featured__image lazyload"
-                                                  data-bgset="{% render 'bgset', image: featuredImage %}"
-                                                  data-sizes="auto"
-                                                  data-parent-fit="cover"
-                                                  data-aspectratio="{{ featuredImage.aspect_ratio }}"></div>
-                                              <noscript>
-                                                  <div class="featured__image no-js-image" style="background-image: url({{ section.settings.featured_image | img_url: '1024x' }});"></div>
-                                              </noscript>
-                                          {%- else -%}
-                                              <div class="featured__image svg-placeholder">
-                                                  {{- 'image' | placeholder_svg_tag -}}
-                                              </div>
-                                          {%- endunless -%}
+                                        {%- if featuredHeading != blank or featuredText != blank or featuredButtonText != blank -%}
+                                            <div class="featured__content">
+                                                {%- if featuredHeading -%}
+                                                    <h2>{{ featuredHeading }}</h2>
+                                                {%- endif -%}
 
-                                          {%- if featuredHeading != blank or featuredText != blank or featuredButtonText != blank -%}
-                                              <div class="featured__content">
-                                                  {%- if featuredHeading -%}
-                                                      <h2>{{ featuredHeading }}</h2>
-                                                  {%- endif -%}
+                                                {%- if featuredText -%}
+                                                    {{- featuredText -}}
+                                                {%- endif -%}
 
-                                                  {%- if featuredText -%}
-                                                      {{- featuredText -}}
-                                                  {%- endif -%}
+                                                {%- if featuredButtonText != blank -%}
+                                                    {%- if featuredButtonLink == blank -%}
+                                                        {%- assign featuredButtonLink = "#!" -%}
+                                                    {%- endif -%}
+                                                    <a href="{{ featuredButtonLink }}" title="{{ featuredButtonText }}" class="button button--{{ featuredButtonStyle }}">{{ featuredButtonText }}</a>
+                                                {%- endif -%}
+                                            </div>
+                                        {%- endif -%}
+                                    </div>
+                                </div>
+                            </div>
+                        {%- endif -%}
 
-                                                  {%- if featuredButtonText != blank -%}
-                                                      {%- if featuredButtonLink == blank -%}
-                                                          {%- assign featuredButtonLink = "#!" -%}
-                                                      {%- endif -%}
-                                                      <a href="{{ featuredButtonLink }}" title="{{ featuredButtonText }}" class="button button--{{ featuredButtonStyle }}">{{ featuredButtonText }}</a>
-                                                  {%- endif -%}
-                                              </div>
-                                          {%- endif -%}
-                                      </div>
-                                  </div>
-                              </div>
-                          {%- endif -%}
+                        {%- if collection.products_count > 0 -%}
 
-                          {%- if collection.products_count > 0 -%}
+                            {%- for product in collection.products -%}
+                                {%- render 'product-grid-item', product: product, collection_block_size: collection_block_size, collection_block_size_mobile: collection_block_size_mobile, index: forloop.index, last_element_class: last_element_class -%}
+                            {%- endfor -%}
 
-                              {%- for product in collection.products -%}
-                                  {%- render 'product-grid-item', product: product, collection_block_size: collection_block_size, collection_block_size_mobile: collection_block_size_mobile, index: forloop.index, last_element_class: last_element_class -%}
-                              {%- endfor -%}
+                        {%- else -%}
+                            <div class="collection-no-products row inline u-center empty-collection">
+                                <p>{{ 'collections.errors.no_products_by_filter' | t : products_count: collection.products_count }}</p>
 
-                          {%- else -%}
-                              <div class="collection-no-products row inline u-center empty-collection">
-                                  <p>{{ 'collections.errors.no_products_by_filter' | t : products_count: collection.products_count }}</p>
+                                {%- if enable_filters and current_tags != blank -%}
+                                    <button class="collection__filters-reset-btn {% if current_tags != blank %}is-visible{% endif %}" {% if current_tags == blank %}style="display: none;"{% endif %} data-collection-filters-reset-button>
+                                        {%- render 'icon-close' -%}
+                                        <span class="collection__filters-reset-btn-text">
+                                            {{ 'collections.tag_filtering.reset' | t }}
+                                            <span class="products-found" data-products-found-label>- {{ 'collections.products_with_count' | t: count: collection.products_count }}</span>
+                                        </span>
+                                    </button>
+                                {%- endif -%}
+                            </div>
+                        {%- endif -%}
 
-                                  {%- if enable_filters and current_tags != blank -%}
-                                      <button class="collection__filters-reset-btn {% if current_tags != blank %}is-visible{% endif %}" {% if current_tags == blank %}style="display: none;"{% endif %} data-collection-filters-reset-button>
-                                          {%- render 'icon-close' -%}
-                                          <span class="collection__filters-reset-btn-text">
-                                              {{ 'collections.tag_filtering.reset' | t }}
-                                              <span class="products-found" data-products-found-label>- {{ 'collections.products_with_count' | t: count: collection.products_count }}</span>
-                                          </span>
-                                      </button>
-                                  {%- endif -%}
-                              </div>
-                          {%- endif -%}
+                        {%- if enable_infinity_scroll -%}
+                            <div class="pagination pagination--infinity" id="AjaxinatePagination">
+                                {%- if paginate.next -%}
+                                    <div class="pagination u-center" data-collection-pagination>
+                                        <a href="{{ paginate.next.url }}" class="loadMore visually-hidden">{{ 'collections.pagination.load_more' | t }}</a>
+                                        <div class="icon-load-more"></div>
+                                    </div>
+                                {%- endif -%}
+                            </div>
+                        {%- else -%}
+                            {%- if paginate.pages > 1 -%}
+                                {%- render 'pagination', paginate: paginate -%}
+                            {%- endif -%}
+                        {%- endif -%}
 
-                          {%- if enable_infinity_scroll -%}
-                              <div class="pagination pagination--infinity" id="AjaxinatePagination">
-                                  {%- if paginate.next -%}
-                                      <div class="pagination u-center" data-collection-pagination>
-                                          <a href="{{ paginate.next.url }}" class="loadMore visually-hidden">{{ 'collections.pagination.load_more' | t }}</a>
-                                          <div class="icon-load-more"></div>
-                                      </div>
-                                  {%- endif -%}
-                              </div>
-                          {%- else -%}
-                              {%- if paginate.pages > 1 -%}
-                                  {%- render 'pagination', paginate: paginate -%}
-                              {%- endif -%}
-                          {%- endif -%}
-
-                      </div>
-                  {%- endpaginate -%}
-              {%- endif -%}
-          </div>
-      </section>
-    </div>
+                    </div>
+                {%- endpaginate -%}
+            {%- endif -%}
+        </div>
+    </section>
 </div>
 
-<div class="container">
   <div class="duo-block">
     <div class="row">
       <div class="block med_s12 salmon" style="background-image: url(https://cdn.shopify.com/s/files/1/0532/9960/9797/files/8R2A2067_1080x.jpg?v=1620255283); background-position: 50% 60%;">
@@ -482,7 +475,6 @@
       </div>
     </div>
   </div>
-</div>
 
 {%- render 'product-quick-view' -%}
 

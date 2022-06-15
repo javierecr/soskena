@@ -319,10 +319,8 @@
 				{%- assign is_block_odd = block.settings.reverse_layout -%}
 
 				<div class="product-features--container pad-sm" {{ block.shopify_attributes }}>
-					<div class="container">
-						<div class="row">
-							{%- render 'product-features__item', block: block, image_height: image_height, blocks_alignment: blocks_alignment, is_block_odd: is_block_odd -%}
-						</div>
+					<div class="row">
+						{%- render 'product-features__item', block: block, image_height: image_height, blocks_alignment: blocks_alignment, is_block_odd: is_block_odd -%}
 					</div>
 				</div>
 

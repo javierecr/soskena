@@ -7,7 +7,7 @@
 {% endcomment %}
 {% paginate customer.orders by 10 %}
 <section class="account-page">
-  <div class="account-home container">
+  <div class="account-home">
     <div class="account-title row">
       <p class="pad-xs size--heading-1">{{ 'customer.account.title' | t }}</p>
       <a href="{{ routes.account_logout_url }}">{{ 'customer.link.logout' | t }}</a>

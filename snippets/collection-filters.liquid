@@ -110,35 +110,33 @@
 
 {%- if filter_tags != blank -%}
 	<div class="collection__filters collection__filters--{{ position_filters }} {% if current_tags != blank %}collection__filters--has-tags-selected{% endif %}" data-collection-filters>
-		<div class="container">
-			<div class="collection__filters-list">
-				<div class="collection__filters-reset">
-					<button class="collection__filters-reset-btn {% if current_tags != blank %}is-visible{% endif %}" {% if current_tags == blank %}style="display: none;"{% endif %} data-collection-filters-reset-button>
-						{%- render 'icon-close' -%}
-						<span class="collection__filters-reset-btn-text">
-							{{ 'collections.tag_filtering.reset' | t }}
-							<span class="products-found" data-products-found-label>- {{ 'collections.products_with_count' | t: count: collection.products_count }}</span>
-						</span>
-					</button>
-				</div>
-
-				{%- case filter_mode -%}
-				{%- when 'tag' -%}
-					<div class="collection__filter collection__filter--accordion-expanded" data-collection-filter>
-						<button class="collection__filter-title" data-collection-filter-title>
-							<span>{{ 'collections.tag_filtering.filters' | t }}</span>
-							{%- render 'icon-arrow' -%}
-						</button>
-						<div class="collection__filter-container">
-							<ul class="collection__filter-tags">
-								{{- filter_tags -}}
-							</ul>
-						</div>
-					</div>
-				{%- when 'group' -%}
-					{{- filter_tags -}}
-				{%- endcase -%}
+		<div class="collection__filters-list">
+			<div class="collection__filters-reset">
+				<button class="collection__filters-reset-btn {% if current_tags != blank %}is-visible{% endif %}" {% if current_tags == blank %}style="display: none;"{% endif %} data-collection-filters-reset-button>
+					{%- render 'icon-close' -%}
+					<span class="collection__filters-reset-btn-text">
+						{{ 'collections.tag_filtering.reset' | t }}
+						<span class="products-found" data-products-found-label>- {{ 'collections.products_with_count' | t: count: collection.products_count }}</span>
+					</span>
+				</button>
 			</div>
+
+			{%- case filter_mode -%}
+			{%- when 'tag' -%}
+				<div class="collection__filter collection__filter--accordion-expanded" data-collection-filter>
+					<button class="collection__filter-title" data-collection-filter-title>
+						<span>{{ 'collections.tag_filtering.filters' | t }}</span>
+						{%- render 'icon-arrow' -%}
+					</button>
+					<div class="collection__filter-container">
+						<ul class="collection__filter-tags">
+							{{- filter_tags -}}
+						</ul>
+					</div>
+				</div>
+			{%- when 'group' -%}
+				{{- filter_tags -}}
+			{%- endcase -%}
 		</div>
 	</div>
 {%- endif -%}

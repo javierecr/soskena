@@ -14,18 +14,16 @@ Icons row
 {%- if section.blocks.size > 0 -%}
 <section data-section-id="{{ section.id }}" data-section-type="icons-row">
   <div class="icons-row--background pad-sm">
-    <div class="container">
-      <div class="row">
-        <div class="icons-row-wrapper icons-row-wrapper--{{ alignment }}">
-          {%- for block in section.blocks -%}
-            {%- assign title = block.settings.title -%}
-            {%- assign content = block.settings.content -%}
-            {%- assign image = block.settings.icon_image -%}
-            {%- assign icon = block.settings.icon_name -%}
+    <div class="row">
+      <div class="icons-row-wrapper icons-row-wrapper--{{ alignment }}">
+        {%- for block in section.blocks -%}
+          {%- assign title = block.settings.title -%}
+          {%- assign content = block.settings.content -%}
+          {%- assign image = block.settings.icon_image -%}
+          {%- assign icon = block.settings.icon_name -%}
 
-            {%- render 'icons-row__item', title: title, content: content, image: image, icon: icon -%}
-          {% endfor %}
-        </div>
+          {%- render 'icons-row__item', title: title, content: content, image: image, icon: icon -%}
+        {% endfor %}
       </div>
     </div>
   </div>

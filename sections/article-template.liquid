@@ -17,24 +17,22 @@ Note that comment.created_at will only be defined if the comment did not have an
 {%- capture author -%}{{ article.user.first_name }} {{ article.user.last_name }}{%- endcapture -%}
 
 <section class="page-title page-title--article container-wrap">
-	<div class="container">
-		<div class="row row-sm">
-			<div class="block">
-				<h1>{{ article.title }}</h1>
+	<div class="row row-sm">
+		<div class="block">
+			<h1>{{ article.title }}</h1>
 
-				<p class="post-meta">
-					<span class="post-meta__author">{{- 'blog.article.by_author' | t: author: author -}}</span>
-					<span class="post-meta__date"><time pubdate datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%B %d, %Y' }}</time></span>
-					{%- if blog.comments_enabled? -%}
-					<span class="post-meta__comment-count"><a href="#comments" data-anchor-link>{{ 'blog.blog_list_view.comment_count' | t: count: article.comments_count }}</a></span>
-					{%- endif -%}
-				</p>
-			</div>
+			<p class="post-meta">
+				<span class="post-meta__author">{{- 'blog.article.by_author' | t: author: author -}}</span>
+				<span class="post-meta__date"><time pubdate datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%B %d, %Y' }}</time></span>
+				{%- if blog.comments_enabled? -%}
+				<span class="post-meta__comment-count"><a href="#comments" data-anchor-link>{{ 'blog.blog_list_view.comment_count' | t: count: article.comments_count }}</a></span>
+				{%- endif -%}
+			</p>
 		</div>
 	</div>
 </section>
 <div class="article__content container-wrap">
-	<div class="container text-content">
+	<div class="text-content">
 		<div class="row row-sm rte">
 			{%- if article.image -%}
 				<div class="article__image lazyload" data-bgset="{% render 'bgset', image: article.image %}" data-sizes="auto" data-parent-fit="cover"></div>
@@ -46,7 +44,7 @@ Note that comment.created_at will only be defined if the comment did not have an
 			{{- article.content -}}
 		</div>
 	</div>
-	<div class="article-footer container">
+	<div class="article-footer">
 		<div class="row row-sm">
 			{%- render 'accent-line' -%}
 
@@ -89,7 +87,7 @@ Note that comment.created_at will only be defined if the comment did not have an
 	</div>
 	{%- if blog.comments_enabled? -%}
 		{%- paginate article.comments by 4 -%}
-			<div class="article-comments container">
+			<div class="article-comments">
 				<div class="row row-sm">
 					{%- if blog.comments_enabled? -%}
 						<h4 class="meta-comments">{{ 'blog.article.comment_count' | t: count: article.comments_count }}</h4>
