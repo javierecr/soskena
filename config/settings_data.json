@@ -359,6 +359,8 @@
           "show_description": false,
           "products_layout": "grid",
           "products_rows": 2,
+          "products_columns": 5,
+          "products_columns_mobile": "1",
           "show_button": false,
           "button_style": "primary",
           "color_style": "white"
@@ -643,7 +645,7 @@
               "btn_url": "shopify:\/\/collections\/essentials",
               "btn_text": "Shop Essentials",
               "bg_color": "#eae7e4",
-              "horizontal_alignment": "flex-start",
+              "horizontal_alignment": "center",
               "vertical_alignment": "space-between"
             }
           }
