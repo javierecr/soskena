@@ -2,6 +2,7 @@
   "sections": {
     "page": {
       "type": "page-template",
+      "disabled": true,
       "settings": {
         "show_page_title": true
       }
