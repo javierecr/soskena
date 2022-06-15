@@ -11590,11 +11590,6 @@ body.allow-grid-items-animations.allow-image-animations
   width: 100%;
   max-width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .signUp-form {
-    width: 400px;
-  }
-}
 @media screen and (max-width: 767px) {
   .signUp-form {
     width: 300px;
