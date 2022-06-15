@@ -71,7 +71,6 @@
 
 {%- if tab_1 != blank or tab_2 != blank or tab_3 != blank or tabs_h6_headings != blank -%}
 	<div class="product__tabs">
-		<div class="container">
 			<div class="product-tabs js-product-tabs{% if tabs_count == 1 %} product-tabs--single{% endif %}">
 				<div class="product-tabs-nav">
 					{%- if tabs_h6_headings != blank -%}
@@ -81,9 +80,9 @@
 						<button class="product-tab-title{% if is_first_tab_heading %} is-active{% endif %}">
 							{{- pages[tab_1].title -}}
 							<span class="button-toggle">
-	{%- render 'icon-plus' -%}
-	{%- render 'icon-minus' -%}
-</span>
+								{%- render 'icon-plus' -%}
+								{%- render 'icon-minus' -%}
+							</span>
 						</button>
 						{%- if is_first_tab_heading -%}
 							{%- assign is_first_tab_heading = false -%}
@@ -93,9 +92,9 @@
 						<button class="product-tab-title{% if is_first_tab_heading %} is-active{% endif %}">
 							{{- pages[tab_2].title -}}
 							<span class="button-toggle">
-	{%- render 'icon-plus' -%}
-	{%- render 'icon-minus' -%}
-</span>
+								{%- render 'icon-plus' -%}
+								{%- render 'icon-minus' -%}
+							</span>
 						</button>
 						{%- if is_first_tab_heading -%}
 							{%- assign is_first_tab_heading = false -%}
@@ -105,9 +104,9 @@
 						<button class="product-tab-title{% if is_first_tab_heading %} is-active{% endif %}">
 							{{- pages[tab_3].title -}}
 							<span class="button-toggle">
-	{%- render 'icon-plus' -%}
-	{%- render 'icon-minus' -%}
-</span>
+								{%- render 'icon-plus' -%}
+								{%- render 'icon-minus' -%}
+							</span>
 						</button>
 						{%- if is_first_tab_heading -%}
 							{%- assign is_first_tab_heading = false -%}
@@ -139,6 +138,5 @@
 					{%- endif -%}
 				</div>
 			</div>
-		</div>
 	</div>
 {%- endif -%}

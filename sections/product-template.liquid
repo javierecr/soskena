@@ -213,28 +213,24 @@
 
 	{%- if show_reviews or enable_yotpo and yotpo_ID != '' -%}
 		<div class="product__reviews">
-			<div class="container">
-              <h2 class="product__reviews-titele">COSTUMER REVIEWS</h2>
-				{%- if enable_yotpo and yotpo_ID != '' -%}
-					{%- render 'yotpo-reviews', product: product -%}
-				{%- else -%}
-					<div id="shopify-product-reviews2" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
-				{%- endif -%}
-			</div>
+			<h2 class="product__reviews-titele">COSTUMER REVIEWS</h2>
+			{%- if enable_yotpo and yotpo_ID != '' -%}
+				{%- render 'yotpo-reviews', product: product -%}
+			{%- else -%}
+				<div id="shopify-product-reviews2" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
+			{%- endif -%}
 		</div>
 	{%- endif -%}
   
-  <div class="container">
-    <div class="row product__review-row ">
-      <div class="block  s1 med_s13 product__review-sumary">
-        <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
-      </div>
-      <div class="block s1 med_s23 product__review-slider-container">
-        <div id="review-slider" class="product__review-slider">
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="row product__review-row ">
+		<div class="block  s1 med_s13 product__review-sumary">
+			<div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
+		</div>
+		<div class="block s1 med_s23 product__review-slider-container">
+			<div id="review-slider" class="product__review-slider">
+			</div>
+		</div>
+	</div>
   
   <script>
 	// Options for the observer (which mutations to observe)
