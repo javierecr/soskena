@@ -108,47 +108,49 @@
 	{%- assign show_social_icons = section.settings.show_social_icons -%}
 
 	<div class="footer-bottom">
-		<div class="container">
-			<div class="row">
+		<div class="row">
 
-				<div class="footer-bottom__right">
-					{%- render 'cross-border' -%}
+			<div class="footer-bottom__right">
+				{%- render 'cross-border' -%}
 
-					{%- if show_social_icons or menu -%}
+				{%- if show_social_icons or menu -%}
 
-						{%- if show_social_icons -%}
-							{%- render 'social-links' -%}
-						{%- endif -%}
-
-						{%- if menu -%}
-							{%- if linklists[menu].links != empty -%}
-								<div class="footer__menu">
-									<ul>
-										{%- for link in linklists[menu].links -%}
-											<li class="footer-link">
-												<a href="{{ link.url }}">{{ link.title }}</a>
-											</li>
-										{%- endfor -%}
-									</ul>
-								</div>
-							{%- endif -%}
-						{%- endif -%}
-					{%- endif -%}
-				</div>
-
-				<div class="footer-bottom__left">
-					{%- if section.settings.show_payment_icons -%}
-						<div class="footer__payment">
-							{%- render 'payment-icons' -%}
-						</div>
+					{%- if show_social_icons -%}
+						{%- render 'social-links' -%}
 					{%- endif -%}
 
-					<div class="footer__text">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}</div>
-
-				</div>
-
+					{%- if menu -%}
+						{%- if linklists[menu].links != empty -%}
+							<div class="footer__menu">
+								<ul>
+									{%- for link in linklists[menu].links -%}
+										<li class="footer-link">
+											<a href="{{ link.url }}">{{ link.title }}</a>
+										</li>
+									{%- endfor -%}
+								</ul>
+							</div>
+						{%- endif -%}
+					{%- endif -%}
+				{%- endif -%}
 			</div>
+
+			<div class="footer-bottom__left">
+				{%- if section.settings.show_payment_icons -%}
+					<div class="footer__payment">
+						{%- render 'payment-icons' -%}
+					</div>
+				{%- endif -%}
+
+				<div class="footer__text">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}</div>
+
+				<div class="footer__copyright">
+					<p>{{ 'password.content.powered_by' | t }}<a href="https://www.shopify.com/" rel="noopener" target="_blank" rel="nofollow">Shopify</a></p>
+				</div>
+			</div>
+
 		</div>
+	</div>
 </footer>
 
 {% schema %}
