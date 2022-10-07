@@ -12487,14 +12487,14 @@ jQuery(function ($) {
               breakpoint: 1440,
               settings: {
                 centerPadding: '40px',
-                slidesToShow: 6,
+                slidesToShow: 4,
               },
             },
             {
               breakpoint: 1024,
               settings: {
                 centerPadding: '30px',
-                slidesToShow: 5,
+                slidesToShow: 4,
               },
             },
             {
@@ -12508,14 +12508,14 @@ jQuery(function ($) {
               breakpoint: 768,
               settings: {
                 centerPadding: '20px',
-                slidesToShow: 3,
+                slidesToShow: 4,
               },
             },
             {
               breakpoint: 640,
               settings: {
                 centerPadding: '15px',
-                slidesToShow: 2,
+                slidesToShow: 4,
               },
             },
             {
