@@ -3,14 +3,8 @@
 		<div class="icons-row__image">
 			{%- assign image_widths = '[295,394,590,700]' -%}
 			{%- assign image_url_pattern = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-			<img
-				 src="{{ image.url }}"
-      {% comment %}
-				 data-widths= "{{ image_widths }}"
-				 data-aspectratio="{{ image.aspect_ratio }}"
-				 data-sizes="auto"
-      {% endcomment %}
-				 alt="{{ image.alt | escape }}">
+			
+          {{ image | img_url: 'master' | img_tag }}
 			<noscript>
 				<img src="{{ image | img_url: '512x' }}" alt="{{ image.alt | escape }}">
 			</noscript>
