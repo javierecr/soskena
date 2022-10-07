@@ -114,7 +114,7 @@
           "logo_max_width": 135,
           "show_site_name": false,
           "menu_list": "main-menu",
-          "secondary_menu": "secondary-menu",
+          "secondary_menu": "",
           "links_position": "links_left",
           "logo_position": "logo_center",
           "meganav_image": "shopify:\/\/shop_images\/8P8A9262.jpg",
