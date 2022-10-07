@@ -700,6 +700,94 @@
           "header": "ABOUT",
           "paragraph": "<p>Estamos en la industria de hacer de las personas las mejores versiones de ellas. Nuestros productos son un catalizador de esta meta. Nos deshacemos de toda la mierda que nos han metido en la cabeza_ “el deber ser” y alimentamos la idea de que las cosas auténticas son las más bellas y valiosas de la vida.<\/p>"
         }
+      },
+      "5e6be806-dbd3-485b-91cb-619675f629a1": {
+        "type": "image-with-text",
+        "blocks": {
+          "5e6be806-dbd3-485b-91cb-619675f629a1-166518476735ab4aae-0": {
+            "type": "gallery_image",
+            "settings": {
+            }
+          },
+          "5e6be806-dbd3-485b-91cb-619675f629a1-166518476735ab4aae-1": {
+            "type": "gallery_image",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "5e6be806-dbd3-485b-91cb-619675f629a1-166518476735ab4aae-0",
+          "5e6be806-dbd3-485b-91cb-619675f629a1-166518476735ab4aae-1"
+        ],
+        "settings": {
+          "show_nav_arrows": true,
+          "color_style": "white",
+          "transition": "fade",
+          "autoplay": true,
+          "duration": 4,
+          "show_margins": false,
+          "slide_height": "five-fifty-height-hero",
+          "slide_image_position": "left",
+          "slide_image_width": "med_s12|med_s12",
+          "subheading": "Humble Beginnings",
+          "title": "Tell a Story",
+          "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
+          "cta": "",
+          "link": "",
+          "button_style": "primary"
+        }
+      },
+      "2b80f433-5bb2-464b-b4e0-a347f1456c7a": {
+        "type": "icons-row",
+        "blocks": {
+          "2b80f433-5bb2-464b-b4e0-a347f1456c7a-1665184775df6a5e92-0": {
+            "type": "text",
+            "settings": {
+              "icon_name": "target",
+              "icon_image": "shopify:\/\/shop_images\/Iconos_CC_1.png",
+              "title": "INSERT TEXT HERE",
+              "content": ""
+            }
+          },
+          "2b80f433-5bb2-464b-b4e0-a347f1456c7a-1665184775df6a5e92-1": {
+            "type": "text",
+            "settings": {
+              "icon_name": "shop",
+              "icon_image": "shopify:\/\/shop_images\/Iconos_CC_3.png",
+              "title": "INSERT SOME TEXT",
+              "content": ""
+            }
+          },
+          "133ae55d-3e82-41a7-a54e-2c74dc8adc1b": {
+            "type": "text",
+            "settings": {
+              "icon_name": "shop",
+              "icon_image": "shopify:\/\/shop_images\/Iconos_CC_4.png",
+              "title": "INSERT SOME TEXT",
+              "content": ""
+            }
+          },
+          "2b80f433-5bb2-464b-b4e0-a347f1456c7a-1665184775df6a5e92-2": {
+            "type": "text",
+            "settings": {
+              "icon_name": "shop",
+              "icon_image": "shopify:\/\/shop_images\/Iconos_CC_2.png",
+              "title": "INSERT SOME TEXT",
+              "content": ""
+            }
+          }
+        },
+        "block_order": [
+          "2b80f433-5bb2-464b-b4e0-a347f1456c7a-1665184775df6a5e92-0",
+          "2b80f433-5bb2-464b-b4e0-a347f1456c7a-1665184775df6a5e92-1",
+          "133ae55d-3e82-41a7-a54e-2c74dc8adc1b",
+          "2b80f433-5bb2-464b-b4e0-a347f1456c7a-1665184775df6a5e92-2"
+        ],
+        "settings": {
+          "alignment": "center",
+          "color_icons_bg": "#e8d1c3",
+          "color_icons_text": "#333"
+        }
       }
     },
     "content_for_index": [
@@ -710,8 +798,10 @@
       "165461655110d65638",
       "16124051077ac428b3",
       "logo-list",
+      "2b80f433-5bb2-464b-b4e0-a347f1456c7a",
       "1654616943dba2cba6",
-      "testimonials"
+      "testimonials",
+      "5e6be806-dbd3-485b-91cb-619675f629a1"
     ]
   },
   "presets": {
