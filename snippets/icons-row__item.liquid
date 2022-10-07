@@ -4,7 +4,8 @@
 			{%- assign image_widths = '[295,394,590,700]' -%}
 			{%- assign image_url_pattern = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 			
-          {{ image | img_url: 'master' | img_tag }}
+          
+      {{ image | img_tag: 'image alt text', '', 'master' }}
 			<noscript>
 				<img src="{{ image | img_url: '512x' }}" alt="{{ image.alt | escape }}">
 			</noscript>
