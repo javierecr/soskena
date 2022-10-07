@@ -10394,8 +10394,9 @@ hr.post-divider {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 0 -50px -25px;
+  /* margin: 0 -50px -25px; */
 }
+/*
 @media screen and (max-width: 1023px) {
   .icons-row-wrapper {
     margin-left: -40px;
@@ -10412,6 +10413,7 @@ hr.post-divider {
     margin: 0 0 -10px;
   }
 }
+*/
 .icons-row-wrapper--center {
   justify-content: center;
   text-align: center;
@@ -10421,7 +10423,7 @@ hr.post-divider {
   text-align: left;
 }
 .icons-row__item {
-  width: 33.33333333%;
+  width: 25%;
   padding: 0 50px;
   margin-bottom: 25px;
 }
