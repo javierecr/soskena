@@ -10460,8 +10460,10 @@ hr.post-divider {
 .icons-row__image {
   position: relative;
   display: inline-block;
-  width: 45px;
-  height: 45px;
+  width: 50%;
+  aspec-ratio: 1 / 1;
+  max-width: 120px;
+  
   margin-bottom: 10px;
 }
 .icons-row__image img {
