@@ -12466,7 +12466,7 @@ jQuery(function ($) {
           infinite: true,
           autoplay: false,
           speed: 300,
-          slidesToShow: 8,
+          slidesToShow: 4,
           centerPadding: '80px',
           arrows: true,
           dots: false,
