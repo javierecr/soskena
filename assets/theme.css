@@ -10423,10 +10423,8 @@ hr.post-divider {
   text-align: left;
 }
 .icons-row__item {
-  /*
   width: 25%;
-  margin-bottom: 25px;
-  */
+  /* margin-bottom: 25px; */
   padding: 0 50px;
   
 }
