@@ -749,7 +749,7 @@
         ],
         "settings": {
           "alignment": "center",
-          "color_icons_bg": "#e8d1c3",
+          "color_icons_bg": "#ffffff",
           "color_icons_text": "#333333"
         }
       }
