@@ -10464,10 +10464,11 @@ hr.post-divider {
   position: relative;
   display: inline-block;
   width: 80%;
-  aspec-ratio: 1 / 1;
+  aspect-ratio: 1 / 1;
   max-width: 120px;
   margin-bottom: 10px;
 }
+
 .icons-row__image img {
   display: block;
   width: 100%;
