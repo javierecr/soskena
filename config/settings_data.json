@@ -679,7 +679,7 @@
             "settings": {
               "header": "SØSKENA_A RESPONSABLE AND ETHICAL BRAND.",
               "paragraph": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<\/p>",
-              "btn_url": "#",
+              "btn_url": "shopify:\/\/pages\/about",
               "btn_text": "Learn more",
               "bg_color": "#eae7e4",
               "horizontal_alignment": "center",
