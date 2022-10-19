@@ -38,9 +38,10 @@
     },
     "custom-html": {
       "type": "custom-html",
+      "disabled": true,
       "settings": {
         "subheading": "",
-        "title": "WE LOVE BEAUTIFUL PRODUCTS. WE THINK ORGANIC AND WE BELIEVE FAIRNESS IS NEVER OUT OF FASHION.",
+        "title": "CONSCIOUS MAENINGFUL ESSENTIALS",
         "html": ""
       }
     },
