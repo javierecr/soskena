@@ -651,7 +651,7 @@
             "type": "text",
             "settings": {
               "header": "BUNDLE UP",
-              "paragraph": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. <\/p><p><\/p><p>Nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat<\/p>",
+              "paragraph": "<p>Get 14% off in 3 packs and 20% in 5 packs.<\/p>",
               "btn_url": "#",
               "btn_text": "Save with packs",
               "bg_color": "#eae7e4",
