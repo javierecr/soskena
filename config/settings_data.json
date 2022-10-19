@@ -678,7 +678,7 @@
             "type": "text",
             "settings": {
               "header": "SØSKENA_A RESPONSABLE AND ETHICAL BRAND.",
-              "paragraph": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<\/p>",
+              "paragraph": "<p>Made in Mexico, <br\/>Søskena works with fair trade<br\/>factories to ensure evryone involved in  the production of our garnments is treated with the respect and care they deserve.<\/p>",
               "btn_url": "shopify:\/\/pages\/about",
               "btn_text": "Learn more",
               "bg_color": "#eae7e4",
@@ -713,6 +713,15 @@
               "content": ""
             }
           },
+          "2b80f433-5bb2-464b-b4e0-a347f1456c7a-1665184775df6a5e92-2": {
+            "type": "text",
+            "settings": {
+              "icon_name": "shop",
+              "icon_image": "shopify:\/\/shop_images\/Iconos_CC_2.png",
+              "title": "CLIMATE POSITIVE",
+              "content": ""
+            }
+          },
           "2b80f433-5bb2-464b-b4e0-a347f1456c7a-1665184775df6a5e92-1": {
             "type": "text",
             "settings": {
@@ -730,22 +739,13 @@
               "title": "MADE TO LAST",
               "content": ""
             }
-          },
-          "2b80f433-5bb2-464b-b4e0-a347f1456c7a-1665184775df6a5e92-2": {
-            "type": "text",
-            "settings": {
-              "icon_name": "shop",
-              "icon_image": "shopify:\/\/shop_images\/Iconos_CC_2.png",
-              "title": "CLIMATE POSITIVE",
-              "content": ""
-            }
           }
         },
         "block_order": [
           "2b80f433-5bb2-464b-b4e0-a347f1456c7a-1665184775df6a5e92-0",
+          "2b80f433-5bb2-464b-b4e0-a347f1456c7a-1665184775df6a5e92-2",
           "2b80f433-5bb2-464b-b4e0-a347f1456c7a-1665184775df6a5e92-1",
-          "133ae55d-3e82-41a7-a54e-2c74dc8adc1b",
-          "2b80f433-5bb2-464b-b4e0-a347f1456c7a-1665184775df6a5e92-2"
+          "133ae55d-3e82-41a7-a54e-2c74dc8adc1b"
         ],
         "settings": {
           "alignment": "center",
