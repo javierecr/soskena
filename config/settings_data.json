@@ -652,7 +652,7 @@
             "settings": {
               "header": "BUNDLE UP",
               "paragraph": "<p>Get 14% off in 3 packs and 20% in 5 packs.<\/p>",
-              "btn_url": "#",
+              "btn_url": "shopify:\/\/collections\/all",
               "btn_text": "Save with packs",
               "bg_color": "#eae7e4",
               "horizontal_alignment": "center",
