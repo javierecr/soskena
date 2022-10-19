@@ -422,6 +422,7 @@
       },
       "testimonials": {
         "type": "testimonials",
+        "disabled": true,
         "blocks": {
           "testimonials-0": {
             "type": "testimonial",
