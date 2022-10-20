@@ -46,7 +46,7 @@
     "enable_ajax_cart": true,
     "enable_cart_order_notes": false,
     "show_continue_shopping": true,
-    "tax_text": "Excluding taxes and shipping",
+    "tax_text": "Tax included. Shipping is calculated at checkout.",
     "show_breadcrumbs": false,
     "show_reviews": true,
     "enable_yotpo": false,
