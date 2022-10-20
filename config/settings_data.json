@@ -111,7 +111,7 @@
         "settings": {
           "logo": "shopify:\/\/shop_images\/Soskena_logo_cc-03_e8500648-9ca7-4fff-8873-3437d36970fb_1.png",
           "logo_other": "shopify:\/\/shop_images\/Logo_Soskena.png",
-          "logo_max_width": 150,
+          "logo_max_width": 135,
           "show_site_name": false,
           "menu_list": "main-menu",
           "secondary_menu": "",
