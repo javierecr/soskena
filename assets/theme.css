@@ -6068,6 +6068,22 @@ button.slick-prev.slick-disabled:after {
 .header-icons .cartToggle--empty .icon-cart path:last-child {
   opacity: 0;
 }
+
+.header-icons .cart-icon-container {
+  position: relative;
+}
+
+.header-icons .cart-icon-container:not(.cartToggle--empty)::after {
+  content: '';
+  display: block;
+  background: #4f4e4e;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  border-radius: 50%;
+  top: 8px;
+}
+
 .nav-account-link {
   width: 30px;
   height: 30px;
@@ -10426,7 +10442,6 @@ hr.post-divider {
   width: 25%;
   /* margin-bottom: 25px; */
   padding: 0 50px;
-  
 }
 @media screen and (max-width: 1023px) {
   .icons-row__item {

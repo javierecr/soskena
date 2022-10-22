@@ -171,11 +171,11 @@
 								</a>
 							{%- endif -%}
 
-							<a id="cartTotal" href="{{ routes.cart_url }}" aria-label="{{ 'cart.labels.items_added' | t }}" class="nav-item nav-item-fixed js-cartToggle cartToggle{% if cart.item_count == 0 %} cartToggle--empty{% endif %}" aria-expanded="false" aria-label="{{ 'general.accessibility.cart' | t }}">
+							<a id="cartTotal" href="{{ routes.cart_url }}" aria-label="{{ 'cart.labels.items_added' | t }}" class="nav-item nav-item-fixed js-cartToggle cartToggle{% if cart.item_count == 0 %} cartToggle--empty{% endif %} cart-icon-container" aria-expanded="false" aria-label="{{ 'general.accessibility.cart' | t }}">
 								{%- if settings.cart_icon == 'cart' -%}
-									{%- render 'icon-cart' -%}
-								{%- else -%}
-									{%- render 'icon-circle' -%}
+									<img src="{{ 'icon-cart.svg' | asset_url }}" loading="lazy" width="19" height="23">
+									{%- else -%}
+									<img src="{{ 'icon-circle.svg' | asset_url }}" loading="lazy" width="19" height="23">
 									<div id="CartToggleItemCount" class="cartToggle-items">{{ cart.item_count }}</div>
 								{%- endif -%}
 							</a>
