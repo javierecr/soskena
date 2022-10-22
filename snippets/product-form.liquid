@@ -14,9 +14,8 @@
 		{%- unless product.has_only_default_variant -%}
 			{%- if enable_variant_boxes -%}
 				{%- assign color_label = 'color,colour,couleur,colore,farbe,색,色,färg,farve' | split: ',' -%}
-{%- assign first_variant = product.selected_or_first_available_variant -%}
-
-{%- for option in product.options_with_values -%}
+				{%- assign first_variant = product.selected_or_first_available_variant -%}
+			{%- for option in product.options_with_values -%}
 	{%- assign option_index = option.position | minus: 1 -%}
 	{%- assign downcased_option = option.name | downcase -%}
 	{%- assign is_color = false -%}
@@ -27,47 +26,61 @@
 	{%- if is_color and enable_color_swatches -%}
 		{%- comment -%} /partials/product-swatch.liquid {%- endcomment -%}
 
-{%- assign file_extension = 'png' -%}
-{%- assign first_variant = product.selected_or_first_available_variant -%}
-<div class="row">
-  <div class="block med_s12">  
-    <div class="variant-wrapper variant-wrapper--color" data-option="option{{ option.position }}">
-      <label class="variant-label--color" for="SingleOptionSelector-{{ forloop.index0 }}-{{ product.id }}">
-        {% comment %} COCO -> {% endcomment %}
-          {% comment %}Sin palabra color antes del nombre del color elegido
-          {{- option.name -}}
-          {% endcomment %}
-        {% comment %} <!- COCO {% endcomment %}
-          <span class="variant-label__value" data-color-label>
-              {{- option.selected_value -}}
-          </span>
-      </label>
+		{%- assign file_extension = 'png' -%}
+		{%- assign first_variant = product.selected_or_first_available_variant -%}
+		<div class="row">
+			<div class="block med_s12">  
+				<div class="variant-wrapper variant-wrapper--color" data-option="option{{ option.position }}">
+					<label class="variant-label--color" for="SingleOptionSelector-{{ forloop.index0 }}-{{ product.id }}">
+						{% comment %} COCO -> {% endcomment %}
+							{% comment %}Sin palabra color antes del nombre del color elegido
+							{{- option.name -}}
+							{% endcomment %}
+						{% comment %} <!- COCO {% endcomment %}
+							<span class="variant-label__value" data-color-label>
+									{{- option.selected_value -}}
+							</span>
+					</label>
 
-      <fieldset
-          id="SingleOptionSelector-{{ forloop.index0 }}-{{ product.id }}"
-          class="variant-input-wrap"
-          data-index="option{{ option.position }}">
-          <div class="swatch{% if settings.color_swatches_style == 'square' %} swatch--square{% endif %}">
-              {%- for value in option.values -%}
-                  <div data-value="{{ value | escape }}" class="swatch__element">
-                      <input
-                          id="option-{{ value | handle }}-{{ forloop.index0 }}-{{ section.id }}"
-                          class="swatch__input"
-                          type="radio"
-                          name="{{ option.name }}"
-                          value="{{ value | escape }}"
-                          data-color-swatch
-                          data-single-option-selector
-                          data-index="option{{ option.position }}"
-                          {% if first_variant.options[option_index] == value %}checked="checked"{% endif %}>
-                      <label class="variant__button-label--color swatch__label" for="option-{{ value | handle }}-{{ forloop.index0 }}-{{ section.id }}">
-                          <span class="swatch__color swatch__color--{{ value | handle }}" style="background-color: {{ value | split: ' ' | last | handle }}; background-image: url({{ value | handle | append: '.' | append: file_extension | asset_url }})"></span>
-                          <span class="accessible-label">{{ value }}</span>
-                      </label>
-                  </div>
-              {%- endfor -%}
-          </div>
-      </fieldset>
+					<fieldset
+							id="SingleOptionSelector-{{ forloop.index0 }}-{{ product.id }}"
+							class="variant-input-wrap"
+							data-index="option{{ option.position }}">
+							<div class="swatch{% if settings.color_swatches_style == 'square' %} swatch--square{% endif %}">
+									{%- for value in option.values -%}
+											<div data-value="{{ value | escape }}" class="swatch__element">
+													<input
+															id="option-{{ value | handle }}-{{ forloop.index0 }}-{{ section.id }}"
+															class="swatch__input"
+															type="radio"
+															name="{{ option.name }}"
+															value="{{ value | escape }}"
+															data-color-swatch
+															data-single-option-selector
+															data-index="option{{ option.position }}"
+															{% if first_variant.options[option_index] == value %}checked="checked"{% endif %}>
+													<label class="variant__button-label--color swatch__label" for="option-{{ value | handle }}-{{ forloop.index0 }}-{{ section.id }}">
+															{% assign finalValue = value | downcase %}
+															{% assign hexCode = '#000' %}
+															{% case finalValue %}
+																{% when "white" %}
+																	{% assign hexCode = '#fff' %}
+																{% when "black" %}
+																	{% assign hexCode = '#000' %}
+																{% when "linen" %}
+																	{% assign hexCode = '#F1D8C4' %}
+																{% when "ash rose" %}
+																	{% assign hexCode = '#B07F80' %}
+																{% else %}
+																	{% assign hexCode = 'gray' %}
+															{% endcase %}
+															<span class="swatch__color swatch__color--{{ value | handle }}" style="background-color: {{ hexCode }};"></span>
+															<span class="accessible-label">{{ value }}</span>
+													</label>
+											</div>
+									{%- endfor -%}
+							</div>
+					</fieldset>
     </div>
   
   {%- else -%}
