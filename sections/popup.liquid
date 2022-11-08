@@ -53,13 +53,13 @@
 					{%- endif -%}
 
 					<div class="popup__column">
-						<div class="popup__column-content">
+						<div class="popup__column-content">{% comment %} 
 							{%- if popup_content != blank or popup_header != "" -%}
 								<p class="popup__heading">{{ popup_header | truncatewords: 10 }}</p>
 								{{ popup_content | truncate: 300  }}
 							{%- endif -%}
 
-                           {% comment %} 
+                           
 							{%- if section.settings.show_popup_newsletter -%}
 								{%- render 'newsletter' -%}
 							{%- endif -%}
