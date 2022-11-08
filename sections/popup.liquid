@@ -58,11 +58,12 @@
 								<p class="popup__heading">{{ popup_header | truncatewords: 10 }}</p>
 								{{ popup_content | truncate: 300  }}
 							{%- endif -%}
+
+                           {% comment %} 
 							{%- if section.settings.show_popup_newsletter -%}
 								{%- render 'newsletter' -%}
-
-                          
 							{%- endif -%}
+                           {% endcomment %}
                              <!-- Begin Mailchimp Signup Form -->
                             <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
                             <style type="text/css">
