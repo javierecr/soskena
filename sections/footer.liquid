@@ -80,7 +80,7 @@
 							{%- when 'newsletter' -%}
 
 
-                           {% comment %} {% endcomment %}
+                           {% comment %} 
 								<div class="footer__block footer__block--newsletter {% if mobile_hide_block %}med_hide{% endif %}" {{ block.shopify_attributes }}>
 									{%- assign show_newsletter = true -%}
 									{%- assign title = block.settings.title -%}
@@ -96,7 +96,7 @@
 
 									{%- render 'newsletter' -%}
 								</div>
-                            
+                            {% endcomment %}
                                 
                             <!-- Begin Mailchimp Signup Form -->
                             <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
