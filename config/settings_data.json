@@ -87,9 +87,9 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "show_announcement": false,
+          "show_announcement": true,
           "show_announcement_on_mobile": false,
-          "text": "<p>Free MX Shipping above $1,599. Easy return 30 days.<\/p>",
+          "text": "<p>Free MX Shipping above $2,500. Easy return 30 days.<\/p>",
           "link": ""
         }
       },
