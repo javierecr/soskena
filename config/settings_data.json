@@ -248,7 +248,6 @@
       },
       "slideshow": {
         "type": "slideshow",
-        "disabled": true,
         "blocks": {
           "slideshow-0": {
             "type": "image",
@@ -293,6 +292,7 @@
           "slideshow-0",
           "dc983a8f-1650-4b00-9bed-5156b3985731"
         ],
+        "disabled": true,
         "settings": {
           "showNavArrows": false,
           "show_arrow_down": false,
@@ -422,7 +422,6 @@
       },
       "testimonials": {
         "type": "testimonials",
-        "disabled": true,
         "blocks": {
           "testimonials-0": {
             "type": "testimonial",
@@ -451,6 +450,7 @@
           "testimonials-1",
           "testimonials-2"
         ],
+        "disabled": true,
         "settings": {
           "title": "Testimonials",
           "title_position": "left",
@@ -615,16 +615,16 @@
           "af99b602-5654-4a49-9763-40bd9ad951b4": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/PSD_FRAMING_BAMBOO_SCOOP_BRA_614a49e5-be70-4bcb-b2a0-a2af812015d4.png"
+              "image": "shopify:\/\/shop_images\/Cyber_weekend_30_OFF.png"
             }
           },
           "b905c8f2-3628-4b27-a906-303e72e40aa4": {
             "type": "text",
             "settings": {
-              "header": "INTRODUCING_BAMBOO FOUNDATIONS",
-              "paragraph": "<p>A cellulose fabric made from organically grown bamboo trees. <\/p><p>Silk-like softness, superior breathability, natural moisture-wicking, and anti-bacterial properties.<\/p><p><\/p>",
+              "header": "Cyber weekend",
+              "paragraph": "<p>Our biggest sale of the year<\/p><p>30% off in all our products<\/p><p><\/p>",
               "btn_url": "shopify:\/\/collections\/essentials",
-              "btn_text": "Shop Bamboo foundations",
+              "btn_text": "Shop Now",
               "bg_color": "#eae7e4",
               "horizontal_alignment": "center",
               "vertical_alignment": "space-between"
