@@ -615,14 +615,14 @@
           "af99b602-5654-4a49-9763-40bd9ad951b4": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/61A34389-CDC3-47EA-92C7-D7BC9DBAF126.jpg"
+              "image": "shopify:\/\/shop_images\/s6.jpg"
             }
           },
           "b905c8f2-3628-4b27-a906-303e72e40aa4": {
             "type": "text",
             "settings": {
-              "header": "Holiday Gift Shop",
-              "paragraph": "<p>The best thing you can find under the tree is a dose of love. Get ahead this 2023 holiday with gifts that last.<\/p><p><\/p>",
+              "header": "Clean essentials crafted with care",
+              "paragraph": "<p>Bamboo foundations.<\/p><p>Søskena thoughtfully fits your everyday life with the softest, most comfortable sustainable clothing essentials. <\/p>",
               "btn_url": "shopify:\/\/collections\/essentials",
               "btn_text": "Shop Now",
               "bg_color": "#eae7e4",
